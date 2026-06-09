@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Search | Legal & Vakil</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-page-hero {
+            background: linear-gradient(rgba(7, 12, 20, 0.85), rgba(7, 12, 20, 0.85)), 
+                        url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .search-large-bar {
+            max-width: 750px;
+            margin: 30px auto 0;
+            position: relative;
+            background: #ffffff;
+            border-radius: 50px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .search-large-bar:focus-within {
+            border-color: var(--secondary);
+            box-shadow: 0px 8px 30px rgba(251, 191, 36, 0.25);
+        }
+
+        .search-large-bar i.search-icon {
+            font-size: 20px;
+            color: var(--text-muted);
+            margin-left: 24px;
+        }
+
+        .search-large-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            font-size: 16px;
+            font-family: inherit;
+            color: var(--primary);
+        }
+
+        .search-large-bar button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .search-large-bar button:hover {
+            background-color: var(--primary-light);
+            color: var(--secondary);
+        }
+
+        .search-results-section {
+            padding: 60px 0 100px;
+            background-color: var(--bg-light);
+            min-height: 500px;
+        }
+
+        .search-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .search-tab-btn {
+            padding: 10px 24px;
+            border-radius: 50px;
+            background: white;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .search-tab-btn:hover {
+            border-color: var(--secondary-hover);
+        }
+
+        .search-tab-btn.active {
+            background-color: var(--secondary);
+            color: var(--primary);
+            border-color: var(--secondary);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .result-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .result-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--secondary-hover);
+        }
+
+        .result-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .icon-service {
+            background-color: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+        }
+
+        .icon-lawyer {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+        }
+
+        .icon-faq {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: #f59e0b;
+        }
+
+        .result-info {
+            flex: 1;
+        }
+
+        .result-type-badge {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .badge-service {
+            background-color: rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+
+        .badge-lawyer {
+            background-color: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+        }
+
+        .badge-faq {
+            background-color: rgba(245, 158, 11, 0.15);
+            color: #f59e0b;
+        }
+
+        .result-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .result-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .result-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .result-tag {
+            font-size: 11px;
+            padding: 3px 10px;
+            background-color: var(--bg-neutral);
+            border-radius: 50px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .result-action {
+            display: flex;
+            align-self: center;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+        }
+
+        .no-results i {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .result-card {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .result-action {
+                align-self: flex-start;
+                width: 100%;
+            }
+            .result-action .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lawyers.html">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn" style="color: var(--secondary-hover);"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px;">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs-bar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>&gt;</span>
+            <span class="active">Global Search</span>
+        </div>
+    </div>
+
+    <!-- Search Hero Section -->
+    <section class="search-page-hero">
+        <div class="container">
+            <div class="reveal-onload">
+                <h1>Search Legal & Vakil</h1>
+                <p>Find legal services, expert lawyers, CAs, compliance checklists, or answers to FAQs instantly.</p>
+                <div class="search-large-bar">
+                    <i class="fas fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="global-search-input" placeholder="Type what you are looking for (e.g. mutual divorce, trademark, Rohan Mehta, refund)..." autofocus autocomplete="off">
+                    <button id="global-search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results Section -->
+    <section class="search-results-section">
+        <div class="container">
+            <!-- Filtering Tabs -->
+            <div class="search-tabs reveal">
+                <button class="search-tab-btn active" data-filter="all">All Results (<span id="count-all">0</span>)</button>
+                <button class="search-tab-btn" data-filter="service">Services (<span id="count-service">0</span>)</button>
+                <button class="search-tab-btn" data-filter="lawyer">Experts & Lawyers (<span id="count-lawyer">0</span>)</button>
+                <button class="search-tab-btn" data-filter="faq">FAQs (<span id="count-faq">0</span>)</button>
+            </div>
+
+            <!-- Results Listing -->
+            <div class="results-grid" id="search-results-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Global Search Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search Index Data
+            const searchIndex = [
+                // Services
+                {
+                    type: 'service',
+                    title: 'Marriage Consultation',
+                    desc: 'Expert guidance on marriage registration, prenuptial agreements, mutual separations, child custody, and domestic disputes.',
+                    url: 'service-details.html?service=marriage',
+                    icon: 'fa-ring',
+                    tags: ['family law', 'divorce', 'alimony', 'custody', 'prenup', 'disputes']
+                },
+                {
+                    type: 'service',
+                    title: 'Online Dispute Resolution (ODR)',
+                    desc: 'Settle commercial, property, family or contractual disputes through online arbitration, mediation and conciliation.',
+                    url: 'service-details.html?service=odr',
+                    icon: 'fa-laptop-code',
+                    tags: ['arbitration', 'mediation', 'conciliation', 'digital', 'enforce']
+                },
+                {
+                    type: 'service',
+                    title: 'Challans & Traffic Matters',
+                    desc: 'Dispute virtual challans, represent in virtual traffic courts, resolve license suspension issues, and audit vehicle docs.',
+                    url: 'service-details.html?service=challans',
+                    icon: 'fa-traffic-light',
+                    tags: ['challan', 'traffic', 'license', 'violations', 'court']
+                },
+                {
+                    type: 'service',
+                    title: 'Property Disputes',
+                    desc: 'ancestral property conflicts, tenant evictions, title search verifications, builder delays, and RERA claims.',
+                    url: 'service-details.html?service=property',
+                    icon: 'fa-house',
+                    tags: ['property', 'real estate', 'rera', 'tenant', 'eviction', 'deeds']
+                },
+                {
+                    type: 'service',
+                    title: 'Debt & Loan Issues',
+                    desc: 'Struggling with loan repayments, credit card debts, or recovery agent harassment? Settle debts and restructure loans.',
+                    url: 'service-details.html?service=debt',
+                    icon: 'fa-sack-dollar',
+                    tags: ['loan', 'recovery', 'settlement', 'debts', 'credit score']
+                },
+                {
+                    type: 'service',
+                    title: 'Intellectual Property (IP)',
+                    desc: 'Protect brand names, code, and products with trademark quick filing, patent drafting, and copyright registration.',
+                    url: 'service-details.html?service=ip',
+                    icon: 'fa-lightbulb',
+                    tags: ['trademark', 'patent', 'copyright', 'ip', 'infringement']
+                },
+                {
+                    type: 'service',
+                    title: 'Business Setup & Compliance',
+                    desc: 'Incorporate Private Limited Companies, LLPs, or OPCs in 10 days. Founder agreements, ROC filing, GST registration.',
+                    url: 'service-details.html?service=business',
+                    icon: 'fa-briefcase',
+                    tags: ['business', 'incorporation', 'startup', 'contracts', 'gst', 'roc']
+                },
+                {
+                    type: 'service',
+                    title: 'Criminal Defense',
+                    desc: 'Anticipatory bail filings, regular bails, quashing of false FIRs, cheque bounce defense, and representation in district/high courts.',
+                    url: 'service-details.html?service=criminal',
+                    icon: 'fa-shield-halved',
+                    tags: ['bail', 'fir', 'criminal', 'cheque bounce', 'defense']
+                },
+
+                // Lawyers
+                {
+                    type: 'lawyer',
+                    title: 'Adv. Rohan Mehta',
+                    desc: 'Criminal Law Expert (8+ Yrs Exp). Specializes in bail matters, FIR quashing, cheque bounce, and criminal litigation.',
+                    url: 'lawyer-details.html?id=rohan',
+                    icon: 'fa-user-tie',
+                    tags: ['criminal law', 'bail', 'fir', 'rohan mehta', 'cheque bounce']
+                },
+                {
+                    type: 'lawyer',
+                    title: 'Adv. Sneha Kapoor',
+                    desc: 'Family Law Expert (6+ Yrs Exp). Specializes in mutual divorce, alimony settlements, child custody, and family mediation.',
+                    url: 'lawyer-details.html?id=sneha',
+                    icon: 'fa-user-tie',
+                    tags: ['family law', 'divorce', 'custody', 'alimony', 'sneha kapoor']
+                },
+                {
+                    type: 'lawyer',
+                    title: 'Adv. Vikram Singh',
+                    desc: 'Property Law Expert (10+ Yrs Exp). Certified title reports, builder RERA disputes, partition suits, and lease deeds.',
+                    url: 'lawyer-details.html?id=vikram',
+                    icon: 'fa-user-tie',
+                    tags: ['property', 'rera', 'title search', 'deeds', 'vikram singh']
+                },
+                {
+                    type: 'lawyer',
+                    title: 'Adv. Priya Sharma',
+                    desc: 'Corporate Compliance Specialist (7+ Yrs Exp). Startup setups, VC funding contracts, annual ROC compliance, and founder NDAs.',
+                    url: 'lawyer-details.html?id=priya',
+                    icon: 'fa-user-tie',
+                    tags: ['corporate', 'compliance', 'startup', 'contracts', 'priya sharma']
+                },
+                {
+                    type: 'lawyer',
+                    title: 'Adv. Arjun Nair',
+                    desc: 'Intellectual Property Lawyer (5+ Yrs Exp). Trademark oppositions, copyright violations, patent filing, and IP litigation.',
+                    url: 'lawyer-details.html?id=arjun',
+                    icon: 'fa-user-tie',
+                    tags: ['trademark', 'copyright', 'patent', 'ip litigation', 'arjun nair']
+                },
+
+                // FAQs
+                {
+                    type: 'faq',
+                    title: 'What is Legal & Vakil?',
+                    desc: 'A premium legal technology platform connecting you with verified expert lawyers and corporate consultants with flat-rate pricing.',
+                    url: 'faq.html',
+                    icon: 'fa-circle-question',
+                    tags: ['general', 'what is', 'flat-rate', 'pricing', 'vakil']
+                },
+                {
+                    type: 'faq',
+                    title: 'Are consultations flat-rate and how much is the fee?',
+                    desc: 'Yes! Standard introductory consults cost a heavily discounted ₹99 only. Full confidentiality is guaranteed.',
+                    url: 'faq.html',
+                    icon: 'fa-circle-question',
+                    tags: ['flat-rate', 'fee', 'charge', 'cost', 'consultation']
+                },
+                {
+                    type: 'faq',
+                    title: 'Is there a refund policy if a consult is missed?',
+                    desc: 'Yes. A full 100% refund is issued if a scheduled consult does not take place due to lawyer unavailability or platform technical issues.',
+                    url: 'refund.html',
+                    icon: 'fa-circle-question',
+                    tags: ['refund', 'missed', 'cancellation', 'money back']
+                },
+                {
+                    type: 'faq',
+                    title: 'Can I get custom contracts drafted or reviewed?',
+                    desc: 'Yes. Our corporate lawyers draft and review founder agreements, NDAs, employee contracts, and vendor terms.',
+                    url: 'faq.html',
+                    icon: 'fa-circle-question',
+                    tags: ['contract', 'draft', 'review', 'founder agreement', 'nda']
+                }
+            ];
+
+            const searchInput = document.getElementById('global-search-input');
+            const searchBtn = document.getElementById('global-search-btn');
+            const resultsGrid = document.getElementById('search-results-grid');
+            const tabs = document.querySelectorAll('.search-tab-btn');
+
+            // URL Search Params
+            const params = new URLSearchParams(window.location.search);
+            const initialQuery = params.get('q') || '';
+            if (initialQuery) {
+                searchInput.value = initialQuery;
+            }
+
+            const performSearch = () => {
+                const query = searchInput.value.toLowerCase().trim();
+                const activeTab = document.querySelector('.search-tab-btn.active');
+                const filter = activeTab ? activeTab.getAttribute('data-filter') : 'all';
+
+                // Match algorithm
+                let filteredList = searchIndex.filter(item => {
+                    if (query === '') return true; // Show all if empty query
+                    
+                    const matchesTitle = item.title.toLowerCase().includes(query);
+                    const matchesDesc = item.desc.toLowerCase().includes(query);
+                    const matchesTags = item.tags.some(tag => tag.toLowerCase().includes(query));
+
+                    return matchesTitle || matchesDesc || matchesTags;
+                });
+
+                // Update Counts
+                const counts = { all: 0, service: 0, lawyer: 0, faq: 0 };
+                filteredList.forEach(item => {
+                    counts.all++;
+                    counts[item.type]++;
+                });
+
+                document.getElementById('count-all').textContent = counts.all;
+                document.getElementById('count-service').textContent = counts.service;
+                document.getElementById('count-lawyer').textContent = counts.lawyer;
+                document.getElementById('count-faq').textContent = counts.faq;
+
+                // Apply Tab Filter
+                if (filter !== 'all') {
+                    filteredList = filteredList.filter(item => item.type === filter);
+                }
+
+                // Render Results
+                if (filteredList.length > 0) {
+                    resultsGrid.innerHTML = filteredList.map(item => `
+                        <div class="result-card reveal active">
+                            <div class="result-icon icon-${item.type}">
+                                <i class="fas ${item.icon}"></i>
+                            </div>
+                            <div class="result-info">
+                                <span class="result-type-badge badge-${item.type}">${item.type}</span>
+                                <h3 class="result-title">${item.title}</h3>
+                                <p class="result-desc">${item.desc}</p>
+                                <div class="result-tags">
+                                    ${item.tags.slice(0, 4).map(t => `<span class="result-tag">${t}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div class="result-action">
+                                <a href="${item.url}" class="btn btn-outline" style="padding: 10px 20px; border-radius: 6px; font-size:13px;">View Details</a>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    resultsGrid.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-magnifying-glass-chart"></i>
+                            <h3>No matching results found</h3>
+                            <p>Try searching for other terms like 'divorce', 'rera', 'Rohan Mehta', or 'refund'.</p>
+                        </div>
+                    `;
+                }
+            };
+
+            // Event Listeners
+            searchInput.addEventListener('input', performSearch);
+            searchBtn.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') performSearch();
+            });
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    performSearch();
+                });
+            });
+
+            // Initial search execution
+            performSearch();
+        });
+    </script>
+</body>
+</html>

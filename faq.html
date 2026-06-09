@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Legal & Vakil</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-page-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-category-section {
+            margin-bottom: 40px;
+        }
+
+        .faq-category-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-item:hover {
+            border-color: var(--secondary-hover);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 15.5px;
+            color: var(--primary);
+            gap: 15px;
+        }
+
+        .faq-question i {
+            color: var(--text-muted);
+            transition: var(--transition);
+            font-size: 14px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 15px;
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            border-top: 1px dashed #e2e8f0;
+            margin-top: 12px;
+        }
+
+        .faq-item.active {
+            border-color: var(--secondary);
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+            color: var(--secondary);
+        }
+
+        .tab.active {
+            background-color: var(--secondary) !important;
+            color: var(--primary) !important;
+            border-color: var(--secondary) !important;
+        }
+        .tab:hover:not(.active) {
+            background-color: rgba(255,255,255,0.15) !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lawyers.html">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html" class="active">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px;">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs-bar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>&gt;</span>
+            <span>Legal Resources</span>
+            <span>&gt;</span>
+            <span class="active">FAQ</span>
+        </div>
+    </div>
+
+    <!-- Directory Hero -->
+    <section class="directory-hero">
+        <div class="container">
+            <div class="directory-hero-content reveal-onload" style="max-width: 100%; text-align: center; margin: 0 auto;">
+                <h1>Frequently Asked Questions</h1>
+                <p>Have questions? Find quick answers about our services, booking process, and general legal compliance.</p>
+                
+                <!-- Search bar in Hero -->
+                <div class="search-box" style="margin-top: 30px; margin-bottom: 30px; max-width:680px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15);">
+                    <input type="text" id="faq-search" placeholder="Search for 'refund', 'booking', 'registration'..." style="padding-left: 30px; color:white;">
+                    <button class="btn btn-primary" style="border-radius: 50px; padding: 12px 35px;"><i class="fas fa-search"></i> Search</button>
+                </div>
+
+                <!-- Tabs -->
+                <div class="pricing-toggle-wrapper" style="gap: 12px; margin-bottom: 0; flex-wrap: wrap; justify-content: center;">
+                    <button class="tab active" data-category="all" style="padding: 10px 24px; border-radius: 50px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; font-weight:600; cursor:pointer; font-family:inherit; transition:var(--transition);">All FAQs</button>
+                    <button class="tab" data-category="general" style="padding: 10px 24px; border-radius: 50px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; font-weight:600; cursor:pointer; font-family:inherit; transition:var(--transition);">General</button>
+                    <button class="tab" data-category="booking" style="padding: 10px 24px; border-radius: 50px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; font-weight:600; cursor:pointer; font-family:inherit; transition:var(--transition);">Booking & Consults</button>
+                    <button class="tab" data-category="services" style="padding: 10px 24px; border-radius: 50px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; font-weight:600; cursor:pointer; font-family:inherit; transition:var(--transition);">Services & Drafting</button>
+                    <button class="tab" data-category="payments" style="padding: 10px 24px; border-radius: 50px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white; font-weight:600; cursor:pointer; font-family:inherit; transition:var(--transition);">Payments & Refunds</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordions Container -->
+    <section class="directory-section" style="background-color: var(--bg-light); padding: 60px 0;">
+        <div class="container">
+            <div class="faq-page-container">
+                
+                <!-- Category: General -->
+                <div class="faq-category-section" data-section-category="general">
+                    <h3 class="faq-category-title"><i class="fas fa-info-circle"></i> General Questions</h3>
+                    
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <span>What is Legal & Vakil?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Legal & Vakil is a premium digital legal platform connecting individuals and businesses with verified, top-tier lawyers, CAs, and corporate compliance experts in India. We offer transparent, flat-rate pricing and modern tools like our AI Legal Assistant.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <span>How does the AI Legal Assistant work?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Our AI Legal Assistant (Beta) helps you understand basic legal concepts, rights, and regulatory procedures. It can analyze simple legal queries and point you toward the correct legal services, though it is not a replacement for formal advice from a qualified attorney.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Booking & Consultations -->
+                <div class="faq-category-section" data-section-category="booking">
+                    <h3 class="faq-category-title"><i class="fas fa-calendar-check"></i> Booking & Consultations</h3>
+                    
+                    <div class="faq-item" data-category="booking">
+                        <div class="faq-question">
+                            <span>How do I book a consultation with a lawyer?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Browse our directory under "Find Lawyers", select an expert based on their specialty (e.g., criminal, family, or corporate law), and click "Consult Now" or "Book Call". Fill out the consultation request, and our system will schedule a secure phone or virtual session.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="booking">
+                        <div class="faq-question">
+                            <span>Are the consultation fees flat-rate?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we partner with verified legal professionals to offer flat-rate, transparent pricing. A standard consultation starts at a heavily discounted rate of ₹99 (originally ₹499) for a limited time.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Services & Drafting -->
+                <div class="faq-category-section" data-section-category="services">
+                    <h3 class="faq-category-title"><i class="fas fa-file-signature"></i> Services & Drafting</h3>
+                    
+                    <div class="faq-item" data-category="services">
+                        <div class="faq-question">
+                            <span>What services are offered on the platform?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We offer extensive services across corporate setup (LLP/Pvt Ltd incorporation), Marriage Consultations, Property Disputes, Debt & Loan issues, Online Dispute Resolution (ODR), Intellectual Property filings (Trademark/Copyright/Patent), and Criminal Defense.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="services">
+                        <div class="faq-question">
+                            <span>Can I get my business contracts drafted or reviewed?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Absolutely. Our corporate legal experts specialize in drafting and reviewing custom founder agreements, Non-Disclosure Agreements (NDAs), terms of service, employment contracts, and vendor agreements.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Payments & Refunds -->
+                <div class="faq-category-section" data-section-category="payments">
+                    <h3 class="faq-category-title"><i class="fas fa-wallet"></i> Payments & Refunds</h3>
+                    
+                    <div class="faq-item" data-category="payments">
+                        <div class="faq-question">
+                            <span>Is my payment secure on Legal & Vakil?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes. All payments are processed through industry-standard encrypted payment gateways. Your billing details are never stored on our servers, ensuring 100% security.
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="payments">
+                        <div class="faq-question">
+                            <span>Can I request a refund if my consultation doesn't happen?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes. If a scheduled consultation does not take place due to lawyer unavailability or platform technical issues, you are entitled to a full 100% refund. Please contact our support within 24 hours of the scheduled time.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Placeholder -->
+                <div id="no-results-msg" style="display:none; text-align:center; padding: 40px; color:var(--text-muted); font-size:16px;">
+                    No FAQs found matching your query.
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Match CTA Banner -->
+    <section style="padding: 60px 0; background-color: var(--bg-neutral);">
+        <div class="container">
+            <div class="match-banner reveal">
+                <div class="match-banner-text">
+                    <h4 style="font-size:22px;">Still have questions?</h4>
+                    <p>Contact our support team directly or consult an expert lawyer to resolve your issues.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">Legal Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+            const tabs = document.querySelectorAll('.tab');
+            const searchInput = document.getElementById('faq-search');
+            const categorySections = document.querySelectorAll('.faq-category-section');
+            const noResultsMsg = document.getElementById('no-results-msg');
+
+            // 1. Accordion logic
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const answer = item.querySelector('.faq-answer');
+                    const isVisible = answer.style.display === 'block';
+
+                    // Close all answers in this active setup
+                    faqItems.forEach(other => {
+                        other.classList.remove('active');
+                        other.querySelector('.faq-answer').style.display = 'none';
+                    });
+
+                    if (!isVisible) {
+                        item.classList.add('active');
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+
+            // 2. Filter & Search logic
+            const filterFAQs = () => {
+                const searchVal = searchInput.value.toLowerCase().trim();
+                const activeTab = document.querySelector('.tab.active');
+                const categoryVal = activeTab ? activeTab.getAttribute('data-category') : 'all';
+
+                let totalVisible = 0;
+
+                categorySections.forEach(section => {
+                    const sectionCategory = section.getAttribute('data-section-category');
+                    let sectionVisibleCount = 0;
+
+                    const itemsInSection = section.querySelectorAll('.faq-item');
+                    itemsInSection.forEach(item => {
+                        const itemText = item.textContent.toLowerCase();
+                        const matchesSearch = itemText.includes(searchVal);
+                        const matchesCategory = (categoryVal === 'all' || sectionCategory === categoryVal);
+
+                        if (matchesSearch && matchesCategory) {
+                            item.style.display = 'block';
+                            sectionVisibleCount++;
+                            totalVisible++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    // Hide/Show section header based on whether it has visible children
+                    if (sectionVisibleCount > 0) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+
+                // Display no results msg
+                if (totalVisible === 0) {
+                    noResultsMsg.style.display = 'block';
+                } else {
+                    noResultsMsg.style.display = 'none';
+                }
+            };
+
+            // Tab click listeners
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    filterFAQs();
+                });
+            });
+
+            // Search input listener
+            if (searchInput) {
+                searchInput.addEventListener('input', filterFAQs);
+            }
+        });
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

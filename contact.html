@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Legal and Vakil</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(rgba(7, 12, 20, 0.8), rgba(7, 12, 20, 0.8)), 
+                        url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 50px;
+            margin-top: -50px;
+            margin-bottom: 100px;
+        }
+
+        .contact-info-card {
+            background: var(--primary);
+            color: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--secondary);
+        }
+
+        .contact-info-card h2 {
+            color: var(--secondary);
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+
+        .info-item h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .info-item p {
+            opacity: 0.9;
+            font-size: 15px;
+            color: #e2e8f0;
+        }
+
+        .contact-form-card {
+            background: var(--bg-card);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .map-section {
+            padding: 100px 0;
+            background: var(--bg-light);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: #131e31;
+            position: relative;
+            border: 1px solid var(--border-color);
+        }
+
+        .map-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .map-overlay {
+            background: rgba(7, 12, 20, 0.85);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 992px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                margin-top: 0;
+                padding-top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lawyers.html">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px;">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero reveal-onload">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We're here to help you with all your legal and professional needs. Reach out to our experts today.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info-card reveal">
+                    <h2>Contact Information</h2>
+                    <p style="margin-bottom: 40px; opacity: 0.8;">Fill out the form and our team will get back to you within 24 hours.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 92965 00296</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>admin@legalandvakil.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Our Office</h4>
+                            <p>Head Office: New Delhi</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="display: flex; gap: 20px; font-size: 24px; margin-top: 40px;">
+                        <a href="#" style="color: var(--secondary);"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--secondary);"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--secondary);"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: var(--secondary);"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card reveal">
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+91 92965 00296" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Inquiry Subject</label>
+                            <select id="subject">
+                                <option value="" disabled selected>Select Inquiry Subject</option>
+                                <option value="debt">Debt Issue</option>
+                                <option value="marriage">Marriage Consultation</option>
+                                <option value="loan">Loan Settlement</option>
+                                <option value="gst">GST Filing & Issues</option>
+                                <option value="notary">Notary Services</option>
+                                <option value="rera">RERA Compliance</option>
+                                <option value="cyber">Cyber Law</option>
+                                <option value="ip">Intellectual Property</option>
+                                <option value="employment">Employment Law</option>
+                                <option value="rental">Rental Agreements</option>
+                                <option value="will">Will & Succession</option>
+                                <option value="consumer">Consumer Protection</option>
+                                <option value="business">Business Setup</option>
+                                <option value="tax">Tax & Compliance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section reveal">
+        <div class="container">
+            <div class="section-head">
+                <h2>Visit Our Office</h2>
+                <p>We're located in the heart of the city, easily accessible for in-person consultations.</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <h3>Legal and Vakil HQ</h3>
+                        <p>Head Office: New Delhi</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="margin-top: 15px; border-color: white; color: white;">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="firebase-analytics.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button');
+            const originalText = btn.textContent;
+            
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+            
+            // Prepare form data for Google Sheet
+            const formData = {
+                name: document.getElementById('firstName').value,
+                surname: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Call the global submission function
+            window.submitToGoogleSheet(formData).then(success => {
+                if (success) {
+                    alert('Thank you! Your message has been sent successfully. We will get back to you soon.');
+                    this.reset();
+                } else {
+                    alert('Oops! Something went wrong. Please try again later.');
+                }
+                btn.disabled = false;
+                btn.textContent = originalText;
+            });
+        });
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Legal & Vakil</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 0;
+            background-color: var(--bg-neutral);
+        }
+
+        .auth-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .auth-header h2 {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .auth-header p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .auth-form .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .auth-form label {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .auth-form input[type="text"],
+        .auth-form input[type="email"],
+        .auth-form input[type="password"] {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+            background-color: white;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .auth-form input[type="text"]:focus,
+        .auth-form input[type="email"]:focus,
+        .auth-form input[type="password"]:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.15);
+        }
+
+        .auth-meta-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .checkbox-container a {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .checkbox-container a:hover {
+            text-decoration: underline;
+        }
+
+        .auth-card-footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13.5px;
+            color: var(--text-muted);
+        }
+
+        .auth-card-footer a {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .auth-card-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lawyers.html">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px; background-color: var(--secondary-hover); color: var(--primary);">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs-bar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>&gt;</span>
+            <span class="active">Sign Up</span>
+        </div>
+    </div>
+
+    <!-- Signup Container -->
+    <section class="auth-container">
+        <div class="auth-card reveal-onload">
+            <div class="auth-header">
+                <h2>Create Account</h2>
+                <p>Join Legal & Vakil to manage your consultations, reviews, and legal agreements.</p>
+            </div>
+            
+            <form class="auth-form" id="signupForm">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Min. 8 characters" minlength="8" required>
+                </div>
+                
+                <div class="auth-meta-row">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; border-radius: 8px;">Create Account</button>
+            </form>
+            
+            <div class="auth-card-footer">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form script -->
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            submitBtn.textContent = 'Registering...';
+            submitBtn.disabled = true;
+            
+            // Mock signup values
+            localStorage.setItem('userRegistered', 'true');
+            localStorage.setItem('registeredName', document.getElementById('signup-name').value);
+            localStorage.setItem('registeredEmail', document.getElementById('signup-email').value);
+            
+            setTimeout(() => {
+                alert('Account created successfully! Redirecting to login page...');
+                window.location.href = 'login.html';
+            }, 800);
+        });
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

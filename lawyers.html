@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Expert Lawyers You Can Trust | Legal & Vakil</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lawyers.html" class="active">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px;">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Directory Hero -->
+    <section class="directory-hero">
+        <div class="container">
+            <div class="service-hero-grid">
+                <div class="directory-hero-content reveal-onload">
+                    <h1>Find Expert Lawyers<br><span class="highlight">You Can Trust</span></h1>
+                    <p>Connect with experienced lawyers specialized in your legal matters.</p>
+                    <div class="directory-hero-bullets">
+                        <div class="directory-bullet-item">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Verified & Experienced Lawyers</span>
+                        </div>
+                        <div class="directory-bullet-item">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Specialized in Multiple Legal Areas</span>
+                        </div>
+                        <div class="directory-bullet-item">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Confidential & Reliable Consultations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Background Image wrapper on right side -->
+                <div class="reveal-onload" style="text-align: right;">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=500" alt="Handshake legal" style="border-radius: var(--radius-md); max-height:220px; width:100%; object-fit:cover; border:1px solid rgba(255,255,255,0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="directory-stats-bar">
+        <div class="container">
+            <div class="directory-stats-grid">
+                <div class="dir-stat-item">
+                    <strong>500+</strong>
+                    <span>Expert Lawyers</span>
+                </div>
+                <div class="dir-stat-item">
+                    <strong>50K+</strong>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="dir-stat-item">
+                    <strong>4.8 / 5</strong>
+                    <span>Average Rating</span>
+                </div>
+                <div class="dir-stat-item">
+                    <strong>24/7</strong>
+                    <span>Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Filters Bar -->
+    <section class="filters-bar">
+        <div class="container">
+            <div class="filters-flex">
+                <div class="filter-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="dir-search" placeholder="Search by name, expertise or keyword...">
+                </div>
+                <div>
+                    <select id="dir-specialty">
+                        <option value="all">All Specializations</option>
+                        <option value="Criminal Law">Criminal Law</option>
+                        <option value="Family Law">Family Law</option>
+                        <option value="Property Law">Property Law</option>
+                        <option value="Corporate Law">Corporate Law</option>
+                        <option value="IP Law">IP Law</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="dir-sort">
+                        <option value="rating">Sort by Rating</option>
+                        <option value="experience">Sort by Experience</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directory Listings -->
+    <section class="directory-section">
+        <div class="container">
+            <div class="section-head" style="text-align: left; margin-bottom: 30px;">
+                <h2 style="font-size:24px;">Top Rated Lawyers</h2>
+            </div>
+            
+            <!-- Dynamic container populated by JS -->
+            <div class="directory-layout-flex" id="directory-lawyers-container">
+                <!-- Javascript will load lawyer-card-horizontal templates here -->
+            </div>
+            
+            <!-- Bottom Matched Banner -->
+            <div class="match-banner reveal">
+                <div class="match-banner-text">
+                    <h4>Can't find the right lawyer?</h4>
+                    <p>Let us help you match with the best lawyer for your case.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Get Matched Now</a>
+            </div>
+
+            <!-- Bottom features icons list -->
+            <div class="directory-features-row">
+                <div class="dir-feature-item">
+                    <div class="dir-feature-icon"><i class="fas fa-user-check"></i></div>
+                    <div class="dir-feature-info">
+                        <h5>Verified Lawyers</h5>
+                        <p>All lawyers are verified and experienced</p>
+                    </div>
+                </div>
+                <div class="dir-feature-item">
+                    <div class="dir-feature-icon"><i class="fas fa-tags"></i></div>
+                    <div class="dir-feature-info">
+                        <h5>Fixed Consultation Fee</h5>
+                        <p>Transparent pricing, no hidden charges</p>
+                    </div>
+                </div>
+                <div class="dir-feature-item">
+                    <div class="dir-feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="dir-feature-info">
+                        <h5>Secure & Confidential</h5>
+                        <p>Your data and case details are safe</p>
+                    </div>
+                </div>
+                <div class="dir-feature-item">
+                    <div class="dir-feature-icon"><i class="fas fa-headset"></i></div>
+                    <div class="dir-feature-info">
+                        <h5>Quick Support</h5>
+                        <p>Get help from our team anytime</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Consultation</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <input type="hidden" id="modal-lawyer-id" value="">
+                    <div class="form-group">
+                        <label for="book-name">Full Name</label>
+                        <input type="text" id="book-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-email">Email Address</label>
+                        <input type="email" id="book-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-phone">Phone Number</label>
+                        <input type="tel" id="book-phone" placeholder="+91 92965 00296" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-subject">Inquiry Subject</label>
+                        <select id="book-subject" required>
+                            <option value="" disabled selected>Select Inquiry Subject</option>
+                            <option value="Marriage Consultation">Marriage Consultation</option>
+                            <option value="Online Dispute Resolution">Online Dispute Resolution</option>
+                            <option value="Property Disputes">Property Disputes</option>
+                            <option value="Business setup & Legal">Business setup & Legal</option>
+                            <option value="Criminal Defense">Criminal Defense</option>
+                            <option value="Debt & Loan Issues">Debt & Loan Issues</option>
+                            <option value="Trademark & Patents">Trademark & Patents</option>
+                            <option value="Other Legal Help">Other Legal Help</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-message">Your Message</label>
+                        <textarea id="book-message" rows="4" placeholder="Briefly describe your legal requirement..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Confirm & Book Call</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Feedback Modal -->
+    <div id="statusModal" class="modal">
+        <div class="status-modal-content" id="status-modal-body">
+            <!-- Populated dynamically by JS -->
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

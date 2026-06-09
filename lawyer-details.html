@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Profile | Legal & Vakil</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lawyers.html" class="active">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px;">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs-bar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>&gt;</span>
+            <a href="lawyers.html">Lawyers</a>
+            <span>&gt;</span>
+            <span class="active">Adv. Rohan Mehta</span>
+        </div>
+    </div>
+
+    <!-- Profile Hero Section -->
+    <section class="lawyer-profile-hero" id="lawyer-details-container">
+        <div class="container">
+            <div class="lawyer-profile-header-card reveal-onload">
+                
+                <!-- Left Image Column -->
+                <div class="lawyer-profile-img-col">
+                    <img id="profile-img" src="assets/Lawyer (1).webp" alt="Lawyer Profile">
+                    <div class="lawyer-availability-badge">
+                        <span></span> Available for Consultation
+                    </div>
+                </div>
+                
+                <!-- Middle Details Column -->
+                <div class="lawyer-profile-info-col">
+                    <div class="lawyer-verified-tag">
+                        <i class="fas fa-certificate"></i> Verified Lawyer
+                    </div>
+                    <h1 id="profile-name">Adv. Rohan Mehta</h1>
+                    <p id="profile-specialty" class="lawyer-mid-specialty" style="font-size:16px;">Criminal Law Expert</p>
+                    <p id="profile-exp" class="lawyer-mid-specialty" style="color:var(--text-main); font-weight:600; margin-bottom:12px;">8+ Years of Experience</p>
+                    
+                    <div class="lawyer-mid-meta" style="margin-bottom: 24px;">
+                        <span class="lawyer-rating" style="font-size:15px;">
+                            <i class="fas fa-star"></i> <span id="profile-rating-num">4.9</span> 
+                            <span id="profile-reviews-count" class="lawyer-reviews-count">(120 Reviews)</span>
+                        </span>
+                    </div>
+                    
+                    <p id="profile-tagline" class="lawyer-desc" style="font-size:14.5px; margin-bottom:24px;">Expert in criminal defense, bail matters, and high court litigation. Committed to providing effective legal solutions with integrity and dedication.</p>
+                    
+                    <!-- Tags Row -->
+                    <div class="lawyer-tags-row" id="profile-tags-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                
+                <!-- Right CTA Pricing Column -->
+                <div class="lawyer-fee-box" style="border:1px solid var(--border-color); border-radius:var(--radius-md); padding:24px; background:var(--bg-neutral);">
+                    <span class="fee-label">Consultation Fee</span>
+                    <div class="fee-pricing">
+                        <span class="fee-original" id="cta-original-fee">₹499</span>
+                        <span class="fee-discounted" id="cta-discounted-fee">₹99</span>
+                    </div>
+                    <span class="fee-offer-text">Limited Time Offer</span>
+                    <a href="#" class="btn btn-primary book-call-btn" id="cta-book-btn" style="width: 100%; margin-bottom:12px;"><i class="fas fa-phone"></i> Book a Call @ ₹99</a>
+                    <a href="https://wa.me/919296500296?text=Hello%20Adv%20Rohan%20Mehta,%20I'd%20like%20to%20book%20a%20legal%20consultation." target="_blank" class="btn btn-outline" style="width: 100%; background:white; color:#25d366; border-color:#25d366; margin-bottom:16px;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <span class="fee-guarantee-text"><i class="fas fa-shield-halved"></i> 100% Confidential</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="directory-stats-bar" style="background-color: white; border-bottom: 1px solid var(--border-color); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="directory-stats-grid">
+                <div class="dir-stat-item">
+                    <strong id="stat-cases">500+</strong>
+                    <span>Cases Handled</span>
+                </div>
+                <div class="dir-stat-item">
+                    <strong id="stat-clients">200+</strong>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="dir-stat-item">
+                    <strong id="stat-rating">4.9/5</strong>
+                    <span>Average Rating</span>
+                </div>
+                <div class="dir-stat-item">
+                    <strong id="stat-exp">8+</strong>
+                    <span>Years of Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Grid details -->
+    <section class="lawyer-details-grid-body">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.6fr 0.8fr; gap: 40px; align-items: start;">
+                
+                <!-- Left Main Content Column -->
+                <div class="profile-main-column">
+                    <!-- About block -->
+                    <div class="profile-card-block reveal">
+                        <h2>About the Expert</h2>
+                        <div class="profile-bio-text" id="profile-bio">
+                            <!-- Populated by JS -->
+                        </div>
+                        <ul class="profile-bullet-list" id="profile-bullets">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Areas of Expertise block -->
+                    <div class="profile-card-block reveal">
+                        <h2>Areas of Expertise</h2>
+                        <div class="cases-handled-grid" id="profile-expertise-grid" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Cases Handled block -->
+                    <div class="profile-card-block reveal">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1.5px solid var(--border-color); padding-bottom: 10px;">
+                            <h2 style="margin-bottom: 0; border-bottom: none; padding-bottom: 0;">Cases Handled</h2>
+                            <a href="#" class="view-all-link">View All Cases <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="cases-handled-grid" id="profile-cases-grid">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Reviews block -->
+                    <div class="profile-card-block reveal">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1.5px solid var(--border-color); padding-bottom: 10px;">
+                            <h2 style="margin-bottom: 0; border-bottom: none; padding-bottom: 0;">What Clients Say</h2>
+                            <a href="#" class="view-all-link">View All Reviews <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="reviews-block-list" id="profile-reviews-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Sidebar Column -->
+                <div class="profile-sidebar-column">
+                    <!-- Credentials block -->
+                    <div class="credentials-sidebar-card reveal">
+                        <h3>Education & Credentials</h3>
+                        <div class="credentials-list" id="profile-credentials-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Sticky Call Out Banner -->
+                <div class="match-banner reveal" style="grid-column: 1 / -1; background-color: var(--primary);">
+                    <div class="match-banner-text">
+                        <h4 style="font-size:22px;">Need Legal Assistance?</h4>
+                        <p>Book a consultation call with Adv. Rohan Mehta and get expert legal advice.</p>
+                    </div>
+                    <a href="#" class="btn btn-primary book-call-btn" data-id="rohan"><i class="fas fa-phone"></i> Book a Call @ ₹99</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Consultation</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <input type="hidden" id="modal-lawyer-id" value="">
+                    <div class="form-group">
+                        <label for="book-name">Full Name</label>
+                        <input type="text" id="book-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-email">Email Address</label>
+                        <input type="email" id="book-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-phone">Phone Number</label>
+                        <input type="tel" id="book-phone" placeholder="+91 92965 00296" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-subject">Inquiry Subject</label>
+                        <select id="book-subject" required>
+                            <option value="" disabled selected>Select Inquiry Subject</option>
+                            <option value="Marriage Consultation">Marriage Consultation</option>
+                            <option value="Online Dispute Resolution">Online Dispute Resolution</option>
+                            <option value="Property Disputes">Property Disputes</option>
+                            <option value="Business setup & Legal">Business setup & Legal</option>
+                            <option value="Criminal Defense">Criminal Defense</option>
+                            <option value="Debt & Loan Issues">Debt & Loan Issues</option>
+                            <option value="Trademark & Patents">Trademark & Patents</option>
+                            <option value="Other Legal Help">Other Legal Help</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-message">Your Message</label>
+                        <textarea id="book-message" rows="4" placeholder="Briefly describe your legal requirement..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Confirm & Book Call</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Feedback Modal -->
+    <div id="statusModal" class="modal">
+        <div class="status-modal-content" id="status-modal-body">
+            <!-- Populated dynamically by JS -->
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Vakil | Your Legal Partner | Expert Legal Advice & Services</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container" style="width: 100%;">
+            <nav>
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-subtitle">Your Legal Partner</span>
+                    </div>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="lawyers.html">Find Lawyers</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                            <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                            <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                            <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Legal Resources <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="search.html" style="color: inherit; text-decoration: none;" aria-label="Search"><i class="fas fa-magnifying-glass search-icon-btn"></i></a>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 18px; border-radius: 6px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 18px; border-radius: 6px;">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Hero Left Info -->
+                <div class="hero-left reveal-onload">
+                    <h1>Your Legal Rights,<br><span class="highlight">Our Legal Expertise</span></h1>
+                    <p>Reliable legal solutions for every challenge. Consult top lawyers, resolve issues & protect your rights.</p>
+                    <div class="hero-btns">
+                        <a href="lawyers.html" class="btn btn-primary"><i class="fas fa-user-tie"></i> Consult a Lawyer</a>
+                        <a href="services.html" class="btn btn-outline-white"><i class="fas fa-cubes"></i> Explore Services</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Right AI Assistant Widget -->
+                <div class="hero-right reveal-onload">
+                    <div class="ai-assistant-card">
+                        <div class="ai-header">
+                            <div class="ai-header-left">
+                                <div class="ai-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <span class="ai-title">AI Legal Assistant <span class="ai-beta-tag">Beta</span></span>
+                            </div>
+                            <span style="width: 8px; height: 8px; border-radius:50%; background:var(--success); display:block;" title="Online"></span>
+                        </div>
+                        
+                        <div class="ai-chat-body" id="chat-body">
+                            <!-- AI Welcome Msg -->
+                            <div class="chat-msg chat-msg-ai">
+                                Hello! I'm your AI legal assistant. How can I help you today?
+                            </div>
+                            
+                            <!-- Quick Assist Options list -->
+                            <div class="ai-options">
+                                <button class="ai-opt-btn">
+                                    <span><i class="fas fa-gavel"></i> I have a legal issue</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <button class="ai-opt-btn">
+                                    <span><i class="fas fa-file-shield"></i> Need document review</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <button class="ai-opt-btn">
+                                    <span><i class="fas fa-magnifying-glass"></i> Check case status</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                                <button class="ai-opt-btn">
+                                    <span><i class="fas fa-scale-balanced"></i> Legal rights & advice</span>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <form class="ai-input-form" id="chat-form">
+                            <div class="ai-input-wrapper">
+                                <input type="text" id="chat-input" placeholder="Ask your legal question..." required autocomplete="off">
+                                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Bar -->
+    <section class="metrics-bar">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <i class="fas fa-circle-check"></i>
+                    <strong>50K+</strong>
+                    <span>Cases Solved</span>
+                </div>
+                <div class="metric-item">
+                    <i class="fas fa-users"></i>
+                    <strong>20K+</strong>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="metric-item">
+                    <i class="fas fa-scale-balanced"></i>
+                    <strong>500+</strong>
+                    <span>Expert Lawyers</span>
+                </div>
+                <div class="metric-item">
+                    <i class="fas fa-clock"></i>
+                    <strong>24/7</strong>
+                    <span>Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Legal Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-header-flex">
+                <div>
+                    <h2 style="margin-bottom: 5px;">Our Legal Services</h2>
+                    <p style="color:var(--text-muted); font-size:14.5px;">Comprehensive professional solutions for all legal and compliance requirements.</p>
+                </div>
+                <a href="services.html" class="view-all-link">View All Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="services-grid-8">
+                <!-- Card 1 -->
+                <a href="service-details.html?service=marriage" class="service-card-light reveal">
+                    <div class="service-card-icon sc-marriage">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Marriage Consultation</h3>
+                    <p>Divorce, Alimony, Child Custody, Marriage Disputes</p>
+                </a>
+                <!-- Card 2 -->
+                <a href="service-details.html?service=odr" class="service-card-light reveal">
+                    <div class="service-card-icon sc-odr">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Online Dispute Resolution</h3>
+                    <p>Resolve disputes online quickly & legally</p>
+                </a>
+                <!-- Card 3 -->
+                <a href="service-details.html?service=challans" class="service-card-light reveal">
+                    <div class="service-card-icon sc-challans">
+                        <i class="fas fa-traffic-light"></i>
+                    </div>
+                    <h3>Challans & Traffic</h3>
+                    <p>Challan disputes, license issues, traffic violations</p>
+                </a>
+                <!-- Card 4 -->
+                <a href="service-details.html?service=property" class="service-card-light reveal">
+                    <div class="service-card-icon sc-property">
+                        <i class="fas fa-house"></i>
+                    </div>
+                    <h3>Property Disputes</h3>
+                    <p>Property conflicts, ownership, rent agreements</p>
+                </a>
+                <!-- Card 5 -->
+                <a href="service-details.html?service=debt" class="service-card-light reveal">
+                    <div class="service-card-icon sc-debt">
+                        <i class="fas fa-sack-dollar"></i>
+                    </div>
+                    <h3>Debt & Loan Issues</h3>
+                    <p>Loan recovery, settlements, financial disputes</p>
+                </a>
+                <!-- Card 6 -->
+                <a href="service-details.html?service=ip" class="service-card-light reveal">
+                    <div class="service-card-icon sc-ip">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Intellectual Property</h3>
+                    <p>Copyrights, Trademarks, Patents, IP Registration</p>
+                </a>
+                <!-- Card 7 -->
+                <a href="service-details.html?service=business" class="service-card-light reveal">
+                    <div class="service-card-icon sc-business">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Setup</h3>
+                    <p>Company registration, contracts, legal compliance</p>
+                </a>
+                <!-- Card 8 -->
+                <a href="services.html" class="service-card-light reveal">
+                    <div class="service-card-icon sc-criminal">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Criminal Defense</h3>
+                    <p>Bail, FIR, Appeals, Criminal disputes</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Legal Issues People Face -->
+    <section class="issues-section">
+        <div class="container">
+            <div class="services-header-flex">
+                <div>
+                    <h2 style="margin-bottom: 5px;">Top Legal Issues People Face</h2>
+                    <p style="color:var(--text-muted); font-size:14.5px;">Most common dispute areas requiring expert legal solutions.</p>
+                </div>
+                <a href="services.html" class="view-all-link">View All Issues <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="issues-grid-5">
+                <!-- Card 1 -->
+                <a href="service-details.html?service=property" class="issue-card reveal">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=400" alt="Property Issues">
+                    <div class="issue-overlay">
+                        <h4>Property Issues</h4>
+                        <p>Disputes over property ownership & documents</p>
+                    </div>
+                </a>
+                <!-- Card 2 -->
+                <a href="service-details.html?service=debt" class="issue-card reveal">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=400" alt="Loan & Debt Issues">
+                    <div class="issue-overlay">
+                        <h4>Loan & Debt Issues</h4>
+                        <p>Recovery, settlements & financial disputes</p>
+                    </div>
+                </a>
+                <!-- Card 3 -->
+                <a href="service-details.html?service=marriage" class="issue-card reveal">
+                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80&w=400" alt="Relationship Issues">
+                    <div class="issue-overlay">
+                        <h4>Relationship Issues</h4>
+                        <p>Divorce, alimony, custody & family disputes</p>
+                    </div>
+                </a>
+                <!-- Card 4 -->
+                <a href="services.html" class="issue-card reveal">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2959d43?auto=format&fit=crop&q=80&w=400" alt="Workplace Issues">
+                    <div class="issue-overlay">
+                        <h4>Workplace Issues</h4>
+                        <p>Wrongful termination, harassment & disputes</p>
+                    </div>
+                </a>
+                <!-- Card 5 -->
+                <a href="services.html" class="issue-card reveal">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=400" alt="Consumer Issues">
+                    <div class="issue-overlay">
+                        <h4>Consumer Issues</h4>
+                        <p>Consumer rights, frauds & service complaints</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Lawyers Section -->
+    <section class="lawyers-section">
+        <div class="container">
+            <div class="services-header-flex">
+                <div>
+                    <h2 style="margin-bottom: 5px;">Top Lawyers</h2>
+                    <p style="color:var(--text-muted); font-size:14.5px;">Consult directly with our verified, top-rated legal professionals.</p>
+                </div>
+                <a href="lawyers.html" class="view-all-link">View All Lawyers <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="lawyers-grid-5">
+                <!-- Lawyer 1 -->
+                <a href="lawyer-details.html?id=rohan" class="lawyer-card-vertical reveal">
+                    <div class="lawyer-img-wrapper">
+                        <img src="assets/Lawyer (1).webp" alt="Adv. Rohan Mehta">
+                    </div>
+                    <div class="lawyer-info-body">
+                        <h4>Adv. Rohan Mehta</h4>
+                        <span class="lawyer-specialty">Criminal Law Expert</span>
+                        <div class="lawyer-meta-row">
+                            <span class="lawyer-rating">
+                                <i class="fas fa-star"></i> 4.9 <span class="lawyer-reviews-count">(120)</span>
+                            </span>
+                            <span class="lawyer-exp">8+ Yrs Exp.</span>
+                        </div>
+                        <span class="btn btn-outline" style="width: 100%;">Consult Now</span>
+                    </div>
+                </a>
+                
+                <!-- Lawyer 2 -->
+                <a href="lawyer-details.html?id=sneha" class="lawyer-card-vertical reveal">
+                    <div class="lawyer-img-wrapper">
+                        <img src="assets/Lawyer (2).webp" alt="Adv. Sneha Kapoor">
+                    </div>
+                    <div class="lawyer-info-body">
+                        <h4>Adv. Sneha Kapoor</h4>
+                        <span class="lawyer-specialty">Family Law Expert</span>
+                        <div class="lawyer-meta-row">
+                            <span class="lawyer-rating">
+                                <i class="fas fa-star"></i> 4.8 <span class="lawyer-reviews-count">(98)</span>
+                            </span>
+                            <span class="lawyer-exp">6+ Yrs Exp.</span>
+                        </div>
+                        <span class="btn btn-outline" style="width: 100%;">Consult Now</span>
+                    </div>
+                </a>
+
+                <!-- Lawyer 3 -->
+                <a href="lawyer-details.html?id=vikram" class="lawyer-card-vertical reveal">
+                    <div class="lawyer-img-wrapper">
+                        <img src="assets/Lawyer (3).webp" alt="Adv. Vikram Singh">
+                    </div>
+                    <div class="lawyer-info-body">
+                        <h4>Adv. Vikram Singh</h4>
+                        <span class="lawyer-specialty">Property Law Expert</span>
+                        <div class="lawyer-meta-row">
+                            <span class="lawyer-rating">
+                                <i class="fas fa-star"></i> 4.9 <span class="lawyer-reviews-count">(110)</span>
+                            </span>
+                            <span class="lawyer-exp">10+ Yrs Exp.</span>
+                        </div>
+                        <span class="btn btn-outline" style="width: 100%;">Consult Now</span>
+                    </div>
+                </a>
+
+                <!-- Lawyer 4 -->
+                <a href="lawyer-details.html?id=priya" class="lawyer-card-vertical reveal">
+                    <div class="lawyer-img-wrapper">
+                        <img src="assets/Lawyer (4).webp" alt="Adv. Priya Sharma">
+                    </div>
+                    <div class="lawyer-info-body">
+                        <h4>Adv. Priya Sharma</h4>
+                        <span class="lawyer-specialty">Corporate Law Expert</span>
+                        <div class="lawyer-meta-row">
+                            <span class="lawyer-rating">
+                                <i class="fas fa-star"></i> 4.8 <span class="lawyer-reviews-count">(85)</span>
+                            </span>
+                            <span class="lawyer-exp">7+ Yrs Exp.</span>
+                        </div>
+                        <span class="btn btn-outline" style="width: 100%;">Consult Now</span>
+                    </div>
+                </a>
+
+                <!-- Lawyer 5 -->
+                <a href="lawyer-details.html?id=arjun" class="lawyer-card-vertical reveal">
+                    <div class="lawyer-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" alt="Adv. Arjun Nair">
+                    </div>
+                    <div class="lawyer-info-body">
+                        <h4>Adv. Arjun Nair</h4>
+                        <span class="lawyer-specialty">IP Law Expert</span>
+                        <div class="lawyer-meta-row">
+                            <span class="lawyer-rating">
+                                <i class="fas fa-star"></i> 4.7 <span class="lawyer-reviews-count">(65)</span>
+                            </span>
+                            <span class="lawyer-exp">5+ Yrs Exp.</span>
+                        </div>
+                        <span class="btn btn-outline" style="width: 100%;">Consult Sales</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose a Plan That Suits You Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Choose a Plan That Suits You</h2>
+                <p>Simple, predictable flat pricing for individual and enterprise legal compliance.</p>
+            </div>
+            
+            <div class="pricing-toggle-wrapper">
+                <span class="pricing-toggle-label active" id="toggle-monthly">Monthly</span>
+                <div class="pricing-switch" id="pricing-switch"></div>
+                <span class="pricing-toggle-label" id="toggle-yearly">Yearly</span>
+                <span class="yearly-save-badge">Save 20%</span>
+            </div>
+            
+            <div class="pricing-layout-grid">
+                <!-- 3 main cards grid -->
+                <div class="pricing-cards-grid">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card reveal" data-plan="basic">
+                        <span class="plan-title">Basic</span>
+                        <div class="plan-price-wrapper">
+                            <span class="plan-price">₹299</span>
+                            <span class="plan-period">/ month</span>
+                        </div>
+                        <ul class="plan-features-list">
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> 1 Legal Consultation</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Document Review</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Email Support</li>
+                        </ul>
+                        <button class="btn btn-outline">Get Started</button>
+                    </div>
+                    <!-- Plan 2 -->
+                    <div class="pricing-card reveal" data-plan="standard">
+                        <span class="plan-title">Standard</span>
+                        <div class="plan-price-wrapper">
+                            <span class="plan-price">₹559</span>
+                            <span class="plan-period">/ month</span>
+                        </div>
+                        <ul class="plan-features-list">
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> 5 Legal Consultations</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Document Review</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Priority Support</li>
+                        </ul>
+                        <button class="btn btn-outline">Get Started</button>
+                    </div>
+                    <!-- Plan 3 -->
+                    <div class="pricing-card popular reveal" data-plan="premium">
+                        <span class="plan-title">Premium</span>
+                        <div class="plan-price-wrapper">
+                            <span class="plan-price">₹999</span>
+                            <span class="plan-period">/ month</span>
+                        </div>
+                        <ul class="plan-features-list">
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Unlimited Consultations</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Document Review</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> 24/7 Priority Support</li>
+                            <li class="plan-feature-item"><i class="fas fa-circle-check"></i> Case Tracking</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Sidebar details -->
+                <div class="pricing-features-panel reveal">
+                    <div class="pricing-side-feature">
+                        <div class="pricing-side-feature-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <div class="pricing-side-feature-text">
+                            <h5>Trusted & Secure</h5>
+                            <p>All interactions are legally privileged and protected.</p>
+                        </div>
+                    </div>
+                    <div class="pricing-side-feature">
+                        <div class="pricing-side-feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="pricing-side-feature-text">
+                            <h5>Confidential & Safe</h5>
+                            <p>Data stored securely with industry grade encryption.</p>
+                        </div>
+                    </div>
+                    <div class="pricing-side-feature">
+                        <div class="pricing-side-feature-icon">
+                            <i class="fas fa-scale-balanced"></i>
+                        </div>
+                        <div class="pricing-side-feature-text">
+                            <h5>Expert Legal Advice</h5>
+                            <p>Consult only with registered bar verified lawyers.</p>
+                        </div>
+                    </div>
+                    <div class="pricing-side-feature">
+                        <div class="pricing-side-feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="pricing-side-feature-text">
+                            <h5>24/7 Support</h5>
+                            <p>Around-the-clock coordination and emergency legal assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enterprise Row Banner -->
+            <div class="pricing-card pricing-card-enterprise reveal" style="margin-top: 25px; flex-direction: row; justify-content: space-between; align-items: center; gap: 30px;">
+                <div>
+                    <span class="plan-title">Enterprise</span>
+                    <h3 class="plan-price" style="margin-bottom: 0;">Custom Pricing</h3>
+                    <p style="color: rgba(255,255,255,0.7); font-size:13px; margin-top:5px;">Dedicated lawyers, custom corporate compliance checklists, and corporate retainer accounts.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary" style="white-space: nowrap; width: auto;">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-flex">
+                <div class="newsletter-text reveal">
+                    <h3>Stay Updated with Legal Insights</h3>
+                    <p>Subscribe to our newsletter for latest legal updates & tips.</p>
+                </div>
+                <form class="newsletter-form reveal" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1 -->
+                <div class="footer-col" style="grid-column: span 1.5;">
+                    <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                        </div>
+                    </a>
+                    <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Col 2 -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="lawyers.html">Find Lawyers</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3 -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service-details.html?service=marriage">Marriage Consultation</a></li>
+                        <li><a href="service-details.html?service=odr">ODR Services</a></li>
+                        <li><a href="service-details.html?service=property">Property Disputes</a></li>
+                        <li><a href="service-details.html?service=debt">Debt & Loan Issues</a></li>
+                        <li><a href="services.html">View All Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 -->
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 5 -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info-list">
+                        <li><i class="fas fa-phone"></i> <span>+91 92965 00296</span></li>
+                        <li><i class="fas fa-envelope"></i> <span>admin@legalandvakil.com</span></li>
+                        <li><i class="fas fa-location-dot"></i> <span>Head Office:<br>New Delhi</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2025 Legal & Vakil. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Consultation</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <input type="hidden" id="modal-lawyer-id" value="">
+                    <div class="form-group">
+                        <label for="book-name">Full Name</label>
+                        <input type="text" id="book-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-email">Email Address</label>
+                        <input type="email" id="book-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-phone">Phone Number</label>
+                        <input type="tel" id="book-phone" placeholder="+91 92965 00296" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-subject">Inquiry Subject</label>
+                        <select id="book-subject" required>
+                            <option value="" disabled selected>Select Inquiry Subject</option>
+                            <option value="Marriage Consultation">Marriage Consultation</option>
+                            <option value="Online Dispute Resolution">Online Dispute Resolution</option>
+                            <option value="Property Disputes">Property Disputes</option>
+                            <option value="Business setup & Legal">Business setup & Legal</option>
+                            <option value="Criminal Defense">Criminal Defense</option>
+                            <option value="Debt & Loan Issues">Debt & Loan Issues</option>
+                            <option value="Trademark & Patents">Trademark & Patents</option>
+                            <option value="Other Legal Help">Other Legal Help</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-message">Your Message</label>
+                        <textarea id="book-message" rows="4" placeholder="Briefly describe your legal requirement..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">Confirm & Book Call</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Feedback Modal -->
+    <div id="statusModal" class="modal">
+        <div class="status-modal-content" id="status-modal-body">
+            <!-- Populated dynamically by JS -->
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919296500296?text=Hello%20Legal%20%26%20Vakil,%20I%20have%20a%20legal%20query." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
