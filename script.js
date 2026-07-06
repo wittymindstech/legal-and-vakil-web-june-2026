@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
             consultFee: 99,
             originalFee: 499,
             available: true,
-            img: 'assets/Lawyer (3).webp',
+            img: 'assets/Lawyer (1).webp',
             bio: 'Adv. Vikram Singh has extensive experience in property verification, real estate documentation, RERA complaints, and handling property title litigation in civil courts.',
             bullets: [
                 'Enrolled with Bar Council of Delhi (2014)',
@@ -233,6 +233,120 @@ document.addEventListener('DOMContentLoaded', () => {
             reviewsList: [
                 { user: 'Sunil Kumar', rating: 5, text: 'His property title report was very detailed and saved me from investing in a disputed land.' },
                 { user: 'Maya Roy', rating: 5, text: 'Highly professional. He helped file my RERA complaint and got me a refund.' }
+            ]
+        },
+        'ankita': {
+            id: 'ankita',
+            name: 'Adv. Ankita Singh',
+            specialty: 'Property Law Expert',
+            shortSpecialty: 'Property Law',
+            expYears: 10,
+            rating: 4.9,
+            reviewsCount: 110,
+            casesCount: '600+',
+            clientsCount: '300+',
+            successRate: '96%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'assets/Lawyer (3).webp',
+            bio: 'Adv. Ankita Singh has extensive experience in relationship consultation , ODR, real estate documentation, RERA complaints, and handling property title litigation in civil courts.',
+            bullets: [
+                'Enrolled with Bar Council of Delhi (2014)',
+                'LL.B. from Faculty of Law, University of Delhi',
+                'Consultant for top real estate developers',
+                'Expert title checker with 1000+ verifications completed'
+            ],
+            tags: ['Property Disputes', 'RERA', 'Title Verification', 'Partition Suits', 'Lease Deeds'],
+            education: [
+                { title: 'LL.B., Faculty of Law', span: 'University of Delhi' },
+                { title: 'Enrollment No.', span: 'D/9879/2018' },
+                { title: 'Diploma in Real Estate Law', span: 'ILI, New Delhi' },
+                { title: 'Member', span: 'Delhi High Court Bar Association' }
+            ],
+            casesList: [
+                { title: 'RERA Refund Granted', desc: 'Secured full refund with interest for homebuyer due to builder delay.', result: 'Refund Granted', statusClass: 'success' },
+                { title: 'Partition Suit Settled', desc: 'Resolved family ancestral property division amicably out of court.', result: 'Amicably Settled', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Aman Kumar', rating: 5, text: 'His property title report was very detailed and saved me from investing in a disputed land.' },
+                { user: 'Riya Roy', rating: 5, text: 'Highly professional. He helped file my RERA complaint and got me a refund.' }
+            ]
+        },
+        'chandramauli': {
+            id: 'chandramauli',
+            name: 'Adv. Chandramauli Kumar',
+            specialty: 'Legal Expert',
+            shortSpecialty: 'All Legal Matters',
+            expYears: 10,
+            rating: 4.9,
+            reviewsCount: 110,
+            casesCount: '600+',
+            clientsCount: '300+',
+            successRate: '96%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'chandramauli.webp',
+            bio: 'Adv.  Chandramauli Kumar has extensive experience in property verification, real estate documentation, RERA complaints, and handling property title litigation in civil courts.',
+            bullets: [
+                'Member of Bar Council',
+                'LL.B. from Faculty of Law,',
+                'Practices at Patna High Court',
+                'Expert title checker with 1000+ verifications completed'
+            ],
+            tags: ['Property Disputes', 'RERA', 'Title Verification', 'Partition Suits', 'Lease Deeds'],
+            education: [
+                { title: 'LL.B., Faculty of Law', span: 'University of Delhi' },
+                { title: 'Enrollment No.', span: 'BR/1715/2023' },
+                { title: 'Diploma in Real Estate Law', span: 'ILI, New Delhi' },
+                { title: 'Member', span: 'Delhi High Court Bar Association' }
+            ],
+            casesList: [
+                { title: 'RERA Refund Granted', desc: 'Secured full refund with interest for homebuyer due to builder delay.', result: 'Refund Granted', statusClass: 'success' },
+                { title: 'Partition Suit Settled', desc: 'Resolved family ancestral property division amicably out of court.', result: 'Amicably Settled', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Sunil Kumar', rating: 5, text: 'His property title report was very detailed and saved me from investing in a disputed land.' },
+                { user: 'Maya Roy', rating: 5, text: 'Highly professional. He helped file my RERA complaint and got me a refund.' }
+            ]
+        },
+        'narendra': {
+            id: 'narendra',
+            name: 'Adv. Narendra Kumar',
+            specialty: 'Legal Expert',
+            shortSpecialty: 'All Legal Matters',
+            expYears: 10,
+            rating: 4.9,
+            reviewsCount: 110,
+            casesCount: '600+',
+            clientsCount: '300+',
+            successRate: '96%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'narendra.webp',
+            bio: 'Adv.  Narendra Kumar has extensive experience in property verification, real estate documentation, RERA complaints, and handling property title litigation in civil courts.',
+            bullets: [
+                'Member of Bar Council',
+                'LL.B. from Faculty of Law,',
+                'Practices in Rajasthan',
+                'Expert title checker with 1000+ verifications completed'
+            ],
+            tags: ['Property Disputes', 'RERA', 'Title Verification', 'Partition Suits', 'Lease Deeds'],
+            education: [
+                { title: 'LL.B., Faculty of Law', span: 'University of Delhi' },
+                { title: 'Enrollment No.', span: 'RJ/XXXX/XXXX' },
+                { title: 'Diploma in Real Estate Law', span: 'ILI, New Delhi' },
+                { title: 'Member', span: 'Delhi High Court Bar Association' }
+            ],
+            casesList: [
+                { title: 'RERA Refund Granted', desc: 'Secured full refund with interest for homebuyer due to builder delay.', result: 'Refund Granted', statusClass: 'success' },
+                { title: 'Partition Suit Settled', desc: 'Resolved family ancestral property division amicably out of court.', result: 'Amicably Settled', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Rohan Awasthi', rating: 5, text: 'His property title report was very detailed and saved me from investing in a disputed land.' },
+                { user: 'Sushmita Kumari', rating: 5, text: 'Highly professional. He helped file my RERA complaint and got me a refund.' }
             ]
         },
         'priya': {
