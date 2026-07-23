@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Details | Legal & Vakil</title>
+    <title>Service Details | Legal And Vakil</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -17,10 +17,10 @@
             <nav>
                 <a href="index.html" class="logo-container">
                     <div class="logo-icon">
-                        <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                        <img src="assets/logo.png" alt="Legal And Vakil Logo">
                     </div>
                     <div class="logo-text">
-                        <span class="logo-title">Legal & <span>Vakil</span></span>
+                        <span class="logo-title">Legal And <span>Vakil</span></span>
                         <span class="logo-subtitle">Your Legal Partner</span>
                     </div>
                 </a>
@@ -35,6 +35,15 @@
                             <li><a href="service-details.html?service=odr">ODR Services</a></li>
                             <li><a href="service-details.html?service=property">Property Disputes</a></li>
                             <li><a href="service-details.html?service=business">Corporate & Setup</a></li>
+                            <li class="divider" style="border-top: 1px solid rgba(0,0,0,0.08); margin: 4px 0;"></li>
+                            <li class="dropdown-header" style="padding: 4px 16px; font-size: 11px; font-weight: bold; text-transform: uppercase; color: var(--text-muted);">Company Setup</li>
+                            <li><a href="service-details.html?service=pvt-ltd">Private Limited Company</a></li>
+                            <li><a href="service-details.html?service=llp">LLP Registration</a></li>
+                            <li><a href="service-details.html?service=opc">One Person Company</a></li>
+                            <li><a href="service-details.html?service=section-8">Section 8 Company</a></li>
+                            <li><a href="service-details.html?service=public-ltd">Public Limited Company</a></li>
+                            <li><a href="service-details.html?service=nidhi">Nidhi Company</a></li>
+                            <li><a href="service-details.html?service=subsidiary">Indian Subsidiary</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -129,11 +138,11 @@
                 </div>
                 <div style="display:flex; align-items:center; gap:20px;">
                     <div style="text-align: right;">
-                        <span style="text-decoration:line-through; color:var(--text-muted); font-size:13px; margin-right:6px;">₹499</span>
-                        <span style="font-size:24px; font-weight:800; color:var(--primary); font-family:'Outfit';">₹99</span>
+                        <span id="service-original-price" style="text-decoration:line-through; color:var(--text-muted); font-size:13px; margin-right:6px;">₹499</span>
+                        <span id="service-discounted-price" style="font-size:24px; font-weight:800; color:var(--primary); font-family:'Outfit';">₹99</span>
                         <div style="color:var(--danger); font-size:10px; font-weight:700; text-transform:uppercase;">Limited Time Offer</div>
                     </div>
-                    <a href="#" class="btn btn-primary book-call-btn" data-id="sneha" style="padding:14px 28px;"><i class="fas fa-calendar-check"></i> Book @ ₹99</a>
+                    <a href="#" class="btn btn-primary book-call-btn" id="service-book-btn" data-id="sneha" style="padding:14px 28px;"><i class="fas fa-calendar-check"></i> Book @ ₹99</a>
                 </div>
             </div>
         </div>
@@ -229,10 +238,10 @@
                 <div class="footer-col" style="grid-column: span 1.5;">
                     <a href="index.html" class="logo-container" style="margin-bottom: 20px; display: inline-flex;">
                         <div class="logo-icon">
-                            <img src="assets/logo.png" alt="Legal & Vakil Logo">
+                            <img src="assets/logo.png" alt="Legal And Vakil Logo">
                         </div>
                         <div class="logo-text">
-                            <span class="logo-title">Legal & <span>Vakil</span></span>
+                            <span class="logo-title">Legal And <span>Vakil</span></span>
                         </div>
                     </a>
                     <p style="font-size: 13.5px; margin-bottom: 25px;">Your trusted legal partner for every legal issue. We're here to protect your rights.</p>
@@ -292,7 +301,7 @@
             </div>
             
             <div class="footer-bottom">
-                &copy; 2025 Legal & Vakil. All Rights Reserved.
+                &copy; 2025 Legal And Vakil. All Rights Reserved.
             </div>
         </div>
     </footer>

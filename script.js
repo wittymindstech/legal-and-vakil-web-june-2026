@@ -1,5 +1,5 @@
 /**
- * Legal & Vakil - Main JS Logic
+ * Legal And Vakil - Main JS Logic
  * Core functionality for search, filters, pricing toggles, AI assistant, and modals.
  */
 
@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             benefits: ['Hassle-free Marriage Registration', 'Legally valid prenups/postnups drafting', 'Empathetic mutual divorce counsel', 'Child custody & support advice', 'Protection against domestic violence', 'Confidential 1-on-1 expert support'],
             faqs: [
                 { q: 'What documents are required for marriage registration?', a: 'You need proof of age (Aadhar, Birth Certificate), address proof, passport size photographs, and two witnesses with their identity cards.' },
-                { q: 'Are prenuptial agreements legally binding in India?', a: 'In India, prenups are generally not enforceable as contracts under family law, but they can be used to show the intent of parties and divide assets if drafted correctly under the Indian Contract Act.' }
+                { q: 'Are prenuptial agreements legally binding in India?', a: 'In India, prenups are generally not enforceable as contracts under family law, but they can be used to show the intent of parties and divide assets if drafted correctly under the Indian Contract Act.' },
+                { q: 'What is the fee for Marriage Counseling / Consultation?', a: 'Our Marriage Counseling sessions are priced at a highly discounted rate of ₹20 per minute (originally ₹99 per minute), allowing you to pay exactly for the time you consult.' }
             ]
         },
         'odr': {
@@ -102,6 +103,153 @@ document.addEventListener('DOMContentLoaded', () => {
                 { q: 'What is the minimum requirement to start a Pvt Ltd?', a: 'You need minimum 2 directors (one must be Indian resident), 2 shareholders, and a registered office address proof.' }
             ]
         },
+        'pvt-ltd': {
+            title: 'Private Limited Company Registration',
+            category: 'startup',
+            icon: 'fa-building',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Most popular corporate entity structure for startups',
+            subtitle: 'The most popular legal structure for startups and growing businesses.',
+            desc: 'A Private Limited Company is the most preferred business entity in India. It offers limited liability protection to its shareholders, the ability to raise equity funds, separate legal status, and perpetual existence.',
+            benefits: [
+                'Limited Liability Protection',
+                'Access to Funding & Venture Capital',
+                'Separate Legal Entity Status',
+                'Higher Credibility & Brand Value',
+                'Easy Transferability of Shares',
+                'Perpetual Existence'
+            ],
+            faqs: [
+                { q: 'What are the minimum requirements to register a Private Limited Company in India?', a: 'Minimum 2 directors, 2 shareholders, and a registered office address in India. At least one director must be an Indian resident.' },
+                { q: 'How long does it take to register a Private Limited Company?', a: 'Typically, the entire process takes about 7 to 10 working days, subject to government processing and name approval times.' }
+            ]
+        },
+        'llp': {
+            title: 'LLP Registration',
+            category: 'startup',
+            icon: 'fa-handshake',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Combine partnership flexibility with limited liability',
+            subtitle: 'Combine the benefits of a partnership firm and a company structure.',
+            desc: 'LLP registration is ideal for professional service providers, small businesses, and partners that do not require venture capital funding. It offers limited liability protection and has fewer compliance requirements compared to a Private Limited Company.',
+            benefits: [
+                'No Minimum Capital Requirement',
+                'Limited Liability Protection',
+                'Fewer Compliance Audits',
+                'No Corporate Tax on Distributed Profit',
+                'Easy to Manage and Operate',
+                'Lower Registration Cost'
+            ],
+            faqs: [
+                { q: 'What is the main difference between a Partnership and an LLP?', a: 'Unlike a traditional partnership, partners in an LLP have limited liability, meaning their personal assets are protected from business debts. Also, an LLP is a separate legal entity.' },
+                { q: 'Is audit mandatory for an LLP?', a: 'Audit is mandatory only if the annual turnover exceeds Rs. 40 Lakhs or the contribution exceeds Rs. 25 Lakhs.' }
+            ]
+        },
+        'opc': {
+            title: 'One Person Company (OPC) Registration',
+            category: 'startup',
+            icon: 'fa-user-tie',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Run a corporate entity with sole ownership',
+            subtitle: 'Run a corporate entity with sole ownership and limited liability.',
+            desc: 'OPC is a hybrid structure that combines the sole proprietor model with a Private Limited Company structure. It allows a single founder to operate a corporate entity with limited liability protection and full control.',
+            benefits: [
+                'Single Owner Control',
+                'Limited Liability Protection',
+                'Separate Legal Entity',
+                'Easy Financing from Banks',
+                'Sole Succession via Nominee',
+                'Organized Corporate Structure'
+            ],
+            faqs: [
+                { q: 'Who can register a One Person Company?', a: 'Only a natural person who is an Indian citizen and resident in India is eligible to incorporate an OPC and act as a nominee.' },
+                { q: 'Can an OPC have more than one director?', a: 'Yes, an OPC can have up to 15 directors, but it can only have one shareholder/member.' }
+            ]
+        },
+        'public-ltd': {
+            title: 'Public Limited Company Registration',
+            category: 'startup',
+            icon: 'fa-city',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Scale your business with public shareholding',
+            subtitle: 'Scale your business with the power of public shareholding and investment.',
+            desc: 'A Public Limited Company is a corporate entity registered under the Companies Act, which can raise funds from the general public and issue shares. It is suitable for large-scale operations requiring substantial capital.',
+            benefits: [
+                'Public Funding & Share Capital',
+                'High Corporate Credibility',
+                'Uncapped Number of Shareholders',
+                'Transferable Shares & Listing Option',
+                'Greater Borrowing Power',
+                'Growth and Expansion Opportunities'
+            ],
+            faqs: [
+                { q: 'What are the minimum requirements to register a Public Limited Company?', a: 'You need minimum 3 directors, 7 shareholders, and a registered office address. There is no minimum capital requirement as per recent amendments.' },
+                { q: 'Can a Public Limited Company list on the stock exchange?', a: 'Yes, a Public Limited Company can list its shares on BSE/NSE through an Initial Public Offering (IPO) after satisfying SEBI guidelines.' }
+            ]
+        },
+        'section-8': {
+            title: 'Section 8 Company Registration',
+            category: 'startup',
+            icon: 'fa-hands-holding-child',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Establish a non-profit organization or NGO',
+            subtitle: 'Establish a non-profit organization or NGO under corporate guidelines.',
+            desc: 'A Section 8 Company is registered for promoting charitable causes, art, science, sports, education, research, social welfare, or environmental protection, where any profits are reinvested back into the promotion of these activities.',
+            benefits: [
+                'Exemption from using "Limited" suffix',
+                'Tax Exemptions for Donors (80G) and NGO',
+                'Separate Legal Entity status',
+                'No Minimum Capital Requirement',
+                'Credibility for Foreign Funding (FCRA)',
+                'Perpetual Succession'
+            ],
+            faqs: [
+                { q: 'Can profits be distributed as dividend in a Section 8 Company?', a: 'No, distribution of any profits or dividends to shareholders or directors is strictly prohibited.' },
+                { q: 'How many people are required to start a Section 8 Company?', a: 'Minimum of 2 people are required to register a Section 8 Company.' }
+            ]
+        },
+        'nidhi': {
+            title: 'Nidhi Company Registration',
+            category: 'startup',
+            icon: 'fa-piggy-bank',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Start a mutual benefit financial institution',
+            subtitle: 'Start a mutual benefit financial institution for lending and savings.',
+            desc: 'Nidhi Company is a class of Non-Banking Financial Company (NBFC) that facilitates thrift, savings, and lending amongst its members. It works on the principle of mutual benefit and is regulated by the Ministry of Corporate Affairs.',
+            benefits: [
+                'Easy borrowing and lending for members',
+                'Lower rate of interest than informal lenders',
+                'No external intervention (members only)',
+                'Safe and secure savings channel',
+                'Low capital requirement compared to NBFCs',
+                'Easy management structure'
+            ],
+            faqs: [
+                { q: 'Can a Nidhi Company do microfinance or general banking business?', a: 'No, Nidhi Companies can only accept deposits from and lend loans to their registered members. They cannot issue credit cards, run insurance business, or do general banking.' },
+                { q: 'What are the minimum membership requirements?', a: 'Within one year of registration, a Nidhi Company must have at least 200 members.' }
+            ]
+        },
+        'subsidiary': {
+            title: 'Indian Subsidiary Registration',
+            category: 'startup',
+            icon: 'fa-globe',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Establish a subsidiary of your foreign company',
+            subtitle: 'Establish a branch or subsidiary of your foreign company in India.',
+            desc: 'An Indian Subsidiary is a foreign business entity incorporated as a Private Limited Company in India. It enables foreign companies to conduct operations, hire talent, and invest in the rapidly growing Indian market.',
+            benefits: [
+                '100% FDI allowed in many sectors',
+                'Separate legal entity in India',
+                'Limited liability for parent company',
+                'Access to skilled Indian talent pool',
+                'Legal protection under Indian corporate law',
+                'Simplified repatriation of profits'
+            ],
+            faqs: [
+                { q: 'Does a foreign subsidiary need an Indian director?', a: 'Yes, at least one director on the board of the Indian Subsidiary must be an Indian citizen and resident.' },
+                { q: 'Can a foreign parent company hold 100% shares of the Indian Subsidiary?', a: 'Yes, under the automatic route of FDI, a foreign company can own 100% of the equity shares of the Indian Subsidiary in most sectors.' }
+            ]
+        },
         'criminal': {
             title: 'Criminal Defense',
             category: 'legal',
@@ -170,8 +318,8 @@ document.addEventListener('DOMContentLoaded', () => {
             casesCount: '350+',
             clientsCount: '150+',
             successRate: '95%',
-            consultFee: 99,
-            originalFee: 499,
+            consultFee: '20/min',
+            originalFee: '99/min',
             available: true,
             img: 'assets/Lawyer (2).webp',
             bio: 'Adv. Sneha Kapoor specializes in matrimonial and family dispute cases, including divorce, alimony, child custody, and domestic violence. She offers compassionate yet firm representation for her clients.',
@@ -715,7 +863,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (data) {
             // Document Title
-            document.title = `${data.name} | Expert Profile | Legal & Vakil`;
+            document.title = `${data.name} | Expert Profile | Legal And Vakil`;
 
             // Breadcrumbs
             const breadcrumbActive = document.querySelector('.breadcrumbs-bar span.active');
@@ -848,7 +996,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (data) {
             // Document Title
-            document.title = `${data.title} Services | Legal & Vakil`;
+            document.title = `${data.title} Services | Legal And Vakil`;
 
             // Titles & Image
             const sTitle = document.getElementById('service-detail-title');
@@ -862,6 +1010,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (sImage && data.image) {
                 sImage.src = data.image;
                 sImage.alt = data.title;
+            }
+
+            // Dynamic Pricing block
+            const originalPriceEl = document.getElementById('service-original-price');
+            const discountedPriceEl = document.getElementById('service-discounted-price');
+            const bookBtnEl = document.getElementById('service-book-btn');
+
+            if (serviceId === 'marriage') {
+                if (originalPriceEl) originalPriceEl.textContent = '₹99/min';
+                if (discountedPriceEl) discountedPriceEl.textContent = '₹20/min';
+                if (bookBtnEl) bookBtnEl.innerHTML = `<i class="fas fa-calendar-check"></i> Book @ ₹20/min`;
+            } else {
+                if (originalPriceEl) originalPriceEl.textContent = '₹499';
+                if (discountedPriceEl) discountedPriceEl.textContent = '₹99';
+                if (bookBtnEl) bookBtnEl.innerHTML = `<i class="fas fa-calendar-check"></i> Book @ ₹99`;
             }
 
             // Service details bullets in hero
@@ -1073,6 +1236,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (key === 'debt') return 'fa-sack-dollar';
             if (key === 'ip') return 'fa-lightbulb';
             if (key === 'business') return 'fa-briefcase';
+            if (key === 'pvt-ltd') return 'fa-building';
+            if (key === 'llp') return 'fa-handshake';
+            if (key === 'opc') return 'fa-user-tie';
+            if (key === 'public-ltd') return 'fa-city';
+            if (key === 'section-8') return 'fa-hands-holding-child';
+            if (key === 'nidhi') return 'fa-piggy-bank';
+            if (key === 'subsidiary') return 'fa-globe';
             if (key === 'criminal') return 'fa-shield-halved';
             return 'fa-scale-balanced';
         };
