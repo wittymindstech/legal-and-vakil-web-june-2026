@@ -1027,6 +1027,178 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (bookBtnEl) bookBtnEl.innerHTML = `<i class="fas fa-calendar-check"></i> Book @ ₹99`;
             }
 
+            // Toggle marriage-only help section
+            const marriageHelp = document.getElementById('marriage-help-section');
+            if (marriageHelp) {
+                marriageHelp.style.display = (serviceId === 'marriage') ? 'block' : 'none';
+            }
+
+            // Company registration services interactive pricing
+            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary'];
+            if (companyServices.includes(serviceId)) {
+                const stdPricing = document.getElementById('standard-consultation-section');
+                const compPricing = document.getElementById('company-pricing-section');
+                const compDocs = document.getElementById('company-documents-section');
+                if (stdPricing) stdPricing.style.display = 'none';
+                if (compPricing) compPricing.style.display = 'block';
+                if (compDocs) compDocs.style.display = 'block';
+
+                let compType = data.title.replace(' Registration', '');
+                if (serviceId === 'llp') compType = 'LLP';
+
+                const pricingPlans = [
+                    {
+                        name: 'Consultation Fee',
+                        price: '₹999',
+                        isRecommended: false,
+                        title: 'Complete guide for registration',
+                        bullets: [
+                            'Process',
+                            'Required Documents',
+                            'Benefits',
+                            'Tax Compliance',
+                            'Timeframe etc.'
+                        ]
+                    },
+                    {
+                        name: 'Start Up Plan',
+                        price: '₹2999 + Govt. Fee',
+                        isRecommended: false,
+                        bullets: [
+                            `Register your ${compType} at Ministry of Corporate Affairs`,
+                            'Drafting & Filing by Experienced Professionals',
+                            'Expert advice and assistance',
+                            'MCA processing and CIN',
+                            'Company PAN & TAN',
+                            'MOA',
+                            'AOA',
+                            'Allotment of 2 DINs',
+                            'ESI and PF registration'
+                        ]
+                    },
+                    {
+                        name: 'Basic Plan',
+                        price: '₹7999 + Govt. Fee',
+                        isRecommended: true,
+                        bullets: [
+                            `Register your ${compType} at Ministry of Corporate Affairs`,
+                            'Drafting & Filing by Experienced Professionals',
+                            'Expert advice and assistance',
+                            'MCA processing and CIN',
+                            'Company PAN & TAN',
+                            'MOA',
+                            'AOA',
+                            'Allotment of 2 DINs',
+                            'ESI and PF registration',
+                            'GST registration',
+                            'INC-20A commencement of business',
+                            'The 1st Board Resolution documentation',
+                            'Consent Letter drafting',
+                            'Appointment of the Auditor'
+                        ]
+                    },
+                    {
+                        name: 'Smart Plan',
+                        price: '₹16999 + Govt. Fee',
+                        isRecommended: false,
+                        bullets: [
+                            `Register your ${compType} at Ministry of Corporate Affairs`,
+                            'Company PAN & TAN',
+                            'MOA',
+                            'AOA',
+                            'Allotment of 2 DINs',
+                            'ESI and PF registration',
+                            'GST registration',
+                            'INC-20A commencement of business',
+                            'The 1st Board Resolution documentation',
+                            'Consent Letter drafting',
+                            'Appointment of the Auditor',
+                            'Current Account Opening in your nearest branch',
+                            'MCA processing',
+                            'MCA annual return filing and DIR-3 Director KYC'
+                        ]
+                    },
+                    {
+                        name: 'Mega Plan',
+                        price: '₹29999 + Govt. Fee',
+                        isRecommended: false,
+                        bullets: [
+                            `Register your ${compType} with the Ministry of Corporate Affairs`,
+                            '1 Trademark Application',
+                            'Company PAN & TAN',
+                            'MOA',
+                            'AOA',
+                            'Allotment of 2 DINs',
+                            'ESI and PF registration',
+                            'GST registration',
+                            'INC-20A commencement of business',
+                            'The 1st Board Resolution documentation',
+                            'Consent Letter drafting',
+                            'Income Tax Return filing',
+                            'Financial statements preparation',
+                            'Appointment of the Auditor',
+                            'MCA processing',
+                            'MCA annual return filing and DIR-3 Director KYC',
+                            'GST Return filing for 12 months'
+                        ]
+                    }
+                ];
+
+                const tabsContainer = document.getElementById('company-pricing-tabs');
+                const detailsContainer = document.getElementById('company-pricing-details');
+
+                const renderPlanDetails = (index) => {
+                    const plan = pricingPlans[index];
+                    const numBullets = plan.bullets.length;
+                    const itemsPerCol = Math.ceil(numBullets / 3);
+                    const col1 = plan.bullets.slice(0, itemsPerCol);
+                    const col2 = plan.bullets.slice(itemsPerCol, itemsPerCol * 2);
+                    const col3 = plan.bullets.slice(itemsPerCol * 2);
+
+                    const titleHtml = plan.title ? `<div class="pricing-title">${plan.title}</div>` : '';
+
+                    detailsContainer.innerHTML = `
+                        ${titleHtml}
+                        <div class="pricing-grid">
+                            <div class="pricing-col">
+                                ${col1.map(b => `<div class="pricing-bullet"><i class="fas fa-check-circle"></i><span>${b}</span></div>`).join('')}
+                            </div>
+                            <div class="pricing-col">
+                                ${col2.map(b => `<div class="pricing-bullet"><i class="fas fa-check-circle"></i><span>${b}</span></div>`).join('')}
+                            </div>
+                            <div class="pricing-col">
+                                ${col3.map(b => `<div class="pricing-bullet"><i class="fas fa-check-circle"></i><span>${b}</span></div>`).join('')}
+                            </div>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="register-btn book-call-btn" data-plan="${plan.name}" data-price="${plan.price}" data-id="rohan">
+                                Register Now
+                            </a>
+                        </div>
+                    `;
+                };
+
+                if (tabsContainer && detailsContainer) {
+                    tabsContainer.innerHTML = pricingPlans.map((plan, idx) => `
+                        <button class="company-pricing-tab ${idx === 2 ? 'active' : ''}" data-index="${idx}">
+                            <span class="price-value">${plan.price.split(' ')[0]}</span>
+                            <span class="plan-name">${plan.name}</span>
+                        </button>
+                    `).join('');
+
+                    renderPlanDetails(2);
+
+                    tabsContainer.querySelectorAll('.company-pricing-tab').forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            tabsContainer.querySelectorAll('.company-pricing-tab').forEach(t => t.classList.remove('active'));
+                            tab.classList.add('active');
+                            const index = parseInt(tab.getAttribute('data-index'));
+                            renderPlanDetails(index);
+                        });
+                    });
+                }
+            }
+
             // Service details bullets in hero
             const sBullets = document.getElementById('service-hero-bullets');
             if (sBullets) {
@@ -1111,6 +1283,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Set hidden input
                 const hiddenLawyerId = document.getElementById('modal-lawyer-id');
                 if (hiddenLawyerId) hiddenLawyerId.value = lawyerId;
+
+                // Prefill details if registering for a specific company plan
+                const planName = targetBtn.getAttribute('data-plan');
+                const planPrice = targetBtn.getAttribute('data-price');
+                const subjectSelect = document.getElementById('book-subject');
+                const messageTextarea = document.getElementById('book-message');
+
+                if (planName && planPrice) {
+                    if (subjectSelect) subjectSelect.value = "Business setup & Legal";
+                    if (messageTextarea) {
+                        const params = new URLSearchParams(window.location.search);
+                        const serviceId = params.get('service') || '';
+                        const companyName = serviceId ? (serviceData[serviceId]?.title || 'Company Registration') : 'Company Registration';
+                        messageTextarea.value = `I would like to register for the "${planName}" (${planPrice}) of ${companyName}.`;
+                    }
+                } else {
+                    // Reset or default values if opened from standard btn
+                    if (subjectSelect) subjectSelect.value = "";
+                    if (messageTextarea) messageTextarea.value = "";
+                }
 
                 bookingModal.style.display = 'flex';
             }
