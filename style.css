@@ -457,6 +457,10 @@ nav {
     grid-template-columns: repeat(2, 1fr) !important;
 }
 
+.mobile-action-item {
+    display: none !important;
+}
+
 .nav-actions {
     display: flex;
     align-items: center;
@@ -2913,14 +2917,15 @@ footer {
         gap: 0 !important;
     }
     
-    /* Show Login and SignUp, hide or keep search icon compact */
-    .nav-actions {
-        gap: 10px !important;
+    /* Hide main action links and show them only in the mobile drawer */
+    .nav-actions a {
+        display: none !important;
     }
     
-    .nav-actions .btn {
-        padding: 6px 12px !important;
-        font-size: 13px !important;
+    .mobile-action-item {
+        display: block !important;
+        border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+        background-color: #f8fafc !important;
     }
 }
 
