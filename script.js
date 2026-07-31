@@ -849,6 +849,46 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        // Check for URL search/specialty params to pre-filter on load
+        const urlParams = new URLSearchParams(window.location.search);
+        const searchParam = urlParams.get('search');
+        const specialtyParam = urlParams.get('specialty');
+        
+        if (specialtyParam) {
+            const specialtySelect = document.getElementById('dir-specialty');
+            if (specialtySelect) {
+                let normParam = specialtyParam.toLowerCase().trim();
+                // Map common lawyer terms to existing categories
+                if (normParam.includes('criminal')) normParam = 'criminal law';
+                else if (normParam.includes('family')) normParam = 'family law';
+                else if (normParam.includes('property') || normParam.includes('estate') || normParam.includes('real estate')) normParam = 'property law';
+                else if (normParam.includes('corporate')) normParam = 'corporate law';
+                else if (normParam.includes('intellectual') || normParam.includes('ip')) normParam = 'ip law';
+
+                let matched = false;
+                for (let option of specialtySelect.options) {
+                    if (option.value.toLowerCase() === normParam) {
+                        specialtySelect.value = option.value;
+                        matched = true;
+                        break;
+                    }
+                }
+                
+                // If we couldn't map to a specific dropdown option, or to assist with matching, set the search field
+                if (!matched) {
+                    const searchInput = document.getElementById('dir-search');
+                    if (searchInput) {
+                        searchInput.value = specialtyParam;
+                    }
+                }
+            }
+        } else if (searchParam) {
+            const searchInput = document.getElementById('dir-search');
+            if (searchInput) {
+                searchInput.value = searchParam;
+            }
+        }
+
         // First render
         renderDirectory();
     }
