@@ -764,6 +764,946 @@ document.addEventListener('DOMContentLoaded', () => {
                 { q: 'What is Form STK-3?', a: 'Form STK-3 is the official Indemnity Bond that must be executed and notarized by every director of the company.' }
             ]
         },
+        'fssai-registration': {
+            title: 'FSSAI Registration',
+            category: 'startup',
+            icon: 'fa-utensils',
+            image: 'assets/company registration.webp',
+            shortDesc: 'FSSAI FoSCoS Food License Registration',
+            subtitle: 'Who Needs An FSSAI FoScos License?',
+            desc: 'Get your business certified under the Food Safety and Standards Authority of India (FSSAI). Mandatory for all Food Business Operators (FBOs) including Canteens, Clubs, Dhabas, Distributors, Restaurants, Retailers, Storages, Suppliers, Transporters, and Wholesalers. We make the registration process transparent, fast, and simple.',
+            benefits: [
+                'FSSAI registration for Canteens, Clubs, Dhabas, & Restaurants',
+                'Suitable for food Retailers, Wholesalers, Distributors, & Suppliers',
+                'FoSCoS licensing for food Storage & Transporters',
+                'Transparent pricing with clear expert assistance',
+                'End-to-end liaisoning with Food Safety Officers'
+            ],
+            documents: [
+                { name: 'Passport photo of the Food Business Operator', icon: 'fa-image' },
+                { name: 'Identity Proof (Aadhaar / Voter ID / PAN Card)', icon: 'fa-id-card' },
+                { name: 'Proof of possession of premises (Rent Agreement / Electricity Bill)', icon: 'fa-file-contract' },
+                { name: 'List of food products planned to manufacture or sell', icon: 'fa-list-check' }
+            ],
+            faqs: [
+                { q: 'Who needs an FSSAI License?', a: 'Any individual or entity handling, processing, manufacturing, storing, distributing, or selling food products must register under FSSAI.' },
+                { q: 'What is the validity of an FSSAI Registration?', a: 'An FSSAI Registration or License can be issued with a validity ranging from 1 to 5 years, as requested by the FBO.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Basic License',
+                    price: '₹1999',
+                    title: 'FSSAI FOSCOS Basic License (Govt. fee extra, GST Extra)',
+                    bullets: [
+                        'Eligibility: Annual turnover of the business is upto to 1.5 crore',
+                        'Validity: 1 To 5 Years duration',
+                        'Fee: 1 year ₹1,999 | 2 years ₹2,499 | 3 years ₹2,999 | 4 years ₹3,499 | 5 years ₹3,999',
+                        'One Time professional fee excluding Govt. Fee and GST',
+                        'FoSCoS application preparation and submission by experts',
+                        'Instant application status tracking and updates'
+                    ]
+                },
+                {
+                    name: 'State License',
+                    price: '₹3499',
+                    title: 'FSSAI FOSCOS State License (Govt. fee extra, GST Extra)',
+                    bullets: [
+                        'Eligibility: Turnovers or operations exceeding basic limits',
+                        'Validity: 1 To 5 Years duration',
+                        'Fee: ₹3,499 One Time professional fee',
+                        'Excluding Govt. Fee and GST charges',
+                        'Detailed documentation check and product category mapping',
+                        'Liaisoning with state licensing authority'
+                    ]
+                },
+                {
+                    name: 'Central License',
+                    price: '₹4499',
+                    title: 'FSSAI FOSCOS Central License (Govt. fee extra, GST Extra)',
+                    bullets: [
+                        'Eligibility: Importers, multi-state operators, or large factories',
+                        'Validity: 1 To 5 Years duration',
+                        'Fee: ₹4,499 One Time professional fee',
+                        'Excluding Govt. Fee and GST charges',
+                        'Filing under Central licensing category of FSSAI FoSCoS portal',
+                        'Full compliance check for international trade and imports'
+                    ]
+                }
+            ]
+        },
+        'fssai-food-labeling': {
+            title: 'FSSAI Food Labeling Compliance',
+            category: 'startup',
+            icon: 'fa-tags',
+            image: 'assets/company registration.webp',
+            shortDesc: 'FSSAI & Legal Metrology Food Label Compliance Review',
+            subtitle: 'What is Food Label Compliance?',
+            desc: 'Food Label Compliance ensures that packaged food products meet applicable declaration and packaging requirements under FSSAI and Legal Metrology frameworks. Incorrect labels can create legal and commercial problems—from marketplace rejections to delayed product launches. Properly reviewed labels improve transparency, support smoother distribution, and help build customer confidence.',
+            benefits: [
+                'Packaged food brands & D2C food startups compliance reviews',
+                'Suitable for FMCG manufacturers, snack, and beverage businesses',
+                'Label verification for nutraceutical and supplement brands',
+                'Avoid marketplace rejections and product launch delays',
+                'Compliance review under FSSAI and Legal Metrology frameworks'
+            ],
+            documents: [
+                { name: 'Current packaging artwork or label draft', icon: 'fa-image' },
+                { name: 'Complete list of ingredients and additives used', icon: 'fa-list-ol' },
+                { name: 'Nutritional facts or lab testing report of the product', icon: 'fa-file-lines' },
+                { name: 'FSSAI License or Registration number details', icon: 'fa-id-card' }
+            ],
+            faqs: [
+                { q: 'Why do businesses need label compliance support?', a: 'Businesses increasingly sell through online marketplaces, retail channels, and D2C platforms where packaging accuracy and regulatory adherence prevent bans and recall issues.' },
+                { q: 'Who should use this food label service?', a: 'Any manufacturer, cloud kitchen, or brand selling packaged food items under trademark classes 29, 30, and 5.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Starter Package',
+                    price: '₹5999',
+                    title: 'Starter Package - Label Compliance',
+                    bullets: [
+                        'FSSAI declaration review',
+                        'Ingredient verification',
+                        'Veg/Non-Veg symbol review',
+                        'License display check',
+                        'MRP and quantity review',
+                        'Batch details review',
+                        'Deficiency sheet preparation',
+                        'Deliverables: Compliance report, checklist, and correction sheet'
+                    ]
+                },
+                {
+                    name: 'Advanced Package',
+                    price: '₹9999',
+                    title: 'Advanced Package - Label Compliance',
+                    bullets: [
+                        'Legal Metrology review',
+                        'Nutritional format review',
+                        'Allergen review & callout verification',
+                        'Packaging declaration validation',
+                        'Customer care verification',
+                        'Two revision rounds included',
+                        'Deliverables: Detailed report, nutritional format sheet, checklist, and corrected draft'
+                    ]
+                }
+            ]
+        },
+        'fssai-renewal': {
+            title: 'FSSAI Renewal',
+            category: 'startup',
+            icon: 'fa-rotate',
+            image: 'assets/company registration.webp',
+            shortDesc: 'FSSAI License Renewal Online',
+            subtitle: 'FSSAI License Renewal Online | Easy Food License Renewal Support',
+            desc: 'An FSSAI food license is mandatory to be renewed before the expiry of its validity period. If you fail to apply for renewal in time, your current license becomes invalid, and you will have to apply for a fresh new license. Let our FoSCoS experts handle your renewal seamlessly.',
+            benefits: [
+                'Timely submission to avoid license expiry issues',
+                'Avoid high penalties and legal complications',
+                'Smooth processing through FSSAI FoSCoS portal',
+                'Document verification by food licensing experts',
+                'End-to-end renewal tracking and notifications'
+            ],
+            documents: [
+                { name: 'Copy of current active FSSAI License/Registration Certificate', icon: 'fa-id-card' },
+                { name: 'Form A or Form B duly filled and signed by the applicant', icon: 'fa-file-signature' },
+                { name: 'Declared changes in business details (if any)', icon: 'fa-file-invoice' },
+                { name: 'Passport photo and identity proof of the FBO', icon: 'fa-image' }
+            ],
+            faqs: [
+                { q: 'When should I apply for FSSAI renewal?', a: 'You must apply for renewal at least 30 days before the expiry date of your current food license to avoid late fees.' },
+                { q: 'What happens if my FSSAI license expires?', a: 'Once expired, you cannot renew the license. You must cease business activities and apply for a brand new FSSAI registration.' }
+            ]
+        },
+        'fssai-annual-return': {
+            title: 'FSSAI Annual Return Filing',
+            category: 'startup',
+            icon: 'fa-file-invoice',
+            image: 'assets/company registration.webp',
+            shortDesc: 'FSSAI Annual Return Filing & Compliance',
+            subtitle: 'FSSAI Annual Return Filing & FoSCoS Compliance',
+            desc: 'All Food Business Operators (FBOs) who possess a food license and have an annual turnover up to Rs. 1.5 crore should file their returns mandatorily and within the due time. If anybody fails to file the returns within the stipulated time period, they may have to face penalties. Every FBO who possesses an FSSAI Food License should submit their return. Failing to file the return within the given time shall face penalties of Rs. 100/day. They are mandatory to file their Half-yearly Return by 30th September/30th March and Annual Return by 31st May of every fiscal year.',
+            benefits: [
+                'Required for every type of food business unit',
+                'FSSAI Annual Return Filing for manufacturers, importers, packers, and labellers',
+                'Avoid the Rs. 100/day penalty for non-filing',
+                'Accurate documentation of food import, production, and distribution details',
+                'Timely submission on the FSSAI FoSCoS portal'
+            ],
+            documents: [
+                { name: 'Copy of active FSSAI Food License', icon: 'fa-id-card' },
+                { name: 'Details of food categories manufactured, imported, or packed', icon: 'fa-clipboard-list' },
+                { name: 'Quantity of food products produced/imported during the year', icon: 'fa-weight-hanging' },
+                { name: 'Financial statement/turnover summary of the food business', icon: 'fa-file-invoice-dollar' }
+            ],
+            faqs: [
+                { q: 'What is the due date for FSSAI Annual Return?', a: 'The FSSAI Annual Return (Form D-1) must be submitted by 31st May of every year for the preceding financial year.' },
+                { q: 'What is the penalty for not filing the annual return?', a: 'A late fee penalty of Rs. 100 per day is levied for each day the return remains unfiled after the due date.' }
+            ]
+        },
+        'fssai-modification': {
+            title: 'FSSAI Modification',
+            category: 'startup',
+            icon: 'fa-file-pen',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Online FSSAI License Modification',
+            subtitle: 'Online FSSAI License Modification | Expert Support for Food License Updates',
+            desc: 'Let the FSSAI FoSCoS Experts of Online Legal India do the FSSAI Modification for your Food Business | 1-Day Processing. As per the latest Notice issued by the FSSAI FoSCoS authority, only selected categories of FBOs can apply for a Modification: Any Registered Food Business Operator, Food Manufacturers, Food Processing units, Food Repackers, Food Re-labellers, and Food Distributors.',
+            benefits: [
+                'FSSAI Modification for registered Food Business Operators (FBOs)',
+                'Suitable for manufacturers, processing units, repackers, and distributors',
+                'Quick 1-day processing for eligible modifications',
+                'Modification of category, business name, address, or products list',
+                'Hassle-free application preparation on FoSCoS portal'
+            ],
+            documents: [
+                { name: 'Copy of current FSSAI License or Registration certificate', icon: 'fa-id-card' },
+                { name: 'Supporting documents for requested change (e.g. rent agreement for address change)', icon: 'fa-file-contract' },
+                { name: 'Board resolution or partner NOC (if name or structure changes)', icon: 'fa-signature' },
+                { name: 'List of proposed food products to add or alter', icon: 'fa-list-ol' }
+            ],
+            faqs: [
+                { q: 'Who can apply for FSSAI License Modification?', a: 'FBOs wanting to change their business address, food category, product lists, or company name must apply for a modification.' },
+                { q: 'Is there a fee for license modification?', a: 'Yes, FSSAI charges a nominal modification fee, which varies based on the type of license (Basic, State, or Central).' }
+            ]
+        },
+        'bis-certificate': {
+            title: 'BIS Certificate',
+            category: 'startup',
+            icon: 'fa-shield-halved',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Apply for BIS Certificate Online',
+            subtitle: 'Apply for BIS Certificate Online with Expert BIS Certification Assistance',
+            desc: 'At Online Legal India, we help your business get BIS certified the right way. BIS Certification—granted by the Bureau of Indian Standards under the BIS Act, 2016—proves that your product meets India’s safety, quality, and compliance standards. From paperwork to lab testing and formalities, we simplify the entire process—so you can focus on growing your business with confidence, credibility.',
+            benefits: [
+                'ISI-mark certification to guarantee safety and performance standards',
+                'Reduces manufacturing defect losses and returns',
+                'Legally mandatory for 380+ products to be sold in India',
+                'Full compliance mapping to protect you from penalties and recalls',
+                'Expert registration, fast processing, and full lab test coordination'
+            ],
+            documents: [
+                { name: 'Proof of factory establishment & business registration documents', icon: 'fa-building' },
+                { name: 'Details of manufacturing machinery & calibration reports', icon: 'fa-gears' },
+                { name: 'List of raw materials and testing equipment details', icon: 'fa-list-check' },
+                { name: 'Product testing lab report from BIS-recognized laboratories', icon: 'fa-file-medical' },
+                { name: 'Authorized signatory details & identity proofs', icon: 'fa-id-card' }
+            ],
+            faqs: [
+                { q: 'What is a BIS Certificate?', a: 'A BIS certificate is a means of providing third-party guarantee of quality, safety, and reliability of products to customers in India.' },
+                { q: 'Is BIS certification mandatory for all products?', a: 'No, but it is legally mandatory for over 380 products including electronics, chemicals, steel, toys, and cement.' }
+            ]
+        },
+        'import-export-code': {
+            title: 'Import Export Code',
+            category: 'startup',
+            icon: 'fa-ship',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Importer Exporter Code (IEC) Registration Online',
+            subtitle: 'Importer Exporter Code (IEC) Registration Online | IEC Certificate India',
+            desc: 'Register your import export business under the Directorate General of Foreign Trade (DGFT), Ministry of Commerce and Industry, Govt. of India. Our IEC experts will file with the DGFT office on your behalf to secure your IEC Certificate. The process requires accurate documentation to avoid customs mismatch issues.',
+            benefits: [
+                'DGFT registration for global import-export business operations',
+                'Avoid mismatch issues at customs during trade transactions',
+                'Lifetime validity of the IEC certificate',
+                'Fast application submission by certified trade experts',
+                'Access to export promotional schemes and subsidies'
+            ],
+            documents: [
+                { name: 'Colour photographs of promoters / individuals / directors', icon: 'fa-image' },
+                { name: 'PAN Card of each shareholder and director of the company', icon: 'fa-id-card' },
+                { name: 'Identity Proof (Voter ID / Driving License / Passport) of directors', icon: 'fa-id-badge' },
+                { name: 'Address Proof (Bank statement / Electricity or mobile bill)', icon: 'fa-location-dot' },
+                { name: 'Proof of registered office (Rent Agreement / Lease Deed)', icon: 'fa-file-contract' },
+                { name: 'Utility bill as proof (must be latest copy)', icon: 'fa-file-invoice' }
+            ],
+            faqs: [
+                { q: 'What is the Importer Exporter Code (IEC)?', a: 'IEC is a 10-digit code issued by the DGFT that is mandatory for importing or exporting goods and services from India.' },
+                { q: 'Does an IEC require regular filings or renewals?', a: 'No, the IEC has lifetime validity and does not require annual renewals, though details must be updated yearly.' }
+            ]
+        },
+        'import-export-modification': {
+            title: 'Import Export Code Modification',
+            category: 'startup',
+            icon: 'fa-file-pen',
+            image: 'assets/company registration.webp',
+            shortDesc: 'IEC Certificate Modification Assistance',
+            subtitle: 'IEC Certificate Modification Assistance | Online IEC Update',
+            desc: 'IEC experts from Online Legal India will help you update your details in the Import Export Code Certificate within 24 hrs. It is essential to update every data of a company: branch details, activity status (manufacture/merchant), and so on. If not done, there will be consequences during the import-export process due to mismatching details in DGFT and customs. You can modify company/registered office address, change company name, add branch details, alter partner/director lists, change business activities, modify bank details, or change registered mobile/email.',
+            benefits: [
+                'Update details in the Import Export Code Certificate within 24 hours',
+                'Avoid import-export hold-ups due to mismatches in DGFT and customs data',
+                'Update company address, names, registered branch details, or partners',
+                'Modify business activities, bank details, and contact coordinates',
+                'Ensure 100% compliance with DGFT and port authorities'
+            ],
+            documents: [
+                { name: 'Copy of current IEC Certificate', icon: 'fa-id-card' },
+                { name: 'Documents supporting the modification (e.g. proof of new bank details, new address proof)', icon: 'fa-file-invoice' },
+                { name: 'Updated Board resolution or partners NOC', icon: 'fa-signature' },
+                { name: 'Valid class-3 Digital Signature Certificate (DSC) of the promoter', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'Is it mandatory to modify the IEC when bank details change?', a: 'Yes, if any detail like bank account, partners, or address changes, it must be updated immediately in the DGFT portal to prevent customs clearance issues.' },
+                { q: 'How long does it take to modify an IEC certificate?', a: 'We can complete the modification submission on the DGFT portal within 24 hours of receiving the documents.' }
+            ]
+        },
+        'online-tax-planning-consultancy': {
+            title: 'Tax Planning & Consultancy',
+            category: 'startup',
+            icon: 'fa-user-gear',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Comprehensive Online Tax Planning & Consultation',
+            subtitle: 'Comprehensive Online Tax Planning & Consultation Services',
+            desc: 'Let the Country’s Most Recommended Tax Consultant panel Analyze, Manage & Help Reduce your Tax Liability following the relevant Income Tax Act’s provisions. Proper tax planning helps save excessive tax payouts, creating economic stability and avoiding legal pitfalls.',
+            benefits: [
+                'Minimize tax liability legally within Income Tax Act rules',
+                'Identify and optimize deductions under sections 80C to 80U',
+                'Advance tax computations and quarterly filing checks',
+                'Avoid legal penalties and compliance delays',
+                'Specialized consulting for salary, house property, and capital gains',
+                'Dedicated CA panel for customized assessment and support'
+            ],
+            documents: [
+                { name: 'Form 16 or salary slips (for salaried individuals)', icon: 'fa-file-invoice' },
+                { name: 'Details of investment proofs (Life Insurance, PPF, Tax Saver FD, etc.)', icon: 'fa-file-shield' },
+                { name: 'Income tax portal credentials (if existing)', icon: 'fa-key' },
+                { name: 'Property ownership documents & rental income details (if any)', icon: 'fa-building' },
+                { name: 'Capital gains statement for stocks, mutual funds, or properties', icon: 'fa-chart-line' },
+                { name: 'Bank transaction statements for the financial year', icon: 'fa-building-columns' }
+            ],
+            faqs: [
+                { q: 'What is the goal of tax planning?', a: 'The primary goal is to organize your financial affairs in a way that minimizes your tax liability by claiming eligible deductions, exemptions, and reliefs.' },
+                { q: 'When should I start tax planning?', a: 'Tax planning should ideally begin at the start of the financial year (April) so you can distribute investments and tax-saving decisions throughout the year.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Salaried Plan',
+                    price: '₹999',
+                    title: 'Tax Planning for Salaried Individuals',
+                    bullets: [
+                        'Efficient support from tax experts',
+                        'Annual tax planning under Chapter VI-A deductions',
+                        'Computation of total taxable income',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'NRI Salary',
+                    price: '₹1499',
+                    title: 'NRI Tax Planning from Salary',
+                    bullets: [
+                        'Efficient support from specialized NRI tax consultants',
+                        'Annual tax planning matching double taxation treaty rules',
+                        'Evaluation of NRE/NRO accounts tax impact',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'Advance Tax',
+                    price: '₹1499',
+                    title: 'Advance Tax Payment & Planning',
+                    bullets: [
+                        'On-call support from tax expert panel',
+                        'Annual direct and indirect tax computation',
+                        'Estimation of advance tax installments due',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'House Property',
+                    price: '₹1499',
+                    title: 'Tax Planning from House Property',
+                    bullets: [
+                        'Efficient support from tax experts',
+                        'Annual tax planning for rental income and housing loan interest',
+                        'Deduction advice under Section 24',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'Capital Gains',
+                    price: '₹2499',
+                    title: 'Capital Gain Tax Planning (Long Term & Short Term)',
+                    bullets: [
+                        'Efficient support from senior tax planners',
+                        'Annual direct-indirect capital gains tax structure',
+                        'Calculation of indexation benefit and exemptions (Sec 54, etc.)',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'Other Sources',
+                    price: '₹2499',
+                    title: 'Tax Planning from Other Sources of Income',
+                    bullets: [
+                        'Efficient support from tax experts',
+                        'Yearly tax planning for dividends, interest, lottery, etc.',
+                        'Advice on tax exemptions on other income categories',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'ITR/Project',
+                    price: '₹1999',
+                    title: 'ITR Tax Planning / Individual Project Report',
+                    bullets: [
+                        'Efficient support from tax consultants',
+                        'Profit & Loss and Balance Sheet preparation',
+                        'Error-free tax computation sheet drafting',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                },
+                {
+                    name: 'Retirement Plan',
+                    price: '₹1999',
+                    title: 'Tax Saving Plan after Retirement (Sec 80C - 80U)',
+                    bullets: [
+                        'Efficient support from senior tax advisors',
+                        'Optimizing pension and gratuity tax implications',
+                        'Senior citizen deduction schemes (Sec 80TTB, etc.)',
+                        'Full call, email, and chat support',
+                        '1-time service'
+                    ]
+                }
+            ]
+        },
+        'tax-compliance-guide': {
+            title: 'Tax & Compliance',
+            category: 'startup',
+            icon: 'fa-shield-halved',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Tax & Compliance Guides & Filings',
+            subtitle: 'Tax & Compliance Guides & Filings for Proprietorships & Companies',
+            desc: 'Stay 100% compliant with the Indian taxation systems. We help sole proprietorships and corporate companies file all required registrations (PAN, TAN, GST, MSME, ESIC & PF), ROC/MCA filings (AOC-4, MGT-7, DIR-3 KYC), books maintenance, TDS returns, and statutory tax audits.',
+            benefits: [
+                'Complete TDS & GST compliance management and filing',
+                'ROC/MCA Annual Filings (AOC-4, MGT-7, Board meetings coordination)',
+                'PF, ESIC & Professional Tax returns handling',
+                'Statutory Books & Records maintenance (cash books, sales/purchase registers)',
+                'Tax Audit coordination and computation sheets'
+            ],
+            documents: [
+                { name: 'Active Incorporation Certificate / Partnership Deed', icon: 'fa-file-invoice' },
+                { name: 'PAN and TAN of the business entity', icon: 'fa-id-card' },
+                { name: 'Active GST Registration certificate copy', icon: 'fa-passport' },
+                { name: 'Financial statements, ledgers, and bank statements', icon: 'fa-building-columns' },
+                { name: 'Digital signature certificates (DSC) of directors/owners', icon: 'fa-signature' }
+            ],
+            faqs: [
+                { q: 'What compliance is mandatory for Sole Proprietorships?', a: 'Sole proprietorships must register for PAN, GST (if turnover exceeds threshold), Udyam MSME, and file income tax returns annually using ITR-3 or ITR-4.' },
+                { q: 'What are the key MCA compliances for Private Limited Companies?', a: 'Companies must hold at least 4 board meetings yearly, conduct an AGM, file AOC-4 (financials) and MGT-7 (annual returns), and update director DIN KYCs annually.' }
+            ]
+        },
+        'online-bookkeeping-service': {
+            title: 'Online Bookkeeping',
+            category: 'startup',
+            icon: 'fa-cash-register',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Online Accounting and Bookkeeping Services',
+            subtitle: 'Online Accounting and Bookkeeping Services in India',
+            desc: 'Let India’s Recommended Accountants Organize, Prepare and Analyze your Financial Transactions | Easy & Quick Cloud-based Bookkeeping Procedure. We provide complete online ledger posting, cash flow mapping, bank reconciliation, and balance sheet preparation.',
+            benefits: [
+                'Easy and quick cloud-based bookkeeping software setup',
+                'Error-free balance sheets and ledger postings by certified CAs',
+                'Direct calculation of GST liabilities and tax deductions',
+                'Safe and secure transmission of fiscal details',
+                'Periodic financial reports and dashboards'
+            ],
+            documents: [
+                { name: 'Bank transaction statements for all business accounts', icon: 'fa-building-columns' },
+                { name: 'Sales invoices, bills, and payment receipts', icon: 'fa-receipt' },
+                { name: 'Purchase invoices, expense bills, and receipts', icon: 'fa-file-invoice' },
+                { name: 'Previous year tax filings and financial reports', icon: 'fa-file-invoice-dollar' }
+            ],
+            faqs: [
+                { q: 'Why is professional bookkeeping necessary?', a: 'Bookkeeping provides a clear picture of your company\'s financial health, simplifies tax computations, and ensures audits can be performed smoothly.' },
+                { q: 'What software do you use for bookkeeping?', a: 'We utilize industry-standard cloud accounting platforms like Tally Prime, QuickBooks, and Zoho Books.' }
+            ]
+        },
+        'section-8-company-compliance-filing': {
+            title: '12A-80G-CSR',
+            category: 'startup',
+            icon: 'fa-ribbon',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Section 8 Company Compliance, 12A & 80G Registration',
+            subtitle: 'Section 8 Company Compliance, 12A & 80G Registration Services',
+            desc: 'Fulfill all compliance requirements for non-profit entities. We help provide 12A registration, section 80G registration, CSR registration, and more, allowing tax exemptions for donors and the non-profit organization.',
+            benefits: [
+                'Section 12A tax exemption certificate registration',
+                'Section 80G registration to allow tax benefits for donors',
+                'CSR-1 registration to qualify for Corporate Social Responsibility funds',
+                'Annual compliance filings under the Companies Act for Section 8 companies',
+                'Absolute transparency in documentation and liaisoning'
+            ],
+            documents: [
+                { name: 'Aadhaar card and PAN card of all the directors of the company', icon: 'fa-id-card' },
+                { name: 'The incorporation certificate, MOA and AOA of the company', icon: 'fa-file-invoice' },
+                { name: 'Business address proof of the company', icon: 'fa-location-dot' },
+                { name: 'Income details & assets/liabilities of the Section 8 Company', icon: 'fa-scale-balanced' },
+                { name: 'PAN Card of the company & copy of the Form 10A', icon: 'fa-file-signature' },
+                { name: 'List of the donors & book of accounts of the company', icon: 'fa-book' }
+            ],
+            faqs: [
+                { q: 'What is a 12A registration?', a: 'Section 12A registration exempts non-profit institutions like Section 8 companies, trusts, and societies from paying income tax on their receipts.' },
+                { q: 'How does 80G registration benefit donors?', a: 'Section 80G registration allows donors to claim deductions (typically 50% or 100%) on the donation amount while filing their income tax returns.' }
+            ]
+        },
+        'project-report-preparation': {
+            title: 'Project Report',
+            category: 'startup',
+            icon: 'fa-file-invoice',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Project Report Preparation for Bank Loans',
+            subtitle: 'Online Project Report Preparation for New Business Bank Loans',
+            desc: 'Our Expert team is dedicated for you to prepare a Project Report to avail an Easy Loan. Trusted by over 5 Lakh+ satisfied clients with guaranteed quality services, challenging low cost across India, and zero hidden charges.',
+            benefits: [
+                'Complete project reports for Mudra, PMEGP, or general commercial bank loans',
+                'ISO 9001:2015 certified preparation for higher loan approval rates',
+                'Error-free financial projections (P&L, balance sheets, cash flow statements)',
+                'Dedicated call, chat, and email support',
+                '100% transparent pricing structure'
+            ],
+            documents: [
+                { name: 'Promoter profiles, educational details, and address proofs', icon: 'fa-id-badge' },
+                { name: 'Proposed business model, product/service descriptions, and marketing plans', icon: 'fa-newspaper' },
+                { name: 'Estimate of cost of project (land, machinery, raw material setup)', icon: 'fa-gears' },
+                { name: 'Source of funds details (own capital, requested loan amount)', icon: 'fa-money-bill-wave' },
+                { name: 'GSTIN and bank statements (if existing business)', icon: 'fa-building-columns' }
+            ],
+            faqs: [
+                { q: 'What is a business project report?', a: 'A project report is a comprehensive document detailing the operational, financial, and marketing plans of a proposed business venture, essential for bank loan applications.' },
+                { q: 'How long does it take to prepare the project report?', a: 'We can deliver a professionally compiled project report within 3 to 5 business days after receiving all parameters.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Project Report',
+                    price: '₹6999',
+                    title: 'Project Report Preparation (excluding GST)',
+                    bullets: [
+                        'Onetime Charge: ₹6,999 + 18% GST',
+                        'Detailed Project Report (DPR) for Bank Loans',
+                        'Includes 5-Year Balance Sheet and Profit & Loss Projections',
+                        'Expert drafting by experienced project analysts',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                }
+            ]
+        },
+        'online-filing-dpt-3': {
+            title: 'DPT-3 Filing',
+            category: 'startup',
+            icon: 'fa-file-shield',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Online Filing of DPT-3 Return',
+            subtitle: 'Expert Assistance for Online Filing of DPT-3 Return',
+            desc: 'If you feel the complications on DPT-3 return filing for your company, contact our expert. DPT-3 is a mandatory annual return of deposits that every company must file under the Companies Act, 2013.',
+            benefits: [
+                'Complete support for reporting outstanding loans and deposits',
+                'Expert guidance on exempt deposits and related disclosures',
+                'Direct filing on the Ministry of Corporate Affairs (MCA) portal',
+                'Avoid heavy late filing penalties and interest charges',
+                'Full call, chat, and email support'
+            ],
+            documents: [
+                { name: 'Copy of the latest audited balance sheet', icon: 'fa-file-invoice' },
+                { name: 'Details of outstanding loan amounts and deposits as of 31st March', icon: 'fa-file-invoice-dollar' },
+                { name: 'Auditor Certificate (mandatory if DPT-3 is filed for deposits)', icon: 'fa-file-shield' },
+                { name: 'DSC of the authorized director', icon: 'fa-signature' }
+            ],
+            faqs: [
+                { q: 'What is DPT-3?', a: 'DPT-3 is an annual return of deposits and particulars of transactions not considered deposits that all active companies in India must file.' },
+                { q: 'What is the due date for filing DPT-3?', a: 'The due date for filing DPT-3 is 30th June for the preceding financial year ending on 31st March.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'DPT-3 Filing',
+                    price: '₹3999',
+                    title: 'DPT-3 Return Filing Plan',
+                    bullets: [
+                        'Onetime Charge: ₹3,999 + 18% GST',
+                        'DPT-3 Return Filing preparation and upload',
+                        'Professional drafting and advisory support',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                }
+            ]
+        },
+        'ngo-darpan-registration': {
+            title: 'NGO DARPAN Registration',
+            category: 'startup',
+            icon: 'fa-globe',
+            image: 'assets/company registration.webp',
+            shortDesc: 'NGO DARPAN Registration Online',
+            subtitle: 'NGO DARPAN Registration Online | NITI Aayog Unique ID',
+            desc: 'NGO DARPAN registration is a process through which all non-governmental organizations (NGOs), voluntary organizations (VOs), not-for-profit organizations (NPOs), registered societies, charity organizations, trusts, etc. sign up on the NGO DARPAN portal to create a database of all the NGOs in India. NGO DARPAN is maintained by NITI Aayog. Obtain your Unique ID for grants and bank accounts.',
+            benefits: [
+                'NGO DARPAN registration managed completely by specialists',
+                'Crucial for obtaining government grants, funding schemes, and recognition',
+                'Required to open a bank account in the name of charitable trusts/societies',
+                'Facilitates corporate partnerships and increases public trust',
+                'Unique ID registration quickly and flawlessly'
+            ],
+            documents: [
+                { name: 'Trust Deed (for Trusts) / Society Deed & Bylaws (for Societies) / Incorporation Certificate & MOA/AOA (for Section 8)', icon: 'fa-file-invoice' },
+                { name: 'PAN card of the Trust, Society, or Section-8 Company', icon: 'fa-id-card' },
+                { name: 'KYC (Aadhaar, PAN, Voter ID) of all Governing Body members', icon: 'fa-users' },
+                { name: 'Active email IDs and Mobile numbers of all members', icon: 'fa-mobile-screen' },
+                { name: 'Declaration of nature of work and scope of operations', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'Who can register on NGO DARPAN?', a: 'Any registered Trust, Society, Section 8 Company, or charitable association carrying out social or welfare activities can apply.' },
+                { q: 'Is it mandatory to have an NGO DARPAN ID?', a: 'Yes, if your NGO wants to apply for government grants, schemes, CSR funds, or foreign contributions, having a DARPAN unique ID is mandatory.' }
+            ]
+        },
+        'annual-compliance-bookkeeping': {
+            title: 'Annual Compliance & Bookkeeping',
+            category: 'startup',
+            icon: 'fa-book-bookmark',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Annual Filing Compliance & Bookkeeping Services',
+            subtitle: 'Annual Filing Compliance & Bookkeeping Services',
+            desc: 'Streamline Your Business Compliance and Bookkeeping services online by experts. Get end-to-end compliance management, expert bookkeeping support, timely ROC filings, and our absolute no-penalty assurance. Enjoy our exclusive Free Incorporation facility included with all compliance and accounting packages.',
+            benefits: [
+                'End-to-End Compliance coverage under the Companies Act',
+                'Expert Bookkeeping and regular ledger maintenance support',
+                'Timely ROC Filing to maintain active business status',
+                'No Penalty Assurance against regulatory late fees',
+                'Free Incorporation facility included with all plans',
+                'Dedicated accounting experts assigned to your company'
+            ],
+            documents: [
+                { name: 'Bank statements for the financial year period', icon: 'fa-building-columns' },
+                { name: 'Purchase invoices and bills record', icon: 'fa-receipt' },
+                { name: 'Sales invoices and receipts summary', icon: 'fa-file-invoice' },
+                { name: 'Previous year tax returns and ledger accounts', icon: 'fa-file-invoice-dollar' },
+                { name: 'PAN and Aadhaar Card of Directors / Partners', icon: 'fa-id-card' },
+                { name: 'GSTIN details and portals access info', icon: 'fa-key' }
+            ],
+            faqs: [
+                { q: 'What does the Bookkeeping package include?', a: 'The package includes daily ledger updates, cash flow statements, bank reconciliation, financial statement preparation, and ROC filing support.' },
+                { q: 'How does the Free Incorporation facility work?', a: 'If you purchase our annual compliance & bookkeeping package, we will process your company incorporation entirely for free (government charges extra).' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Basic Plan',
+                    price: '₹29999',
+                    title: 'Turnover Range (From 0 - 20 Lakh)',
+                    bullets: [
+                        'Turnover Range: 0 - 20 Lakh',
+                        'Facility: Free Incorporation included',
+                        'End-to-End Compliance drafting',
+                        'Expert Bookkeeping support & auditing assistance',
+                        'Timely ROC Filing & financial sheets preparation',
+                        'No Penalty Assurance on ROC deadlines',
+                        'Full email, call, and chat support'
+                    ]
+                },
+                {
+                    name: 'Standard Plan',
+                    price: '₹44999',
+                    title: 'Turnover Range (From 20 - 50 Lakh)',
+                    bullets: [
+                        'Turnover Range: 20 - 50 Lakh',
+                        'Facility: Free Incorporation included',
+                        'End-to-End Compliance drafting',
+                        'Expert Bookkeeping support & auditing assistance',
+                        'Timely ROC Filing & financial sheets preparation',
+                        'No Penalty Assurance on ROC deadlines',
+                        'Full email, call, and chat support'
+                    ]
+                },
+                {
+                    name: 'Premium Plan',
+                    price: '₹64999',
+                    title: 'Turnover Range (50 Lakh Onwards)',
+                    bullets: [
+                        'Turnover Range: 50 Lakh Onwards',
+                        'Facility: Free Incorporation included',
+                        'End-to-End Compliance drafting',
+                        'Expert Bookkeeping support & auditing assistance',
+                        'Timely ROC Filing & financial sheets preparation',
+                        'No Penalty Assurance on ROC deadlines',
+                        'Full email, call, and chat support'
+                    ]
+                }
+            ]
+        },
+        'online-annual-compliance-filing': {
+            title: 'Annual Compliance & Filing',
+            category: 'startup',
+            icon: 'fa-calendar-days',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Annual Compliance Filing for Pvt Ltd, OPC & LLP',
+            subtitle: 'Annual Compliance Filing Assistance for Pvt Ltd, OPC & LLP',
+            desc: 'Let our Experts Start Filing Your Annual Compliance Today! India’s Best Experts Panel Ready to Provide 360° Online Assistance for Your Annual Compliances. The Companies Act, 2013 of Indian Govt. legally mandates every entity in the country to follow the declarations of the Annual Compliance. For Private Limited Companies (Pvt. Ltd.), One Person Companies (OPC), or Limited Liability Partnerships (LLP), Annual Compliance acts as a regular update to the Govt. that the entity is conducting its business under the particular Act.',
+            benefits: [
+                'Free Annual Compliance Drafting',
+                'Free consultations from verified taxation advisors',
+                'Statutory Audit coordination with clear Audit fees',
+                'Point-to-point updates for upcoming compliances & requirements',
+                'Customer service available in English, Hindi & regional languages',
+                'Reliable and expert compliance support'
+            ],
+            documents: [
+                { name: 'Directors’ Board Meeting minutes', icon: 'fa-users' },
+                { name: 'Profit & Loss Balance Sheet of Pvt. Ltd./OPC', icon: 'fa-scale-balanced' },
+                { name: 'Conclusions from the Annual General Meeting (AGM)', icon: 'fa-handshake' },
+                { name: 'Audit report from the auditor', icon: 'fa-file-shield' },
+                { name: 'Financial statement preparation sheets', icon: 'fa-calculator' },
+                { name: 'Income Tax Return filings details', icon: 'fa-file-invoice-dollar' }
+            ],
+            faqs: [
+                { q: 'Why is Annual Compliance filing mandatory?', a: 'Under the Companies Act, 2013, it is legally mandatory for all registered companies (Pvt Ltd, OPC, LLP) to submit annual financial returns to the Registrar of Companies (ROC) to maintain active status.' },
+                { q: 'What is AOC-4 and MGT-7?', a: 'AOC-4 is used for filing financial statements (balance sheet, P&L account) within 30 days of the AGM. MGT-7 is used for filing the annual return of the company within 60 days of the AGM.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Basic Plan',
+                    price: '₹14999 + GST',
+                    title: 'Basic Plan (Turnover upto 20 Lakhs)',
+                    bullets: [
+                        'Eligibility: Turnover upto 20 Lakhs',
+                        'ADT-1: Auditor Appointment filing',
+                        'AOC-4: Annual Return Filing (within 30 days of AGM)',
+                        'MGT-7: Annual Return Filing (within 60 days of AGM)',
+                        'DIR-3: KYC of the Company Director(s)',
+                        'INC-20A: Declaration for business commencement',
+                        'Financial statement preparation & ITR filing',
+                        'Free Annual Compliance Drafting',
+                        'Exclusive of government fees & Audit fees'
+                    ]
+                },
+                {
+                    name: 'Standard Plan',
+                    price: '₹24999 + GST',
+                    title: 'Standard Plan (Turnover 20 - 50 Lakhs)',
+                    bullets: [
+                        'Eligibility: Turnover between 20 - 50 Lakhs',
+                        'ADT-1: Auditor Appointment filing',
+                        'AOC-4: Annual Return Filing (within 30 days of AGM)',
+                        'MGT-7: Annual Return Filing (within 60 days of AGM)',
+                        'DIR-3: KYC of the Company Director(s)',
+                        'INC-20A: Declaration for business commencement',
+                        'Financial statement preparation & ITR filing',
+                        'Free Annual Compliance Drafting',
+                        'Exclusive of government fees & Audit fees'
+                    ]
+                },
+                {
+                    name: 'Premium Plan',
+                    price: '₹34999 + GST',
+                    title: 'Premium Plan (Turnover 51 - 100 Lakhs)',
+                    bullets: [
+                        'Eligibility: Turnover between 51 - 100 Lakhs',
+                        'ADT-1: Auditor Appointment filing',
+                        'AOC-4: Annual Return Filing (within 30 days of AGM)',
+                        'MGT-7: Annual Return Filing (within 60 days of AGM)',
+                        'DIR-3: KYC of the Company Director(s)',
+                        'INC-20A: Declaration for business commencement',
+                        'Financial statement preparation & ITR filing',
+                        'Free Annual Compliance Drafting',
+                        'Exclusive of government fees & Audit fees'
+                    ]
+                }
+            ]
+        },
+        'gst-registration': {
+            title: 'GST Registration',
+            category: 'startup',
+            icon: 'fa-file-invoice-dollar',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Apply for GST Registration with Experts Assistance',
+            subtitle: 'Apply for GST Registration with Experts Assistance by Online Legal India',
+            desc: 'Get 360° Online Assistance from India’s recommended Business Taxation Experts in GST Registration to Filing the Mandatory GST Returns Annually. Obtain your GSTIN to expand your business online, trade across state lines, and leverage input tax credits.',
+            benefits: [
+                'Become more competitive in the Market',
+                'Interstate trading is enabled once business is registered under GST',
+                'Expansion of business online on Amazon, Flipkart, Shopify, & Paytm',
+                'Get Input Tax Credit (ITC) while filing returns',
+                'End-to-end guidance from leading business taxation experts'
+            ],
+            documents: [
+                { name: 'PAN of the Applicant (Proprietor)', icon: 'fa-id-card' },
+                { name: 'Aadhaar card of the applicant', icon: 'fa-id-badge' },
+                { name: 'Proof of business registration or Incorporation certificate', icon: 'fa-file-invoice' },
+                { name: 'Identity and Address proof of Promoters/Director with Photographs', icon: 'fa-image' },
+                { name: 'Address proof of the place of business', icon: 'fa-location-dot' },
+                { name: 'Bank Account statement / Cancelled cheque', icon: 'fa-money-check' },
+                { name: 'Letter of Authorization / Board Resolution for Authorized Signatory', icon: 'fa-file-signature' },
+                { name: 'Rent Agreement in case the PPOB (Principal Place of Business) is rented', icon: 'fa-file-contract' }
+            ],
+            faqs: [
+                { q: 'Is GST registration mandatory for all businesses?', a: 'GST registration is mandatory if your aggregate annual turnover exceeds Rs. 40 lakhs for goods (Rs. 20 lakhs for hilly and North-Eastern states) or Rs. 20 lakhs for services.' },
+                { q: 'What is the penalty for operating without GST?', a: 'Operating without registering under GST when mandatory carries a penalty of 10% of the tax due or Rs. 10,000, whichever is higher.' }
+            ]
+        },
+        'gst-return-filing': {
+            title: 'GST Return Filing',
+            category: 'startup',
+            icon: 'fa-file-invoice',
+            image: 'assets/company registration.webp',
+            shortDesc: 'File your GST Return with ease',
+            subtitle: 'File your GST Return with ease! Your Business, Our Responsibility.',
+            desc: 'Every GST registered organization in India is legally responsible for filing a total of 26 GST return filings in a financial year. It may sound problematic to meet up the regulations but with the GST experts’ proper online guidance in Online Legal India, you would be able to complete all the needful steps with ease. The taxpayers are liable to pay the GST filings within a preset time as the Govt. of India uses these returns to evaluate the entire tax liability in the country.',
+            benefits: [
+                'Get your GST Return filing done in few clicks',
+                'Avoid high late fees and interest penalty charges',
+                'Accurate digital assistance to any corner of the nation',
+                'Complete documentation and reconciliation checks',
+                'Maximize your monthly Input Tax Credit (ITC)'
+            ],
+            documents: [
+                { name: 'GSTIN of the Business Entity', icon: 'fa-id-card' },
+                { name: 'Sales Register containing all outward invoices', icon: 'fa-file-invoice' },
+                { name: 'Purchase Register with inward supply bills', icon: 'fa-receipt' },
+                { name: 'Bank statements and ledger details for the period', icon: 'fa-file-invoice-dollar' }
+            ],
+            faqs: [
+                { q: 'How many returns must a normal taxpayer file?', a: 'A regular taxpayer must file GSTR-1 (sales details) and GSTR-3B (tax summary) monthly, along with an annual return (GSTR-9), totaling 25-26 filings a year.' },
+                { q: 'What is GSTR-3B?', a: 'GSTR-3B is a self-declared monthly summary return that details outward supplies, input tax credit claimed, and tax paid.' }
+            ]
+        },
+        'gst-nil-return-filing': {
+            title: 'GST Nil Return Filing',
+            category: 'startup',
+            icon: 'fa-circle-check',
+            image: 'assets/company registration.webp',
+            shortDesc: 'File your GST NIL Return On-Time',
+            subtitle: 'File your GST NIL Return On-Time | 100% Hassle-Free Process',
+            desc: 'Let the country\'s leading business taxation experts Evaluate, Manage, and File your GST NIL Returns | Complete Digital Assistance at your Fingertips. If you have no sales or purchases in a return period, you must still file a Nil return to avoid active penalties.',
+            benefits: [
+                '100% Hassle-Free Process guided by GST experts',
+                'Quick 5-step workflow from payment to success confirmation',
+                'Pre-approval checks before final filing submission',
+                'Avoid daily compounding late fees on inactive periods',
+                'Fingertip digital tracking of filing records'
+            ],
+            documents: [
+                { name: 'GSTIN of Business Entity', icon: 'fa-id-card' },
+                { name: 'Declared statement of zero sales & purchases for the tax period', icon: 'fa-file-signature' },
+                { name: 'Bank statement verifying zero transactions during the period', icon: 'fa-file-invoice' }
+            ],
+            faqs: [
+                { q: 'Is it mandatory to file a GST return if there is no business?', a: 'Yes, filing GSTR-1 and GSTR-3B is mandatory even if there are zero transactions (Nil Return), otherwise late fees will apply.' },
+                { q: 'Can I file a Nil return via SMS?', a: 'Yes, the government allows filing Nil GSTR-3B and GSTR-1 via SMS, but our experts ensure it is logged correctly in the GST portal with official records.' }
+            ]
+        },
+        'gst-modification': {
+            title: 'GST Modification',
+            category: 'startup',
+            icon: 'fa-pen-to-square',
+            image: 'assets/company registration.webp',
+            shortDesc: 'GST Modification Services & Amendments',
+            subtitle: 'GST Modification Services for GST Registration Amendments',
+            desc: 'Online Legal India will help you fulfill all the formalities regarding the GST modification and amendment of GST registration. Any changes made in the GST Registration or the details entered in the GST certificate are referred to as GST modification or update. One may go for change in GST Registration if he/she wishes from composite to normal scheme, or if there are mistakes in GST registration. To get GST modification, you need to file form GST REG 14.',
+            benefits: [
+                'Filing Form GST REG 14 for core and non-core amendments',
+                'Updating name of business or principal place of business address',
+                'Adding or altering additional places of business',
+                'Addition, deletion, or retirement of partners/directors/CEO',
+                'Updating mobile number or email of the authorized signatory'
+            ],
+            documents: [
+                { name: 'Copy of current GST Registration Certificate', icon: 'fa-id-card' },
+                { name: 'Proof of change (e.g. Rent Agreement for new address)', icon: 'fa-file-contract' },
+                { name: 'Partnership deed or modified MOA / AOA (if partners/directors change)', icon: 'fa-file-lines' },
+                { name: 'ID and Address proof of new directors/partners', icon: 'fa-id-badge' }
+            ],
+            faqs: [
+                { q: 'What is Form GST REG-14?', a: 'GST REG-14 is the amendment application filed on the GST portal to notify and seek approval for changes in your registration details.' },
+                { q: 'What is the difference between Core and Non-Core fields?', a: 'Core fields (like business name, address, or directors) require approval from tax officers, while non-core fields (like contact info) are updated instantly upon filing.' }
+            ]
+        },
+        'gstr-9-annual-filing': {
+            title: 'GSTR-9 Annual Filing',
+            category: 'startup',
+            icon: 'fa-calendar-check',
+            image: 'assets/company registration.webp',
+            shortDesc: 'GSTR-9 Annual Return Filing Online',
+            subtitle: 'GSTR-9 Annual Return Filing Online | Step-by-Step Guide & Support',
+            desc: 'Our Tax Experts are Never Late in Filing Annual GSTR-9 for You | Get 360° Professional Guidance in Each Step from Collecting Documents to GST Filing. As per the Central Goods and Services Act, 2017, every registered business entity is mandated to file GSTR-9 annually. GSTR-9 contains information about all the sales, purchases, refunds, or input tax credit by all tax-payers, Special Economic Zone (SEZ) units, SEZ developers, and many more.',
+            benefits: [
+                'Abolition of the Cascading Effect (tax-on-tax calculations)',
+                'Organized single-time yearly tax reconciliation payment',
+                'Enables nation-wide market access without regional barriers',
+                'Assisting startups and SEZ units to stay compliant',
+                'Complete validation of input tax credit matches'
+            ],
+            documents: [
+                { name: 'Details of total Inward and Outward Supplies in the scheduled Financial Year', icon: 'fa-clipboard-list' },
+                { name: 'Income Tax Credit Ledger for the scheduled Financial Year', icon: 'fa-file-invoice-dollar' },
+                { name: 'GSTIN of Business Entity/Seller', icon: 'fa-id-card' },
+                { name: 'GST Reconciliation Statement details', icon: 'fa-file-signature' },
+                { name: 'Details of the Block Credit, Capital Goods, and related documents', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'Who is liable to file GSTR-9?', a: 'GSTR-9 is optional for businesses with turnover up to Rs. 2 crores, but mandatory for businesses exceeding Rs. 2 crores. Businesses exceeding Rs. 5 crores must file GSTR-9 along with GSTR-9C (reconciliation statement).' },
+                { q: 'What is the due date for GSTR-9 filing?', a: 'The standard due date for filing GSTR-9 is 31st December (or altered dates like 31st October as per government extensions) following the end of the financial year.' }
+            ]
+        },
+        'gst-lut-filing': {
+            title: 'GST LUT Filing',
+            category: 'startup',
+            icon: 'fa-earth-americas',
+            image: 'assets/company registration.webp',
+            shortDesc: 'GST LUT (Letter of Undertaking) Filing Online',
+            subtitle: 'GST LUT (Letter of Undertaking) Filing Online | Compliance Support',
+            desc: 'Launch your Export Business in the Foreign Market with GST LUT Filing from our Specialised Taxation Team at Online Legal India | Get Approval Quickly. GST Letter of Undertaking or Bond legally enables a business personnel or seller to operate an Export business without paying the imposed Tax.',
+            benefits: [
+                'Export products and services without paying additional IGST tax',
+                'Long validity of one entire Financial Year period',
+                'Composure in terms of relaxation from Customs Duty',
+                'Capital friendly process: saves working capital and avoids refund wait times',
+                'Convenient, 100% digital filing process since April 2018'
+            ],
+            documents: [
+                { name: 'GST Registration Certificate', icon: 'fa-id-card' },
+                { name: 'Import Export Code (IEC) certificate copy', icon: 'fa-ship' },
+                { name: 'Details of 2 Nominees/Witnesses (1 must be an Employed Accountant)', icon: 'fa-users' },
+                { name: 'PAN and Aadhaar Card of the Business Owners', icon: 'fa-id-badge' },
+                { name: 'Bank credentials (Canceled Cheque copy)', icon: 'fa-money-check' },
+                { name: 'PAN details of the Business Entity', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'What is a Letter of Undertaking (LUT) under GST?', a: 'An LUT is a document filed on the GST portal that allows exporters to export goods or services without paying Integrated GST (IGST).' },
+                { q: 'For how long is an LUT valid?', a: 'An LUT is valid for one financial year. A fresh LUT must be filed for each subsequent financial year.' }
+            ]
+        },
+        'gst-eway-bill': {
+            title: 'GST E-Way Bill',
+            category: 'startup',
+            icon: 'fa-truck-ramp-box',
+            image: 'assets/company registration.webp',
+            shortDesc: 'GST e-Way Bill Generation Assistance',
+            subtitle: 'Get GST e-Way Bill Generation Online Assistance Through a Trusted Portal',
+            desc: 'Trusted by over 1,20,000+ Corporate Entities | 360° GST Online E-Way Bill Generation Assistance from anywhere in our Nation. Having registered for GST E-Billing leads to various advantages and benefits before transporting goods.',
+            benefits: [
+                'Eliminates checkpoint complications and paper processing delays',
+                'Digital procedure is significantly faster and easier to verify',
+                'Unified document for seamless nation-wide cargo transport',
+                'Tracks shipment movements to enhance transport security',
+                'Ensures preset timing and schedules for faster cargo transit'
+            ],
+            documents: [
+                { name: 'GST Invoice / receipt / challan for the transported goods', icon: 'fa-file-invoice' },
+                { name: 'Detailed description and weight of the transported goods', icon: 'fa-box-open' },
+                { name: 'Date of invoice and transaction details', icon: 'fa-calendar-days' },
+                { name: 'Transport details (Vehicle number for road; Transporter ID & travel docs for rail/air/sea)', icon: 'fa-truck' }
+            ],
+            faqs: [
+                { q: 'When is a GST E-Way Bill required?', a: 'An E-Way Bill is required for any movement of goods worth more than Rs. 50,000 in a vehicle, whether inter-state or intra-state.' },
+                { q: 'Who is responsible for generating the E-Way Bill?', a: 'The registered consignor or consignee who causes the movement of goods is responsible, or the transporter if neither does.' }
+            ]
+        },
         'criminal': {
             title: 'Criminal Defense',
             category: 'legal',
@@ -1591,7 +2531,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Company registration services interactive pricing
-            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary', 'din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up'];
+            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary', 'din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up', 'fssai-registration', 'fssai-food-labeling', 'fssai-renewal', 'fssai-annual-return', 'fssai-modification', 'bis-certificate', 'import-export-code', 'import-export-modification', 'gst-registration', 'gst-return-filing', 'gst-nil-return-filing', 'gst-modification', 'gstr-9-annual-filing', 'gst-lut-filing', 'gst-eway-bill', 'online-annual-compliance-filing', 'annual-compliance-bookkeeping', 'online-tax-planning-consultancy', 'tax-compliance-guide', 'online-bookkeeping-service', 'section-8-company-compliance-filing', 'project-report-preparation', 'online-filing-dpt-3', 'ngo-darpan-registration'];
             if (companyServices.includes(serviceId)) {
                 const stdPricing = document.getElementById('standard-consultation-section');
                 const compPricing = document.getElementById('company-pricing-section');
@@ -1600,7 +2540,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (stdPricing) stdPricing.style.display = 'none';
                 if (compDocs) compDocs.style.display = 'block';
 
-                if (['din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up'].includes(serviceId)) {
+                if (['din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up', 'fssai-renewal', 'fssai-modification', 'fssai-annual-return', 'import-export-code', 'import-export-modification', 'bis-certificate', 'gst-registration', 'gst-return-filing', 'gst-nil-return-filing', 'gst-modification', 'gstr-9-annual-filing', 'gst-lut-filing', 'gst-eway-bill', 'tax-compliance-guide', 'online-bookkeeping-service', 'section-8-company-compliance-filing', 'ngo-darpan-registration'].includes(serviceId)) {
                     if (compPricing) compPricing.style.display = 'none';
                     if (customBuySection) customBuySection.style.display = 'block';
                 } else {
@@ -1685,8 +2625,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (serviceId === 'sec-8-winding-up') compType = 'Section 8 Winding Up';
                 if (serviceId === 'nidhi-winding-up') compType = 'Nidhi Winding Up';
                 if (serviceId === 'subsidiary-winding-up') compType = 'Subsidiary Winding Up';
+                if (serviceId === 'fssai-registration') compType = 'FSSAI License';
+                if (serviceId === 'fssai-food-labeling') compType = 'Food Labeling';
+                if (serviceId === 'fssai-renewal') compType = 'FSSAI Renewal';
+                if (serviceId === 'fssai-annual-return') compType = 'FSSAI Annual Return';
+                if (serviceId === 'fssai-modification') compType = 'FSSAI Modification';
+                if (serviceId === 'bis-certificate') compType = 'BIS Certification';
+                if (serviceId === 'import-export-code') compType = 'IEC Registration';
+                if (serviceId === 'import-export-modification') compType = 'IEC Modification';
+                if (serviceId === 'gst-registration') compType = 'GST Registration';
+                if (serviceId === 'gst-return-filing') compType = 'GST Return Filing';
+                if (serviceId === 'gst-nil-return-filing') compType = 'GST Nil Return';
+                if (serviceId === 'gst-modification') compType = 'GST Modification';
+                if (serviceId === 'gstr-9-annual-filing') compType = 'GSTR-9 Return';
+                if (serviceId === 'gst-lut-filing') compType = 'GST LUT Filing';
+                if (serviceId === 'gst-eway-bill') compType = 'GST E-Way Bill';
+                if (serviceId === 'online-annual-compliance-filing') compType = 'Annual Compliance';
+                if (serviceId === 'annual-compliance-bookkeeping') compType = 'Compliance & Bookkeeping';
+                if (serviceId === 'online-tax-planning-consultancy') compType = 'Tax Planning';
+                if (serviceId === 'tax-compliance-guide') compType = 'Tax & Compliance';
+                if (serviceId === 'online-bookkeeping-service') compType = 'Bookkeeping';
+                if (serviceId === 'section-8-company-compliance-filing') compType = 'NGO Compliance';
+                if (serviceId === 'project-report-preparation') compType = 'Project Report';
+                if (serviceId === 'online-filing-dpt-3') compType = 'DPT-3 Return';
+                if (serviceId === 'ngo-darpan-registration') compType = 'NGO DARPAN';
 
-                const pricingPlans = [
+                const pricingPlans = data.pricingPlans || [
                     {
                         name: 'Consultation Fee',
                         price: '₹999',
@@ -1820,13 +2784,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (tabsContainer && detailsContainer) {
                     tabsContainer.innerHTML = pricingPlans.map((plan, idx) => `
-                        <button class="company-pricing-tab ${idx === 2 ? 'active' : ''}" data-index="${idx}">
+                        <button class="company-pricing-tab ${idx === (pricingPlans.length - 1) ? 'active' : ''}" data-index="${idx}">
                             <span class="price-value">${plan.price.split(' ')[0]}</span>
                             <span class="plan-name">${plan.name}</span>
                         </button>
                     `).join('');
 
-                    renderPlanDetails(2);
+                    renderPlanDetails(pricingPlans.length - 1);
 
                     tabsContainer.querySelectorAll('.company-pricing-tab').forEach(tab => {
                         tab.addEventListener('click', () => {
