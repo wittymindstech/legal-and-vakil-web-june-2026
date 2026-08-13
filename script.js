@@ -250,6 +250,520 @@ document.addEventListener('DOMContentLoaded', () => {
                 { q: 'Can a foreign parent company hold 100% shares of the Indian Subsidiary?', a: 'Yes, under the automatic route of FDI, a foreign company can own 100% of the equity shares of the Indian Subsidiary in most sectors.' }
             ]
         },
+        'din-kyc': {
+            title: 'Director DIN e KYC Update',
+            category: 'startup',
+            icon: 'fa-id-card',
+            image: 'assets/company registration.webp',
+            shortDesc: 'DIN KYC Status Check, eKYC Update & DIR-3 KYC Filing',
+            subtitle: 'DIN KYC Status Check, eKYC Update & DIR-3 KYC Filing, Updates and Compliance Assistance',
+            desc: 'As per Ministry of Corporate Affairs, it is mandatory for all Directors/Partners to file DIR 3 KYC form (e-kyc) before 30th Sep’21 else Rs. 5000 to be paid as penalty. Director identification number (DIN) is a unique identification number given to a person wanting to be a director or an existing director of a company. In this digitised era, application in eForm DIR-3 was sufficient to obtain DIN. This was a one-time process for any person who wants to be a director in one or more companies. However, now with the move of the Ministry of Corporate Affairs (MCA) to update its registry, all directors with a DIN will have to submit their KYC details annually in eForm DIR-3 KYC.',
+            benefits: [
+                'Avoid Rs. 5,000 Penalty',
+                'Keep DIN Status Active',
+                'Ensure Annual Corporate Registry Compliance',
+                'Quick Mobile & Email OTP Verification',
+                'Expert Assistance in DSC Registration'
+            ],
+            documents: [
+                { name: 'PAN of Director', icon: 'fa-id-card' },
+                { name: 'Proof of permanent address (Latest Bank Statement/ Latest Mobile or Electricity Bill)', icon: 'fa-location-dot' },
+                { name: 'Copy of Aadhaar Card (Mandatory for Indian Director)', icon: 'fa-id-badge' },
+                { name: 'Copy of passport if they have the same', icon: 'fa-passport' },
+                { name: 'Mobile No (will need OTP for Verification)', icon: 'fa-mobile' },
+                { name: 'Email (will need OTP for Verification)', icon: 'fa-envelope' },
+                { name: 'Digital Signature of Director', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'What is the due date for filing DIR-3 KYC?', a: 'Every director allotted a DIN must file DIR-3 KYC annually by 30th September of the immediate next financial year.' },
+                { q: 'What happens if I fail to file DIR-3 KYC?', a: 'The MCA will deactivate the DIN with the status "Deactivated due to non-filing of DIR-3 KYC". To reactivate the DIN, you must pay a late filing penalty fee of Rs. 5,000.' }
+            ]
+        },
+        'appointment-director': {
+            title: 'Appointment of Director',
+            category: 'startup',
+            icon: 'fa-user-plus',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Process under Companies Act, 2013',
+            subtitle: 'New Director Appointment – Director Appointment Process under Companies Act, 2013',
+            desc: 'A Company may appoint a new Director for several reasons. Sometimes it is because of hiring new expertise on the board or for the requirement of the company’s shareholders. The recommended panel of Online Legal India will complete the procedure of the Director’s Appointment following the MoA-AoA of the particular company & the Section 2(34) provisions of the Companies Act, 2013. Complete the Process of Appointment of Director through 360° Online Assistance within the Quickest at an Unbeatable Price from India’s Recommended Panel.',
+            benefits: [
+                'Board Resolution & Consent Letters Drafting',
+                'Complete Form DIR-2 & DIR-12 Filings',
+                'Ensure MoA & AoA Provisions Compliance',
+                'Procuring DIN & DSC for the Proposed Director',
+                'Official Registrar of Companies (ROC) Updates'
+            ],
+            documents: [
+                { name: 'Passport size photograph of the new Director', icon: 'fa-camera' },
+                { name: 'PAN Card of the new Director', icon: 'fa-id-card' },
+                { name: 'Aadhaar Card / Identity proof', icon: 'fa-id-badge' },
+                { name: 'Address Proof (Electricity bill/Bank statement)', icon: 'fa-location-dot' },
+                { name: 'Digital Signature Certificate (DSC)', icon: 'fa-file-signature' },
+                { name: 'Consent Letter (Form DIR-2)', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'How many directors can a Private Limited Company have?', a: 'Under the Companies Act, 2013, a Private Limited Company must have at least 2 directors and can have up to 15 directors.' },
+                { q: 'What is DIR-2 and DIR-12?', a: 'DIR-2 is the consent form signed by the proposed director, while DIR-12 is the e-form filed with the Registrar of Companies (ROC) to record the appointment.' }
+            ]
+        },
+        'removal-director': {
+            title: 'Removal of Director',
+            category: 'startup',
+            icon: 'fa-user-minus',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Process under Companies Act, 2013',
+            subtitle: 'Removal of a Director’s Process - Filing & Compliance Assistance',
+            desc: 'Get 360° Online Assistance in the Complete & Quick Director Removal Process under Companies Act, 2013. We handle DIR-11 and DIR-12 filings to ensure seamless compliance.',
+            benefits: [
+                'Board Resolution & Special Resolution Drafting',
+                'Form DIR-11 & DIR-12 Preparation & Filings',
+                'Legal compliance under the Companies Act, 2013 guidelines',
+                'Verification of Digital Signature Certificate (DSC)',
+                'Coordination with the Registrar of Companies (ROC)'
+            ],
+            documents: [
+                { name: 'Resignation Letter of the concerned Director (Form DIR-11)', icon: 'fa-file-signature' },
+                { name: 'Digital Signature Certificate of the concerned Director (Form DIR-11)', icon: 'fa-file-signature' },
+                { name: 'Resignation Letter of the concerned Director (Form DIR-12)', icon: 'fa-file-signature' },
+                { name: 'Board Resolution regarding the Removal of Director process (Form DIR-12)', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'What is DIR-11 and DIR-12 for Director Removal?', a: 'DIR-11 is the notice of resignation filed by the director, while DIR-12 is the notification of change on the board filed by the company with the Registrar.' },
+                { q: 'Can a director be removed without their consent?', a: 'Yes, shareholders can remove a director before the expiry of their tenure by passing an ordinary resolution, subject to the provisions of Section 169 of the Companies Act, 2013.' }
+            ]
+        },
+        'pvt-ltd-winding-up': {
+            title: 'Pvt. Ltd. Winding up',
+            category: 'startup',
+            icon: 'fa-rectangle-xmark',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Close LLP / Company Online & Registrar Compliance Assistance',
+            subtitle: 'LLP Winding Up & Registrar Compliance Assistance',
+            desc: 'Get 360° Online Assistance from India’s Recommended Expert Panel in the Complete & Quick LLP Closure and Winding Up Process. As per the provisions of the Ministry of Corporate Affairs (MCA) & Registrars of Companies (ROC), the required documents and activities are managed digitally.',
+            benefits: [
+                'Fast-track winding up and closure filings',
+                'Complete documentation and review by experts',
+                'ROC & MCA portal notification coordination',
+                'Indemnity Bond and affidavit drafting support',
+                'Securing necessary Regulatory NOCs'
+            ],
+            documents: [
+                { name: 'DSC of the authorized Partner', icon: 'fa-file-signature' },
+                { name: 'NOC (If the LLP is associated with any regulatory body)', icon: 'fa-shield' },
+                { name: 'PAN Card of the LLP & the Partners of that entity', icon: 'fa-id-card' },
+                { name: 'Aadhaar Card of the LLP Partners', icon: 'fa-id-badge' },
+                { name: 'Copy of LLP Agreement', icon: 'fa-file-contract' },
+                { name: 'Acknowledgement of the Partners regarding closure of the LLP', icon: 'fa-signature' },
+                { name: 'Address Proof of all the Partners', icon: 'fa-location-dot' },
+                { name: 'Indemnity Bond signed by the Partner(s)', icon: 'fa-file-signature' },
+                { name: 'Copy of authority to make the application duly signed by all the Partners', icon: 'fa-file-signature' },
+                { name: 'Copy of Acknowledgement of latest Income-tax Return', icon: 'fa-file-invoice' },
+                { name: 'Affidavit signed by the designated Partners [sub-clause(b) of clause (II) of sub-rule (1A) to rule 37]', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'Under what rule is LLP closure filed?', a: 'LLP closure is filed under Rule 37 of the LLP Rules, 2009, which allows an inactive LLP to apply for striking off its name.' },
+                { q: 'Is it mandatory to file tax returns before closure?', a: 'Yes, the latest income tax return acknowledgement must be submitted as part of the closure application.' }
+            ]
+        },
+        'increase-authorized-capital': {
+            title: 'Increase Authorized Capital',
+            category: 'startup',
+            icon: 'fa-arrow-trend-up',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Increase Authorized Capital in a Company',
+            subtitle: 'Increase Authorized Capital in a Company | Expert Assistance, Fees & Stamp Duty',
+            desc: 'Get 360° Online Assistance for Increasing Authorized Capital of your Company by following the best regulatory standards. The alteration in the company’s MoA, AoA, and increase in the Authorized Capital should be informed to the Registrar of Companies (ROC) and the Ministry of Corporate Affairs (MCA).',
+            benefits: [
+                'Checking & amending the AoA capital clauses',
+                'Organizing Board Meetings & Extraordinary General Meetings (EGM)',
+                'Drafting shareholder special resolutions',
+                'Filing Form SH-7 with the MCA',
+                'Adapting MoA Capital Clause structures'
+            ],
+            documents: [
+                { name: 'Documented AoA of the Company (with Capital Increase clause)', icon: 'fa-file-contract' },
+                { name: 'Board Meeting Resolution to approve the capital increase', icon: 'fa-file-signature' },
+                { name: 'Shareholders’ Approval Special Resolution copy', icon: 'fa-file-signature' },
+                { name: 'Amended MoA showing the increased capital details', icon: 'fa-file-lines' },
+                { name: 'Official Form filing with the Registrar of Companies (ROC)', icon: 'fa-building-columns' }
+            ],
+            faqs: [
+                { q: 'What is Authorized Capital?', a: 'Authorized Capital is the maximum amount of share capital that a company is authorized by its constitutional documents to issue to shareholders.' },
+                { q: 'Which MCA form is filed for increasing capital?', a: 'Form SH-7 must be filed with the Registrar of Companies (ROC) within 30 days of passing the resolution for increasing authorized capital.' }
+            ]
+        },
+        'registered-office-change': {
+            title: 'Registered Office Change',
+            category: 'startup',
+            icon: 'fa-map-location-dot',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Registered Workplace Address Changing Assistance',
+            subtitle: 'Change Your Registered Office Address – Filing & Compliance Assistance',
+            desc: 'Get 360° Online Assistance in Renaming Your Registered Workplace at an Unbeatable Price! Whether you are changing the address within the same city, to a different city in the same state, or to another state, we handle all ROC documentation.',
+            benefits: [
+                'INC-22 Form Drafting and Submission',
+                'Board Resolution and advertisement drafts (if state changes)',
+                'Verification of location ownership/tenancy documents',
+                'Updating address with government portals',
+                'Hassle-free, quick ROC address updating'
+            ],
+            documents: [
+                { name: 'The proof of owning the Business Location in the name of the company', icon: 'fa-file-invoice' },
+                { name: 'If the workplace is taken on Rent / Lease, the Legal Document for the same', icon: 'fa-file-contract' },
+                { name: 'In case the property is owned by a Director, valid documents permitting the Company to use the Location', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'Can we change the registered office outside the state?', a: 'Yes, shifting the office to another state requires a special resolution, alteration of the MoA, and approval from the Regional Director.' },
+                { q: 'What is Form INC-22?', a: 'INC-22 is the official form filed with the MCA to notify the Registrar of Companies about the change in the company\'s registered office address.' }
+            ]
+        },
+        'change-company-name': {
+            title: 'Change Company Name',
+            category: 'startup',
+            icon: 'fa-signature',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Change of Company Name with Expert Filing & Compliance',
+            subtitle: 'Change of Company Name in India with Expert Filing & Compliance Support',
+            desc: 'Get Complete Guidance from the Country’s Recommended Expert Panel for your Company’s Name Changing process | Quickest Service at an Unbeatable Price! We verify name availability, draft resolutions, and file MCA form RUN and MGT-14.',
+            benefits: [
+                'Name availability verification on MCA database',
+                'RUN (Reserve Unique Name) application filing',
+                'MGT-14 & INC-24 form submission assistance',
+                'Amended MoA and AoA documentation',
+                'Procuring new Certificate of Incorporation'
+            ],
+            documents: [
+                { name: 'Company Incorporation Certificate', icon: 'fa-file-invoice' },
+                { name: 'Suggested New Names for the Company List', icon: 'fa-list-ol' },
+                { name: 'List of the Company’s Director(s) and Shareholders', icon: 'fa-users' },
+                { name: 'Digital Signature of the Director(s)', icon: 'fa-file-signature' },
+                { name: 'Company’s MOA & AOA statement', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'Is a special resolution required for changing name?', a: 'Yes, a special resolution must be passed by shareholders in an Extraordinary General Meeting (EGM) to change the company name.' },
+                { q: 'Does changing the name affect the company\'s legal entity?', a: 'No, changing the company name does not affect its rights, obligations, or legal identity; all legal proceedings will continue in the new name.' }
+            ]
+        },
+        'moa-amendment-pvt': {
+            title: 'MOA Amendment of Pvt. Ltd.',
+            category: 'startup',
+            icon: 'fa-file-pen',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Pvt. Ltd. MOA Amendment Filing & Compliance',
+            subtitle: 'Private Limited Company MOA Amendment | Expert Filing & Compliance Support',
+            desc: 'Get Step by Step Online Assistance in MOA Amendment Process of a Pvt Ltd Company at an Unbeatable Price! A Board Meeting should be organized by the company to approve the MOA Amendment from the Board of Directors.',
+            benefits: [
+                'EGM special resolution drafting support',
+                'Objects Clause, Capital Clause, or Name Clause changes',
+                'Filing Form MGT-14 with Registrar of Companies (ROC)',
+                'Legal advisory on Memorandum changes',
+                'Board and shareholder resolution documentation'
+            ],
+            documents: [
+                { name: 'Board Meeting Resolution to approve the MOA Amendment', icon: 'fa-file-signature' },
+                { name: 'Shareholders’ Approval and Special Resolution copy', icon: 'fa-file-signature' },
+                { name: 'Documentation of the Amended Memorandum of Association', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'What is the Memorandum of Association (MOA)?', a: 'The MOA is the charter document of a company that defines its constitution, scope of power, and relationship with the outside world.' },
+                { q: 'Within how many days should Form MGT-14 be filed?', a: 'Form MGT-14 must be filed with the ROC within 30 days of passing the special resolution in the shareholders\' meeting.' }
+            ]
+        },
+        'moa-amendment-sec8': {
+            title: 'MOA Amendment of Section 8',
+            category: 'startup',
+            icon: 'fa-file-shield',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Section 8 Company MOA Amendment with Expert Assistance',
+            subtitle: 'Memorandum of Association (MOA) Amendment for Section 8 Company with Expert Assistance',
+            desc: 'Get 360° Online Assistance in Section 8 Company MOA Amendment at an Unbeatable Price! A Board Meeting of the Section-8 company should be organized to approve the MOA Amendment from the managing authority.',
+            benefits: [
+                'Specialized non-profit object clause advisory',
+                'Filing with the regional director and ROC',
+                'Drafting board resolution and special resolutions',
+                'Securing necessary regulatory clearance',
+                'Updating amended MOA records'
+            ],
+            documents: [
+                { name: 'Board Meeting Resolution copy from managing authority', icon: 'fa-file-signature' },
+                { name: 'Director’s Approval / Special Resolution of the Section 8 company', icon: 'fa-file-signature' },
+                { name: 'Documentation of the Amended MOA', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'Does Section 8 MOA amendment require government approval?', a: 'Yes, any amendment to the object clause of a Section 8 Company requires prior approval of the Regional Director / Central Government.' },
+                { q: 'What is the role of ROC in Section 8 MOA Amendment?', a: 'Once the Regional Director approves the amendment, the company must file the approved order with the ROC via Form INC-28 and MGT-14.' }
+            ]
+        },
+        'moa-amendment-public': {
+            title: 'MOA Amendment of Public Limited',
+            category: 'startup',
+            icon: 'fa-file-signature',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Memorandum of Association Amendment for Public Ltd',
+            subtitle: 'MOA Amendment for Public Limited Companies with Expert Assistance',
+            desc: 'Get Step by Step Professional Assistance in Memorandum of Association Amendment Process at an Unbeatable Price! A Board Meeting should be organized by the Public Limited Company to approve the MOA Amendment from the Board of Directors.',
+            benefits: [
+                'Board Meeting coordination and resolution drafting',
+                'Shareholders\' EGM special resolution processing support',
+                'Official Form MGT-14 filing preparation',
+                'Drafting modified Object, Capital or Name clauses in MOA',
+                'ROC compliance and MCA portal synchronization'
+            ],
+            documents: [
+                { name: 'Board meeting resolution to alter MOA', icon: 'fa-file-signature' },
+                { name: 'Special resolution passed by shareholders', icon: 'fa-file-signature' },
+                { name: 'Amended Memorandum of Association copy', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'Is shareholder approval required to alter the MOA?', a: 'Yes, a special resolution must be passed by shareholders in a general meeting to alter any clause of the MOA.' },
+                { q: 'What is the filing timeframe for MOA amendment?', a: 'The company must file Form MGT-14 with the Registrar of Companies within 30 days of passing the special resolution.' }
+            ]
+        },
+        'share-transfer': {
+            title: 'Share Transfer',
+            category: 'startup',
+            icon: 'fa-arrow-right-arrow-left',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Company Share Transfer & Share Transfer Deed Assistance',
+            subtitle: 'Company Share Transfer in India | Share Transfer Deed Assistance',
+            desc: 'Get Your Share Transfered at lowest fees. Online Legal India is an MCA (Ministry of Corporate Affairs) & MSME registered company in India. Our experienced team will draft & complete all the documentations on the same day. In India, the ownership of a Private Limited Company is determined by the shareholding of the Company. The shares of the Company are transferred in order to admit new investors or to transfer the ownership of the Company. The shares or debentures are ‘movable property’ and are transferable in accordance with the Articles of Association of the Company. Hence, the Articles of Association of the Company must be reviewed prior to beginning the share transfer procedure. In order to transfer shares between two or more persons they must enter into a contract or arrangement.',
+            benefits: [
+                'Drafting and execution of Share Transfer Deed (Form SH-4)',
+                'Review of Articles of Association (AoA) for transfer restrictions',
+                'Verification and payment of applicable share transfer stamp duty',
+                'Endorsement and issue of new share certificates',
+                'Updating Register of Members of the company'
+            ],
+            documents: [
+                { name: 'Copy of the transferor\'s original share certificate', icon: 'fa-file-invoice' },
+                { name: 'Authenticated copy of PAN card of the transferor(s) (sellers) and transferee(s) (buyers)', icon: 'fa-id-card' },
+                { name: 'A duly filled and signed Form SH-4', icon: 'fa-file-signature' }
+            ],
+            faqs: [
+                { q: 'How is share transfer stamp duty calculated?', a: 'Stamp duty on transfer of shares is currently 0.015% of the total market value of the shares being transferred.' },
+                { q: 'Which form is used for transfer of shares?', a: 'Form SH-4 (Securities Transfer Form) is the prescribed format under Section 56 of the Companies Act, 2013, which needs to be executed by both transferor and transferee.' }
+            ]
+        },
+        'jansamarth-registration': {
+            title: 'JanSamarth Registration',
+            category: 'startup',
+            icon: 'fa-file-shield',
+            image: 'assets/company registration.webp',
+            shortDesc: 'JanSamarth Portal Registration & Scheme Eligibility Guidance',
+            subtitle: 'The Core Objectives of JanSamarth Schemes',
+            desc: 'JanSamarth schemes are available after registering the beneficiary on the JanSamarth portal of the government of India. These schemes are endowed for the growth and development of the people in their ultimate progress of careers. So, education, business, livelihood development, and Agri-Infrastructure development are brought under the segments. In these verticals, you will get a total of 13 schemes for enjoying the loan. The JanSamarth schemes are entailed with the government of India, and a person can get easy digital approval for the loans. The portal ensures providing facilities digitally through end-to-end coverage.',
+            benefits: [
+                'End-to-end registration on the official JanSamarth portal',
+                'Detailed eligibility checking across all 13 government credit schemes',
+                'Agri-infrastructure, education, and business loan advisory',
+                'Assistance in digital verification and documentation upload',
+                'Ensuring maximum compliance for digital loan approvals'
+            ],
+            documents: [
+                { name: 'Aadhaar Card / Identity proof of the beneficiary', icon: 'fa-id-badge' },
+                { name: 'PAN Card of the applicant', icon: 'fa-id-card' },
+                { name: 'Income proof / ITR / Bank statements', icon: 'fa-file-invoice' },
+                { name: 'Project report or business detail documentations', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'What is the JanSamarth Portal?', a: 'JanSamarth is a unique digital portal that links government schemes to make it simple for beneficiaries to check eligibility and apply for government-backed loans online.' },
+                { q: 'How many schemes are available on the portal?', a: 'There are currently 13 government loan schemes categorized under Education Loan, Agri Infrastructure Loan, Business Activity Loan, and Livelihood Loan.' }
+            ]
+        },
+        'credit-management-analysis': {
+            title: 'Credit Management Analysis',
+            category: 'startup',
+            icon: 'fa-chart-pie',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Fundamentals of Credit Management Analysis Report (CMA)',
+            subtitle: 'Fundamentals of Credit Management Analysis Report',
+            desc: 'Credit Management Analysis (C.M.A.) is a way to review the financial statements of a startup or a project where a detailed analysis of credit will be displayed. Analysis of cash flows, drainage of cash, replaying of loan amount strategy, and the profitable amount of the project are mentioned. Hence, it is the analysis of borrowers’ ability to repay loans and profit generation analytical report. The quality of the business compared to market trends in the competitive landscape is the way to assess the borrower\'s creditworthiness. If the CMA report is positive, it will generate profit. Then only the investors or banks will offer a reasonable loan to your business.',
+            benefits: [
+                'Calculation and optimization of Debt Service Coverage Ratio (DSCR)',
+                'Detailed financial risk coverage documentary proof',
+                'Analysis of cash flows and project profitability',
+                'Creditworthiness assessment according to market trends',
+                'Authentic CMA report preparation for loan approvals'
+            ],
+            documents: [
+                { name: 'Brand Recognition (Credit history & previous loan records)', icon: 'fa-id-badge' },
+                { name: 'Financial Statements (Current liabilities, assets, revenues, & expenses)', icon: 'fa-file-invoice' },
+                { name: 'Cash Flow Statement (Details of repayment capability & cash sources)', icon: 'fa-chart-line' },
+                { name: 'Collaterals list (Assets pledged as security for the loan)', icon: 'fa-building-shield' }
+            ],
+            faqs: [
+                { q: 'What is the Debt Service Coverage Ratio (DSCR)?', a: 'DSCR is a financial metric used to determine if a business has enough cash flow to repay its debt obligations. A ratio of 1.25 or higher is typically expected for startups.' },
+                { q: 'Why is a CMA report important for getting a loan?', a: 'Banks and investors require a CMA report to evaluate the viability, profitability, and financial risk of your project before sanctioning a loan.' }
+            ]
+        },
+        'opc-to-pvt-ltd': {
+            title: 'OPC to PVT. Conversion',
+            category: 'startup',
+            icon: 'fa-arrow-right-arrow-left',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Application for conversion of OPC to a Private Limited Company',
+            subtitle: 'Application for conversion of OPC to a Private Limited Company',
+            desc: 'Convert your One Person Company (OPC) to a Private Limited Company seamlessly. Our experts will manage the entire legal process of conversion, ensuring compliance with the Registrar of Companies (ROC) and Ministry of Corporate Affairs (MCA). Once all the processes and steps are completed, we file the application to the concerned ROC.',
+            benefits: [
+                'Reforming and drafting of reformed MOA and AOA',
+                'Preparation of special resolutions and board meetings',
+                'Drafting of consent letters for directors and members',
+                'Coordinating creditor NOCs and lists of creditors',
+                'End-to-end ROC filing compliance and support'
+            ],
+            documents: [
+                { name: 'Copy of special resolution passed by member', icon: 'fa-file-signature' },
+                { name: 'Reformed MOA and AOA of the Company', icon: 'fa-file-lines' },
+                { name: 'List of proposed members, and its directors with consent letters', icon: 'fa-users' },
+                { name: 'List of creditors and Copy of NOC of every creditor', icon: 'fa-clipboard-list' },
+                { name: 'The latest audited balance sheet with profit and loss statements', icon: 'fa-file-invoice' },
+                { name: 'Consent & Proof of Identity/Residence/PAN of the member and nominee', icon: 'fa-id-card' }
+            ],
+            faqs: [
+                { q: 'When is it mandatory to convert an OPC to a Private Limited company?', a: 'Under previous rules, an OPC was required to convert if its paid-up share capital exceeded Rs. 50 lakhs or average annual turnover exceeded Rs. 2 crores, though voluntary conversion is also supported.' },
+                { q: 'What forms are filed for OPC conversion?', a: 'Form INC-6 is filed with the MCA for the conversion of OPC into a Private Limited Company.' }
+            ]
+        },
+        'pvt-to-public-ltd': {
+            title: 'PVT. to Public Ltd Conversion',
+            category: 'startup',
+            icon: 'fa-users-line',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Trusted Assistance for Conversion of Private to Public Ltd',
+            subtitle: 'Trusted Assistance for Conversion of Private to Public Limited Company',
+            desc: 'Get online assistance to convert your Private Limited Company into a Public Limited Company. We prepare and file all ROC conversion documents, resolutions, and amended MOA/AOA statements.',
+            benefits: [
+                'Complete legal assistance in restructuring shareholding and director boards',
+                'Drafting altered Memorandum of Association (MOA) & Articles of Association (AOA)',
+                'Board meeting and shareholder special resolution documentation',
+                'Attestation and notarization advisory for NRI or Foreign directors',
+                'Hassle-free ROC filing and new Certificate of Incorporation procurement'
+            ],
+            documents: [
+                { name: 'PAN Cards & Passport/DL/Voter ID of Directors and Shareholders', icon: 'fa-id-card' },
+                { name: 'Address proof of all directors or shareholders (Bills/Bank statement)', icon: 'fa-location-dot' },
+                { name: 'Latest passport size Photo of all shareholders and directors', icon: 'fa-image' },
+                { name: 'Business address proof (Rent Agreement, electricity bills & Landlord NOC)', icon: 'fa-file-contract' },
+                { name: 'Attested copy of latest audited Financial Statements & previous year ITR', icon: 'fa-file-invoice' },
+                { name: 'Declaration of incorporation, original MOA, and AOA statements', icon: 'fa-file-lines' }
+            ],
+            faqs: [
+                { q: 'What is the minimum requirement of members for a Public Limited Company?', a: 'A Public Limited Company requires a minimum of 7 shareholders and 3 directors to initiate the conversion from Private Limited.' },
+                { q: 'Which ROC form is filed for converting Private to Public?', a: 'Form INC-27 and Form MGT-14 must be filed with the ROC for conversion.' }
+            ]
+        },
+        'llp-to-pvt-ltd': {
+            title: 'LLP to PVT Conversion',
+            category: 'startup',
+            icon: 'fa-building-columns',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Complete Eligibility & Compliance for LLP to Pvt. Ltd Conversion',
+            subtitle: 'Conversion of LLP to Pvt. Ltd Company',
+            desc: 'Convert your Limited Liability Partnership (LLP) to a Private Limited Company to attract venture capital and equity funding. Our team ensures that all partners become shareholders, and the contribution to LLP is converted into share capital.',
+            benefits: [
+                'Name reservation and suffix transition from LLP to Private Limited',
+                'Filing Statutory Returns and drafting corporate conversion approvals',
+                'Converting LLP Partner contributions into share capital equity structure',
+                'Setting up the company structure with at least 2 shareholders & directors',
+                'ROC Form URC-1 filing and advisory support'
+            ],
+            documents: [
+                { name: 'Copy of existing LLP Agreement', icon: 'fa-file-contract' },
+                { name: 'Filed Statutory Returns of the LLP', icon: 'fa-file-invoice' },
+                { name: 'Written consent from all partners for the conversion', icon: 'fa-signature' },
+                { name: 'List of creditors and NOC from all creditors', icon: 'fa-clipboard-list' },
+                { name: 'Identity & Address Proofs of all partners (to become shareholders)', icon: 'fa-id-card' },
+                { name: 'Latest audited financial statements of the LLP', icon: 'fa-file-invoice-dollar' }
+            ],
+            faqs: [
+                { q: 'Can the name of the LLP be changed during conversion?', a: 'No, the name will simply be suffixed with "Private Limited". For example, ABC LLP will become ABC Private Limited.', },
+                { q: 'What is Form URC-1?', a: 'Form URC-1 is the application for registration of an existing joint stock company/LLP as a company under Section 366 of the Companies Act, 2013.' }
+            ]
+        },
+        'sec-8-winding-up': {
+            title: 'Sec-8 Winding Up',
+            category: 'startup',
+            icon: 'fa-rectangle-xmark',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Closure of Section 8 Company - Process It Online',
+            subtitle: 'Winding Up of Section-8 Company | Closure of Section 8 Company - Process It Online',
+            desc: 'People who are engaged in operating non-profit organizations may create a Section 8 Company under the Companies Act, 2013. If someone wants to close a Section 8 company for operating a private or public limited company or for any other reason, they have to wind up the company by following specific procedures. As it is a non-profit organization, nobody can convert it to another form of company. All its funds must be transferred to the government or to another similar non-profit organization. So, the process is somehow typical and needs to follow the minute processes.',
+            benefits: [
+                'Complete assistance from start to end in Section 8 company closure',
+                'Winding up of dormant firms to avoid legal obligations and compliance costs',
+                'Compliance checklist verification to avoid late filing penalties',
+                'Preparation and drafting of dissolution resolutions',
+                'Guidance on transferring funds/assets to similar NGOs or government bodies'
+            ],
+            documents: [
+                { name: 'Written Board and Shareholders Special Resolutions', icon: 'fa-file-signature' },
+                { name: 'Latest audited accounts and asset distribution declarations', icon: 'fa-file-invoice' },
+                { name: 'Statement of Assets and Liabilities (certified by CA)', icon: 'fa-file-invoice-dollar' },
+                { name: 'No Objection Certificate from regional/regulatory authorities', icon: 'fa-building-columns' },
+                { name: 'Verification of pending litigation status and resolution documents', icon: 'fa-clipboard-question' }
+            ],
+            faqs: [
+                { q: 'Can a Section 8 Company be converted into a Private Limited Company?', a: 'No, a Section 8 Company cannot be converted into a profitable business entity. It must be wound up, and its remaining assets transferred to another Section 8 company or the government.' },
+                { q: 'What happens to the surplus funds of a Section 8 Company upon closure?', a: 'All surplus funds and assets must be transferred to the government or to another NGO with similar non-profit objectives.' }
+            ]
+        },
+        'nidhi-winding-up': {
+            title: 'Nidhi Winding Up',
+            category: 'startup',
+            icon: 'fa-building-columns',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Nidhi Company Closure & strike-off services',
+            subtitle: 'Nidhi Company Closure | Advantages of Closing a Nidhi Company',
+            desc: 'Go for the closure of your dormant Nidhi Company and enjoy a lot of benefits. Any registered Nidhi company needs to file an annual audit report and comply with the MCA. Otherwise, the company will be fined or penalized. To avoid these penalties, you must file a Nidhi Company Strike Off form by professionals.',
+            benefits: [
+                'Strike off form preparation and submission by professionals',
+                'Complete removal of annual MCA compliance and audit report requirements',
+                'Avoidance of compounding penalties and regulatory fines',
+                'Productive resource reallocation for other business ventures',
+                'Total exemption from record maintenance and source tax filings'
+            ],
+            documents: [
+                { name: 'Statement of accounts showing nil debts & liabilities (duly audited)', icon: 'fa-file-invoice' },
+                { name: 'Special resolutions from the members (75% members\' consent required)', icon: 'fa-signature' },
+                { name: 'Indemnity Bond notarized by the directors (Form STK-3)', icon: 'fa-file-contract' },
+                { name: 'Affidavit in Form STK-4', icon: 'fa-file-signature' },
+                { name: 'Latest Bank Statement & Bank Account Closure Certificates', icon: 'fa-building-columns' },
+                { name: 'PAN card of the Nidhi company', icon: 'fa-id-card' }
+            ],
+            faqs: [
+                { q: 'What is the required member consent for Nidhi Company closure?', a: 'At least 75% of the Nidhi company members must provide their written consent through a special resolution for winding up.' },
+                { q: 'What forms are filed for Nidhi Company closure?', a: 'Form STK-2 is filed with the Registrar of Companies (ROC) along with Form STK-3 (Indemnity Bond) and STK-4 (Affidavit) to strike off the Nidhi company.' }
+            ]
+        },
+        'subsidiary-winding-up': {
+            title: 'Indian Subsidiary Windup',
+            category: 'startup',
+            icon: 'fa-circle-xmark',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Closure of Indian Subsidiary - A Complete Guide',
+            subtitle: 'Indian Subsidiary Windup | Closure of Indian Subsidiary - A Complete Guide',
+            desc: 'If you do not want to continue your Indian Subsidiary Company, it is better to close it on time. Otherwise, you have to maintain some compliance against the company. Unless you maintain company compliance, you may be fined or penalized. After closing the company all compliance and responsibilities will be null and void. You need not submit a yearly audit report or hire an expert to submit audit reports.',
+            benefits: [
+                'Complete advisory on striking off subsidiary company legalities',
+                'Filing closing form and coordinating with the Registrar of Companies (ROC)',
+                'Guidance to settle any pending litigations involving the subsidiary',
+                'Preparing delisting processes if public shares are involved',
+                'Making responsibilities, taxes, and compliance liabilities null and void'
+            ],
+            documents: [
+                { name: 'Indemnity Bond (Form STK-3 notarized by every director of the company)', icon: 'fa-file-contract' },
+                { name: 'Affidavit (Form STK-4 declaring zero debts or liabilities)', icon: 'fa-file-signature' },
+                { name: 'Statement of Accounts showing nil assets/liabilities (certified by CA, < 30 days old)', icon: 'fa-file-invoice' },
+                { name: 'Board Meeting Notice and Special Resolution Copy (with 75%+ member consent)', icon: 'fa-users' },
+                { name: 'Statement regarding pending litigation status', icon: 'fa-clipboard-question' },
+                { name: 'NOC from Regulatory Authority & Delisting Certificate from share market (if applicable)', icon: 'fa-building-columns' }
+            ],
+            faqs: [
+                { q: 'Is it necessary to have nil liabilities before windup?', a: 'Yes, the statement of accounts must show nil assets and liabilities certified by a Chartered Accountant, and all directors must declare this in Form STK-4.', },
+                { q: 'What is Form STK-3?', a: 'Form STK-3 is the official Indemnity Bond that must be executed and notarized by every director of the company.' }
+            ]
+        },
         'criminal': {
             title: 'Criminal Defense',
             category: 'legal',
@@ -1035,6 +1549,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = serviceData[serviceId];
 
         if (data) {
+            // Hide custom buy service banner by default
+            const customBuySection = document.getElementById('custom-buy-service-section');
+            if (customBuySection) customBuySection.style.display = 'none';
             // Document Title
             document.title = `${data.title} Services | Legal And Vakil`;
 
@@ -1074,17 +1591,100 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Company registration services interactive pricing
-            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary'];
+            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary', 'din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up'];
             if (companyServices.includes(serviceId)) {
                 const stdPricing = document.getElementById('standard-consultation-section');
                 const compPricing = document.getElementById('company-pricing-section');
                 const compDocs = document.getElementById('company-documents-section');
+                const customBuySection = document.getElementById('custom-buy-service-section');
                 if (stdPricing) stdPricing.style.display = 'none';
-                if (compPricing) compPricing.style.display = 'block';
                 if (compDocs) compDocs.style.display = 'block';
+
+                if (['din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up'].includes(serviceId)) {
+                    if (compPricing) compPricing.style.display = 'none';
+                    if (customBuySection) customBuySection.style.display = 'block';
+                } else {
+                    if (compPricing) compPricing.style.display = 'block';
+                    if (customBuySection) customBuySection.style.display = 'none';
+                }
+
+                // Dynamic documents rendering
+                const compDocsGrid = document.querySelector('.company-documents-grid');
+                if (compDocsGrid) {
+                    if (data.documents && data.documents.length > 0) {
+                        compDocsGrid.innerHTML = data.documents.map((doc, idx) => `
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid ${doc.icon || 'fa-file-invoice'}"></i></div>
+                                <div class="document-number">${String(idx + 1).padStart(2, '0')}</div>
+                                <div class="document-text">${doc.name}</div>
+                                ${doc.subtext ? `<div class="document-subtext">${doc.subtext}</div>` : ''}
+                            </div>
+                        `).join('');
+                    } else {
+                        // Restore default hardcoded ones for other company services
+                        compDocsGrid.innerHTML = `
+                            <!-- Item 1 -->
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid fa-camera"></i></div>
+                                <div class="document-number">01</div>
+                                <div class="document-text">Passport Size Photograph</div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid fa-id-card"></i></div>
+                                <div class="document-number">02</div>
+                                <div class="document-text">PAN Card</div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="document-number">03</div>
+                                <div class="document-text" style="font-weight: 600;">Registered Office Proof</div>
+                                <div class="document-subtext">Copy of Electricity Bill / Water Bill / Gas Bill</div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid fa-id-badge"></i></div>
+                                <div class="document-number">04</div>
+                                <div class="document-text">Copy of Aadhaar Card</div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="document-number">05</div>
+                                <div class="document-text">Address Proof</div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="document-item">
+                                <div class="document-icon"><i class="fa-solid fa-file-signature"></i></div>
+                                <div class="document-number">06</div>
+                                <div class="document-text">No Objection Certificate</div>
+                            </div>
+                        `;
+                    }
+                }
 
                 let compType = data.title.replace(' Registration', '');
                 if (serviceId === 'llp') compType = 'LLP';
+                if (serviceId === 'din-kyc') compType = 'Director KYC';
+                if (serviceId === 'appointment-director') compType = 'Director Appointment';
+                if (serviceId === 'removal-director') compType = 'Director Removal';
+                if (serviceId === 'pvt-ltd-winding-up') compType = 'Winding Up';
+                if (serviceId === 'increase-authorized-capital') compType = 'Authorized Capital';
+                if (serviceId === 'registered-office-change') compType = 'Office Change';
+                if (serviceId === 'change-company-name') compType = 'Company Name Change';
+                if (serviceId === 'moa-amendment-pvt') compType = 'MOA Amendment';
+                if (serviceId === 'moa-amendment-sec8') compType = 'Section 8 MOA Amendment';
+                if (serviceId === 'moa-amendment-public') compType = 'Public MOA Amendment';
+                if (serviceId === 'share-transfer') compType = 'Share Transfer';
+                if (serviceId === 'jansamarth-registration') compType = 'JanSamarth Registration';
+                if (serviceId === 'credit-management-analysis') compType = 'CMA Report';
+                if (serviceId === 'opc-to-pvt-ltd') compType = 'OPC to PVT';
+                if (serviceId === 'pvt-to-public-ltd') compType = 'PVT to Public';
+                if (serviceId === 'llp-to-pvt-ltd') compType = 'LLP to PVT';
+                if (serviceId === 'sec-8-winding-up') compType = 'Section 8 Winding Up';
+                if (serviceId === 'nidhi-winding-up') compType = 'Nidhi Winding Up';
+                if (serviceId === 'subsidiary-winding-up') compType = 'Subsidiary Winding Up';
 
                 const pricingPlans = [
                     {
@@ -1330,7 +1930,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const subjectSelect = document.getElementById('book-subject');
                 const messageTextarea = document.getElementById('book-message');
 
-                if (planName && planPrice) {
+                if (targetBtn.id === 'custom-buy-btn') {
+                    if (subjectSelect) subjectSelect.value = "Business setup & Legal";
+                    if (messageTextarea) {
+                        const params = new URLSearchParams(window.location.search);
+                        const serviceId = params.get('service') || '';
+                        const serviceName = serviceId ? (serviceData[serviceId]?.title || 'Service') : 'Service';
+                        messageTextarea.value = `I want to purchase the service for "${serviceName}". Please contact me to get started with compliance assistance.`;
+                    }
+                } else if (planName && planPrice) {
                     if (subjectSelect) subjectSelect.value = "Business setup & Legal";
                     if (messageTextarea) {
                         const params = new URLSearchParams(window.location.search);
