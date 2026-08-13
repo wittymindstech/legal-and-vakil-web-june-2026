@@ -265,12 +265,19 @@ nav {
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    color: var(--primary);
     line-height: 1.1;
 }
 
-.logo-title span {
-    color: var(--secondary-hover);
+.logo-legal {
+    color: #000000 !important;
+}
+
+.logo-and {
+    color: #dc2626 !important;
+}
+
+.logo-vakil {
+    color: #000000 !important;
 }
 
 .logo-subtitle {

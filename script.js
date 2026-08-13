@@ -3038,7 +3038,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (lawyer && bookingModal) {
                 // Populate modal header
                 const modalHeader = bookingModal.querySelector('.modal-header h3');
-                if (modalHeader) modalHeader.textContent = `Consultation with ${lawyer.name}`;
+                const params = new URLSearchParams(window.location.search);
+                const serviceId = params.get('service');
+                if (serviceId && serviceData[serviceId]) {
+                    if (modalHeader) modalHeader.textContent = `Register for ${serviceData[serviceId].title}`;
+                } else {
+                    if (modalHeader) modalHeader.textContent = `Consultation with ${lawyer.name}`;
+                }
                 
                 // Set hidden input
                 const hiddenLawyerId = document.getElementById('modal-lawyer-id');
@@ -3050,25 +3056,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 const subjectSelect = document.getElementById('book-subject');
                 const messageTextarea = document.getElementById('book-message');
 
+                if (serviceId && serviceData[serviceId]) {
+                    const serviceTitle = serviceData[serviceId].title;
+                    if (subjectSelect) {
+                        let optionExists = false;
+                        for (let i = 0; i < subjectSelect.options.length; i++) {
+                            if (subjectSelect.options[i].value === serviceTitle) {
+                                optionExists = true;
+                                break;
+                            }
+                        }
+                        if (!optionExists) {
+                            const newOpt = document.createElement('option');
+                            newOpt.value = serviceTitle;
+                            newOpt.textContent = serviceTitle;
+                            subjectSelect.appendChild(newOpt);
+                        }
+                        subjectSelect.value = serviceTitle;
+                    }
+                }
+
                 if (targetBtn.id === 'custom-buy-btn') {
-                    if (subjectSelect) subjectSelect.value = "Business setup & Legal";
                     if (messageTextarea) {
-                        const params = new URLSearchParams(window.location.search);
-                        const serviceId = params.get('service') || '';
                         const serviceName = serviceId ? (serviceData[serviceId]?.title || 'Service') : 'Service';
-                        messageTextarea.value = `I want to purchase the service for "${serviceName}". Please contact me to get started with compliance assistance.`;
+                        messageTextarea.value = `I want to purchase the service for "${serviceName}".`;
                     }
                 } else if (planName && planPrice) {
-                    if (subjectSelect) subjectSelect.value = "Business setup & Legal";
                     if (messageTextarea) {
-                        const params = new URLSearchParams(window.location.search);
-                        const serviceId = params.get('service') || '';
                         const companyName = serviceId ? (serviceData[serviceId]?.title || 'Company Registration') : 'Company Registration';
                         messageTextarea.value = `I would like to register for the "${planName}" (${planPrice}) of ${companyName}.`;
                     }
                 } else {
                     // Reset or default values if opened from standard btn
-                    if (subjectSelect) subjectSelect.value = "";
+                    if (!serviceId) {
+                        if (subjectSelect) subjectSelect.value = "";
+                    }
                     if (messageTextarea) messageTextarea.value = "";
                 }
 
@@ -3125,12 +3147,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     const successBody = document.getElementById('status-modal-body');
                     
                     if (successBody) {
+                        const params = new URLSearchParams(window.location.search);
+                        const serviceId = params.get('service');
+                        const isServicePage = !!(serviceId && serviceData[serviceId]);
+                        const serviceTitle = isServicePage ? serviceData[serviceId].title : '';
+
+                        let confirmationMsg = `Your consultation with <strong>${lawyer?.name || 'our expert'}</strong> has been scheduled successfully.<br>Our legal expert will contact you shortly.`;
+                        if (isServicePage) {
+                            confirmationMsg = `Your registration for <strong>${serviceTitle}</strong> has been submitted successfully.<br>Our legal expert will contact you shortly.`;
+                        }
+
                         successBody.innerHTML = `
                             <div class="status-modal-icon">
                                 <i class="fas fa-check"></i>
                             </div>
                             <h3>Booking Confirmed!</h3>
-                            <p>Your consultation with <strong>${lawyer?.name || 'our expert'}</strong> has been scheduled successfully.<br>Our legal expert will contact you shortly.</p>
+                            <p>${confirmationMsg}</p>
                             <div style="background:#f1f5f9; padding:12px; border-radius:6px; font-family:monospace; margin-bottom:20px; font-size:13px; font-weight:600;">
                                 Reference ID: ${bookingId}
                             </div>
