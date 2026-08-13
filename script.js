@@ -1437,6 +1437,159 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             ]
         },
+        'pf-esic-registration': {
+            title: 'PF & ESIC Registration',
+            category: 'startup',
+            icon: 'fa-user-check',
+            image: 'assets/company registration.webp',
+            shortDesc: 'PF & ESIC Registration for Companies & Employers',
+            subtitle: 'Online PF & ESIC Registration for Companies & Employers',
+            desc: 'Get your business registered under the Employee Provident Fund (EPF) and Employee State Insurance (ESI) acts. Mandatory for establishments employing 10 or more people (for ESI) and 20 or more people (for PF). We provide complete registration support for smooth employee onboarding.',
+            benefits: [
+                'Covers Factories, Workshops, Shops, Hotels, NBFCs, and Airports',
+                'Mandatory registration for establishments with 10 or more employees',
+                'Protects your firm from regulatory labor law notices and penalty fees',
+                'Boosts employee morale and retains skilled human resource assets',
+                'Complete liaisoning support with EPF and ESIC regional offices'
+            ],
+            documents: [
+                { name: 'Certificate of incorporation of the establishment', icon: 'fa-file-invoice' },
+                { name: 'Company registration certificate / Partnership deed', icon: 'fa-id-card' },
+                { name: 'GST registration certificate of the firm', icon: 'fa-receipt' },
+                { name: 'MOA & AOA / Proof of address of the company', icon: 'fa-building' },
+                { name: 'Rental agreement / Lease agreement (if rented)', icon: 'fa-file-contract' },
+                { name: 'List of employees working in the company/firm with compensation details', icon: 'fa-users' },
+                { name: 'PAN copy of the business establishment & list of shareholders/directors', icon: 'fa-passport' },
+                { name: 'Cancelled cheque from the bank of the company & attendance register copy', icon: 'fa-money-check' }
+            ],
+            faqs: [
+                { q: 'Who is required to register under PF?', a: 'Any establishment employing 20 or more employees is mandated to register under the Employees\' Provident Funds and Miscellaneous Provisions Act, 1952.' },
+                { q: 'Who is required to register under ESIC?', a: 'Any establishment employing 10 or more employees (in selected states, 20 or more) with salaries up to ₹21,000 per month must register under ESI.' }
+            ]
+        },
+        'esic-return-filing': {
+            title: 'PF-ESIC Return Filing',
+            category: 'startup',
+            icon: 'fa-file-invoice',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Expert ESIC Return Filing Online',
+            subtitle: 'Expert ESIC Return Filing Online with Due Date & Compliance Support',
+            desc: 'Filing your ESIC and PF returns on time is essential to avoid interest penalties and legal show-cause notices. We offer professional monthly filing management matching the size of your payroll.',
+            benefits: [
+                'Compliance with ESI Act 1948 to avoid heavy late-filing penalty fees',
+                'Secures employee sickness, maternity, and injury financial payouts',
+                'Family medical care coverage active for registered employees',
+                'Organized employee data for auditor certification and statutory reports',
+                'Builds trust, employee loyalty, and ensures clear business practices'
+            ],
+            documents: [
+                { name: 'Active ESIC/EPF Employer Portal credentials', icon: 'fa-key' },
+                { name: 'Attendance sheets / register records for the month', icon: 'fa-clipboard-user' },
+                { name: 'Wages / salary computation sheet showing individual components', icon: 'fa-file-invoice-dollar' },
+                { name: 'Contribution amount summary & payment challan records', icon: 'fa-money-check' }
+            ],
+            faqs: [
+                { q: 'What is the due date for monthly ESIC contribution payments?', a: 'The ESI contribution must be paid monthly by the 15th of the subsequent month following the contribution period.' },
+                { q: 'What is the penalty for late ESIC return filing?', a: 'Failure to file contributions on time incurs interest at 12% per annum for each day of delay, plus additional damages up to 25%.' }
+            ],
+            pricingPlans: [
+                {
+                    name: 'Plan 1',
+                    price: '₹2499',
+                    title: 'ESIC Return Plan 1 (Up to 10 Employees)',
+                    bullets: [
+                        'Onetime Charge: ₹2,499 + 18% GST',
+                        'Covers up to 10 employees payroll filing',
+                        'Monthly salary statement reconciliation',
+                        'Challan generation & payment portal mapping',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                },
+                {
+                    name: 'Plan 2',
+                    price: '₹3980',
+                    title: 'ESIC Return Plan 2 (Up to 20 Employees)',
+                    bullets: [
+                        'Onetime Charge: ₹3,980 + 18% GST',
+                        'Covers up to 20 employees payroll filing',
+                        'Monthly salary statement reconciliation',
+                        'Challan generation & payment portal mapping',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                },
+                {
+                    name: 'Plan 3',
+                    price: '₹4999',
+                    title: 'ESIC Return Plan 3 (Up to 30 Employees)',
+                    bullets: [
+                        'Onetime Charge: ₹4,999 + 18% GST',
+                        'Covers up to 30 employees payroll filing',
+                        'Monthly salary statement reconciliation',
+                        'Challan generation & payment portal mapping',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                },
+                {
+                    name: 'Plan 4',
+                    price: '₹5699',
+                    title: 'ESIC Return Plan 4 (Up to 40 Employees)',
+                    bullets: [
+                        'Onetime Charge: ₹5,699 + 18% GST',
+                        'Covers up to 40 employees payroll filing',
+                        'Monthly salary statement reconciliation',
+                        'Challan generation & payment portal mapping',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                },
+                {
+                    name: 'Plan 5',
+                    price: '₹6799',
+                    title: 'ESIC Return Plan 5 (Up to 50 Employees)',
+                    bullets: [
+                        'Onetime Charge: ₹6,799 + 18% GST',
+                        'Covers up to 50 employees payroll filing',
+                        'Monthly salary statement reconciliation',
+                        'Challan generation & payment portal mapping',
+                        'Call, Chat, and Email Support',
+                        'No hidden charges'
+                    ]
+                }
+            ]
+        },
+        'esic-registration': {
+            title: 'ESIC Registration',
+            category: 'startup',
+            icon: 'fa-user-plus',
+            image: 'assets/company registration.webp',
+            shortDesc: 'Online ESIC Registration for Employers',
+            subtitle: 'Documents Required for ESIC Registration',
+            desc: 'Under section 1(5) of the ESI Act 1948, it is mandatory to register your establishment with the Employers\' State Insurance Corporation when employing 10 or more people. Let our payroll experts file your ESIC registration flawlessly.',
+            benefits: [
+                'Mandated for Shops, Hotels, Cinemas, NBFCs, and Manufacturing units',
+                'Ensures health insurance and financial coverage for your workforce',
+                'Quick unique code assignment for the employer unit',
+                'Complete application preparation and submission to ESIC portal',
+                '100% digital assistance and portal registration support'
+            ],
+            documents: [
+                { name: 'Certificate of incorporation of the establishment', icon: 'fa-file-invoice' },
+                { name: 'Company registration certificate / Partnership deed', icon: 'fa-id-card' },
+                { name: 'GST registration certificate of the firm', icon: 'fa-receipt' },
+                { name: 'MOA & AOA / Proof of address of the company', icon: 'fa-building' },
+                { name: 'Rental agreement / Lease agreement (if rented)', icon: 'fa-file-contract' },
+                { name: 'List of employees working in the company/firm with compensation details', icon: 'fa-users' },
+                { name: 'PAN copy of the business establishment & list of shareholders/directors', icon: 'fa-passport' },
+                { name: 'Cancelled cheque from the bank of the company & attendance register copy', icon: 'fa-money-check' }
+            ],
+            faqs: [
+                { q: 'Who is a beneficiary under ESIC?', a: 'Employees earning salaries up to ₹21,000 per month are considered beneficiaries under the ESIC program and receive full insurance advantages.' },
+                { q: 'What is the ESI employer contribution rate?', a: 'The ESI contribution rates are 3.25% of wages by the employer and 0.75% of wages by the employee, totaling 4.0% contribution.' }
+            ]
+        },
         'online-annual-compliance-filing': {
             title: 'Annual Compliance & Filing',
             category: 'startup',
@@ -2531,7 +2684,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Company registration services interactive pricing
-            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary', 'din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up', 'fssai-registration', 'fssai-food-labeling', 'fssai-renewal', 'fssai-annual-return', 'fssai-modification', 'bis-certificate', 'import-export-code', 'import-export-modification', 'gst-registration', 'gst-return-filing', 'gst-nil-return-filing', 'gst-modification', 'gstr-9-annual-filing', 'gst-lut-filing', 'gst-eway-bill', 'online-annual-compliance-filing', 'annual-compliance-bookkeeping', 'online-tax-planning-consultancy', 'tax-compliance-guide', 'online-bookkeeping-service', 'section-8-company-compliance-filing', 'project-report-preparation', 'online-filing-dpt-3', 'ngo-darpan-registration'];
+            const companyServices = ['pvt-ltd', 'opc', 'llp', 'section-8', 'public-ltd', 'nidhi', 'subsidiary', 'din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up', 'fssai-registration', 'fssai-food-labeling', 'fssai-renewal', 'fssai-annual-return', 'fssai-modification', 'bis-certificate', 'import-export-code', 'import-export-modification', 'gst-registration', 'gst-return-filing', 'gst-nil-return-filing', 'gst-modification', 'gstr-9-annual-filing', 'gst-lut-filing', 'gst-eway-bill', 'online-annual-compliance-filing', 'annual-compliance-bookkeeping', 'online-tax-planning-consultancy', 'tax-compliance-guide', 'online-bookkeeping-service', 'section-8-company-compliance-filing', 'project-report-preparation', 'online-filing-dpt-3', 'ngo-darpan-registration', 'pf-esic-registration', 'esic-return-filing', 'esic-registration'];
             if (companyServices.includes(serviceId)) {
                 const stdPricing = document.getElementById('standard-consultation-section');
                 const compPricing = document.getElementById('company-pricing-section');
@@ -2540,7 +2693,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (stdPricing) stdPricing.style.display = 'none';
                 if (compDocs) compDocs.style.display = 'block';
 
-                if (['din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up', 'fssai-renewal', 'fssai-modification', 'fssai-annual-return', 'import-export-code', 'import-export-modification', 'bis-certificate', 'gst-registration', 'gst-return-filing', 'gst-nil-return-filing', 'gst-modification', 'gstr-9-annual-filing', 'gst-lut-filing', 'gst-eway-bill', 'tax-compliance-guide', 'online-bookkeeping-service', 'section-8-company-compliance-filing', 'ngo-darpan-registration'].includes(serviceId)) {
+                if (['din-kyc', 'appointment-director', 'removal-director', 'pvt-ltd-winding-up', 'increase-authorized-capital', 'registered-office-change', 'change-company-name', 'moa-amendment-pvt', 'moa-amendment-sec8', 'moa-amendment-public', 'share-transfer', 'jansamarth-registration', 'credit-management-analysis', 'opc-to-pvt-ltd', 'pvt-to-public-ltd', 'llp-to-pvt-ltd', 'sec-8-winding-up', 'nidhi-winding-up', 'subsidiary-winding-up', 'fssai-renewal', 'fssai-modification', 'fssai-annual-return', 'import-export-code', 'import-export-modification', 'bis-certificate', 'gst-registration', 'gst-return-filing', 'gst-nil-return-filing', 'gst-modification', 'gstr-9-annual-filing', 'gst-lut-filing', 'gst-eway-bill', 'tax-compliance-guide', 'online-bookkeeping-service', 'section-8-company-compliance-filing', 'ngo-darpan-registration', 'pf-esic-registration', 'esic-registration'].includes(serviceId)) {
                     if (compPricing) compPricing.style.display = 'none';
                     if (customBuySection) customBuySection.style.display = 'block';
                 } else {
@@ -2649,6 +2802,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (serviceId === 'project-report-preparation') compType = 'Project Report';
                 if (serviceId === 'online-filing-dpt-3') compType = 'DPT-3 Return';
                 if (serviceId === 'ngo-darpan-registration') compType = 'NGO DARPAN';
+                if (serviceId === 'pf-esic-registration') compType = 'PF & ESIC Registration';
+                if (serviceId === 'esic-return-filing') compType = 'ESIC Return Filing';
+                if (serviceId === 'esic-registration') compType = 'ESIC Registration';
 
                 const pricingPlans = data.pricingPlans || [
                     {
