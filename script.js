@@ -2177,6 +2177,191 @@ document.addEventListener('DOMContentLoaded', () => {
                 { user: 'Deepak M.', rating: 5, text: 'Super fast trademark filing. He explained the objections and cleared them easily.' },
                 { user: 'Shreya Roy', rating: 4.5, text: 'Helped us patent our software design. Highly professional and cost-effective.' }
             ]
+        },
+        'rizwan-hasan': {
+            id: 'rizwan-hasan',
+            name: 'Adv. Rizwan Hasan',
+            specialty: 'Civil & Criminal Law Expert',
+            shortSpecialty: 'Civil & Criminal Law',
+            expYears: 4,
+            rating: 4.8,
+            reviewsCount: 42,
+            casesCount: '150+',
+            clientsCount: '100+',
+            successRate: '93%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'assets/Rizwan Hasan.jpeg',
+            bio: 'Adv. Rizwan Hasan is a dedicated legal practitioner enrolled with the Bar Council of Uttar Pradesh. He practices at the District Courts in Rampur and has handled a wide range of civil, criminal, and family law matters. Known for his client-first approach and thorough legal knowledge, he provides practical legal solutions to his clients.',
+            bullets: [
+                'Enrolled with Bar Council of Uttar Pradesh (2021)',
+                'Bar Council ID: UP12556/2021',
+                'Practices at District Courts, Rampur, Uttar Pradesh',
+                'Expert in Civil, Criminal & Family Disputes'
+            ],
+            tags: ['Civil Law', 'Criminal Law', 'Family Disputes', 'Court Representation', 'Legal Notices'],
+            education: [
+                { title: 'LL.B.', span: 'Uttar Pradesh' },
+                { title: 'Bar Council Enrollment No.', span: 'UP/12556/2021' },
+                { title: 'Member', span: 'Bar Council of Uttar Pradesh' }
+            ],
+            casesList: [
+                { title: 'Civil Suit Decided', desc: 'Successfully represented client in a civil property dispute at Rampur District Court, obtaining a favorable decree.', result: 'Decree Passed', statusClass: 'success' },
+                { title: 'Bail Granted', desc: 'Secured anticipatory bail for client facing false criminal charges within 48 hours.', result: 'Bail Granted', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Mohammad Iqbal', rating: 5, text: 'Rizwan Bhai handled my civil case with great dedication. Very professional and always available.' },
+                { user: 'Sunita Rani', rating: 4.7, text: 'Excellent lawyer, explained everything clearly and fought hard for my family dispute case.' }
+            ]
+        },
+        'gyan-datt-mishra': {
+            id: 'gyan-datt-mishra',
+            name: 'Adv. Gyan Datt Mishra',
+            specialty: 'Civil & Revenue Law Expert',
+            shortSpecialty: 'Civil & Revenue Law',
+            expYears: 3,
+            rating: 4.7,
+            reviewsCount: 38,
+            casesCount: '120+',
+            clientsCount: '80+',
+            successRate: '91%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'assets/Gyan datt mishra.jpeg',
+            bio: 'Adv. Gyan Datt Mishra is an experienced advocate enrolled with the Bar Council of Uttar Pradesh, practicing at the District Court, Kaushambi. He is well-versed in civil, revenue, and family law matters and is known for his methodical approach to legal proceedings and strong representation in court.',
+            bullets: [
+                'Enrolled with Bar Council of Uttar Pradesh (2022)',
+                'Bar Council ID: UP/1963/2022',
+                'Practices at District Court, Kaushambi, Uttar Pradesh',
+                'Specialist in Civil, Revenue & Family Law'
+            ],
+            tags: ['Civil Law', 'Revenue Law', 'Family Law', 'Property Disputes', 'Court Representation'],
+            education: [
+                { title: 'LL.B.', span: 'Uttar Pradesh' },
+                { title: 'Bar Council Enrollment No.', span: 'UP/1963/2022' },
+                { title: 'Member', span: 'Bar Council of Uttar Pradesh' }
+            ],
+            casesList: [
+                { title: 'Property Dispute Resolved', desc: 'Successfully argued a complex land revenue case at Kaushambi District Court, securing land rights for the client.', result: 'Rights Secured', statusClass: 'success' },
+                { title: 'Family Settlement Done', desc: 'Helped family achieve an amicable settlement in a succession dispute, avoiding prolonged litigation.', result: 'Settled Amicably', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Ram Prasad', rating: 5, text: 'Mishra Ji handled my revenue case very professionally. Highly recommend him for property matters in Kaushambi.' },
+                { user: 'Savita Devi', rating: 4.5, text: 'Very knowledgeable and patient. Explained each step of the case to us clearly.' }
+            ]
+        },
+        'varun-kumar-sharma': {
+            id: 'varun-kumar-sharma',
+            name: 'Adv. Varun Kumar Sharma',
+            specialty: 'Criminal & Civil Law Expert',
+            shortSpecialty: 'Criminal & Civil Law',
+            expYears: 15,
+            rating: 4.9,
+            reviewsCount: 95,
+            casesCount: '500+',
+            clientsCount: '350+',
+            successRate: '96%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'assets/varun kumar sharma.jpeg',
+            bio: 'Adv. Varun Kumar Sharma is a seasoned advocate enrolled with the Bar Council of Uttar Pradesh since 2010, practicing at the Sessions Court, Mathura. With over 15 years of courtroom experience, he is known for his sharp legal acumen, strong oral arguments, and unwavering commitment to his clients in civil and criminal matters.',
+            bullets: [
+                'Enrolled with Bar Council of Uttar Pradesh (2010)',
+                'Bar Council ID: UP/19055/2010',
+                'Practices at Session Court, Mathura, Uttar Pradesh',
+                '15+ Years of extensive courtroom experience'
+            ],
+            tags: ['Criminal Law', 'Civil Law', 'Sessions Court', 'Bail & FIR', 'Property Disputes'],
+            education: [
+                { title: 'LL.B.', span: 'Uttar Pradesh' },
+                { title: 'Bar Council Enrollment No.', span: 'UP/19055/2010' },
+                { title: 'Member', span: 'Bar Council of Uttar Pradesh' }
+            ],
+            casesList: [
+                { title: 'Acquittal in Sessions Trial', desc: 'Secured complete acquittal for client in a sessions trial involving serious criminal charges at Mathura Court.', result: 'Acquitted', statusClass: 'success' },
+                { title: 'Civil Decree Executed', desc: 'Successfully executed a civil decree for recovery of property possession after prolonged litigation.', result: 'Possession Granted', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Rajesh Gupta', rating: 5, text: 'Varun Sir is an outstanding lawyer. His knowledge of criminal law and court procedures is exceptional.' },
+                { user: 'Meena Sharma', rating: 4.8, text: 'Handled my civil property case with great professionalism. The result was exactly what we hoped for.' }
+            ]
+        },
+        'akhilesh-tiwari': {
+            id: 'akhilesh-tiwari',
+            name: 'Adv. Akhilesh Tiwari',
+            specialty: 'High Court & Civil Law Expert',
+            shortSpecialty: 'High Court & Civil Law',
+            expYears: 1,
+            rating: 4.6,
+            reviewsCount: 22,
+            casesCount: '50+',
+            clientsCount: '40+',
+            successRate: '90%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'assets/Akhilesh tiwari.jpeg',
+            bio: 'Adv. Akhilesh Tiwari is an emerging advocate enrolled with the Bar Council of Uttar Pradesh, practicing at the High Court of Allahabad (Lucknow Bench) and Civil Courts in Lucknow. He is passionate about delivering justice to his clients and brings fresh legal perspectives backed by diligent research to every case.',
+            bullets: [
+                'Enrolled with Bar Council of Uttar Pradesh (2026)',
+                'Bar Council ID: UP/0779/2026',
+                'Practices at Allahabad High Court (Lucknow Bench) & Civil Courts, Lucknow',
+                'Specialist in Writ Petitions & Civil Litigation'
+            ],
+            tags: ['High Court', 'Civil Law', 'Writ Petitions', 'Court Representation', 'Legal Drafting'],
+            education: [
+                { title: 'LL.B.', span: 'Uttar Pradesh' },
+                { title: 'Bar Council Enrollment No.', span: 'UP/0779/2026' },
+                { title: 'Member', span: 'Bar Council of Uttar Pradesh' }
+            ],
+            casesList: [
+                { title: 'Writ Petition Filed', desc: 'Filed and successfully argued a writ petition before the Lucknow Bench of Allahabad High Court for a service matter.', result: 'Relief Granted', statusClass: 'success' },
+                { title: 'Civil Suit Filed', desc: 'Drafted and filed a civil suit for permanent injunction, protecting client\'s property from encroachment.', result: 'Stay Granted', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Vivek Pandey', rating: 5, text: 'Akhilesh Ji is very thorough with his legal research. He drafted an excellent writ petition for my case.' },
+                { user: 'Rekha Srivastava', rating: 4.3, text: 'Young and hardworking lawyer. Very dedicated and keeps you updated about every development.' }
+            ]
+        },
+        'shivam-dwivedi': {
+            id: 'shivam-dwivedi',
+            name: 'Adv. Shivam Dwivedi',
+            specialty: 'Criminal & Family Law Expert',
+            shortSpecialty: 'Criminal & Family Law',
+            expYears: 11,
+            rating: 4.8,
+            reviewsCount: 78,
+            casesCount: '400+',
+            clientsCount: '280+',
+            successRate: '95%',
+            consultFee: 99,
+            originalFee: 499,
+            available: true,
+            img: 'assets/Kannauj.jpeg',
+            bio: 'Adv. Shivam Dwivedi is a highly experienced advocate enrolled with the Bar Council of Uttar Pradesh since 2014, practicing at the District & Sessions Court, Kannauj. With over 11 years of practice, he is a trusted legal expert in criminal defense, family law, and civil disputes in the Kannauj region.',
+            bullets: [
+                'Enrolled with Bar Council of Uttar Pradesh (2014)',
+                'Bar Council ID: UP/05061/2014',
+                'Practices at District & Sessions Court, Kannauj, Uttar Pradesh',
+                'Expert in Criminal Defense & Family Law Matters'
+            ],
+            tags: ['Criminal Law', 'Family Law', 'Civil Law', 'Bail & FIR', 'Matrimonial Disputes'],
+            education: [
+                { title: 'LL.B.', span: 'Uttar Pradesh' },
+                { title: 'Bar Council Enrollment No.', span: 'UP/05061/2014' },
+                { title: 'Member', span: 'Bar Council of Uttar Pradesh' }
+            ],
+            casesList: [
+                { title: 'Criminal Acquittal Secured', desc: 'Successfully defended client in a serious criminal case at Sessions Court, Kannauj resulting in full acquittal.', result: 'Acquitted', statusClass: 'success' },
+                { title: 'Mutual Divorce Settled', desc: 'Facilitated smooth and amicable mutual divorce settlement protecting the interests of both parties.', result: 'Settled', statusClass: 'info' }
+            ],
+            reviewsList: [
+                { user: 'Anil Dixit', rating: 5, text: 'Shivam Ji is the best criminal lawyer in Kannauj. He handled my case brilliantly and got me acquitted.' },
+                { user: 'Pooja Verma', rating: 4.7, text: 'Very understanding and supportive during my family case. Highly professional and result-oriented.' }
+            ]
         }
     };
 
